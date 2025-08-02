@@ -110,6 +110,28 @@ export default function Home() {
 
       <Driver />
       <Competition />
+
+      <section className="bg-nogogeni-black pt-16 px-8 space-y-8">
+        <iframe
+          allowFullScreen
+          src="https://www.youtube.com/embed/___vZMEwlCc?si=uAXuCUFlykdeH-Ob"
+          title="Nogogeni ITS Team: Company Profile"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          className="aspect-video w-full max-w-[512px] mx-auto"
+        ></iframe>
+
+        <div className="space-y-4">
+          <h2 className="bg-linear-to-r from-nogogeni-white to-nogogeni-orange bg-clip-text text-transparent font-extrabold flex justify-center items-center gap-0.5 text-2xl">
+            <span>The Soul of</span> <br /> <span>Our Work</span>
+          </h2>
+
+          <p className="text-nogogeni-white font-medium text-justify text-sm">
+            It is about building efficient vehicles through careful research,
+            solid teamwork, and a commitment to sustainability.
+          </p>
+        </div>
+      </section>
     </>
   );
 }
