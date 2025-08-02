@@ -12,6 +12,7 @@ import Link from "next/link";
 import { Vehicle } from "@/components/Vehicle";
 import { Competition } from "@/components/Competition";
 import { Driver } from "@/components/Driver";
+import { Review } from "@/components/Review";
 
 export default function Home() {
   const [carouselApi, setCarouselApi] = useState<CarouselApi>();
@@ -63,7 +64,7 @@ export default function Home() {
           </CarouselContent>
         </Carousel>
 
-        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-4">
+        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-3">
           {Array.from({ length: 3 }).map((_, index) => (
             <button
               key={index}
@@ -122,8 +123,14 @@ export default function Home() {
         ></iframe>
 
         <div className="space-y-4">
-          <h2 className="bg-linear-to-r from-nogogeni-white to-nogogeni-orange bg-clip-text text-transparent font-extrabold flex justify-center items-center gap-0.5 text-2xl">
-            <span>The Soul of</span> <br /> <span>Our Work</span>
+          <h2 className="font-extrabold flex flex-col items-center text-2xl">
+            <span className="bg-linear-to-r from-nogogeni-white to-nogogeni-orange bg-clip-text text-transparent">
+              The Soul of
+            </span>{" "}
+            <br />{" "}
+            <span className="bg-linear-to-r from-nogogeni-white to-nogogeni-orange bg-clip-text text-transparent">
+              Our Work
+            </span>
           </h2>
 
           <p className="text-nogogeni-white font-medium text-justify text-sm">
@@ -132,6 +139,9 @@ export default function Home() {
           </p>
         </div>
       </section>
+
+      <Review />
+      <section className="pt-16"></section>
     </>
   );
 }
