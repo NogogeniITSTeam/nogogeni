@@ -105,6 +105,60 @@ export default function Home() {
       </article>
 
       <Vehicle />
+
+      <section className="bg-nogogeni-black pt-16 px-8 text-center">
+        <h2 className="text-nogogeni-orange font-extrabold text-2xl mb-12">
+          These Are
+          <br />
+          <span className="text-nogogeni-white">Nogogeni&apos;s Drivers</span>
+        </h2>
+
+        <div className="flex justify-center items-center gap-8">
+          <div className="basis-1/2 space-y-2 max-w-36 tablet:max-w-3xs desktop:max-w-[512px]">
+            <div className="bg-nogogeni-orange relative overflow-hidden aspect-square rounded-md max-w-36 tablet:max-w-3xs desktop:max-w-[512px]">
+              <Image
+                fill
+                src="/roland.png"
+                alt="Roland Khusnu Winada"
+                className="object-contain object-center translate-y-20 scale-200 tablet:translate-y-36"
+              />
+            </div>
+
+            <div className="flex flex-col items-start">
+              <h3 className="text-nogogeni-white font-bold text-xs tablet:text-base">
+                Roland Khusnu Winada
+              </h3>
+              <span className="text-nogogeni-white font-semibold text-[8px] tablet:text-xs">
+                Urban Ethanol Car
+              </span>
+            </div>
+          </div>
+
+          <div className="basis-1/2 space-y-2 max-w-36 tablet:max-w-3xs desktop:max-w-[512px]">
+            <div className="bg-nogogeni-orange relative overflow-hidden aspect-square rounded-md max-w-36 tablet:max-w-3xs desktop:max-w-[512px]">
+              <Image
+                fill
+                src="/saputra.png"
+                alt="Saputra Ardyan Syah"
+                className="object-contain object-center translate-y-20 scale-200 tablet:translate-y-36"
+              />
+            </div>
+
+            <div className="basis-1/2 space-y-2">
+              <div className="flex flex-col items-start">
+                <h3 className="text-nogogeni-white font-bold text-xs tablet:text-base">
+                  Saputra Ardyan Syah
+                </h3>
+                <span className="text-nogogeni-white font-semibold text-[8px] tablet:text-xs">
+                  Urban Electric Car
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="pt-16"></section>
     </>
   );
 }
