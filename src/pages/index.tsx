@@ -9,19 +9,20 @@ import {
 import { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Vehicle } from "@/components/Vehicle";
 
 export default function Home() {
-  const [api, setApi] = useState<CarouselApi>();
+  const [carouselApi, setCarouselApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
 
   useEffect(() => {
-    if (api) {
-      setCurrent(api.selectedScrollSnap() + 1);
-      api.on("select", () => {
-        setCurrent(api.selectedScrollSnap() + 1);
+    if (carouselApi) {
+      setCurrent(carouselApi.selectedScrollSnap() + 1);
+      carouselApi.on("select", () => {
+        setCurrent(carouselApi.selectedScrollSnap() + 1);
       });
     }
-  }, [api]);
+  }, [carouselApi]);
 
   return (
     <>
@@ -46,7 +47,7 @@ export default function Home() {
       </header>
 
       <section className="relative bg-nogogeni-black">
-        <Carousel setApi={setApi}>
+        <Carousel setApi={setCarouselApi}>
           <CarouselContent>
             <CarouselItem className="w-full h-64">
               <div className="bg-blue-600 w-full h-full"></div>
@@ -64,7 +65,7 @@ export default function Home() {
           {Array.from({ length: 3 }).map((_, index) => (
             <button
               key={index}
-              onClick={() => api?.scrollTo(index)}
+              onClick={() => carouselApi?.scrollTo(index)}
               className={`w-3 h-3 rounded-full transition-colors cursor-pointer ${
                 index + 1 === current
                   ? "bg-nogogeni-orange"
@@ -102,6 +103,8 @@ export default function Home() {
           Learn Our History
         </Link>
       </article>
+
+      <Vehicle />
     </>
   );
 }
