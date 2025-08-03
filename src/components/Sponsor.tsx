@@ -27,7 +27,7 @@ const sponsors = [
   { company: "Spectrum", imgPath: "/spectrum.png" },
   { company: "BSS Original Exhaust", imgPath: "/bss.png" },
   { company: "Print & Print", imgPath: "/print.png" },
-  { company: "Better Luck Project", imgPath: "/better.png" },
+  { company: "Better Luck Project", imgPath: "/betterluck.png" },
   {
     company: "Husky-CNOOC Madura Limited",
     imgPath: "/hcml.png",

@@ -14,6 +14,7 @@ import { Competition } from "@/components/Competition";
 import { Driver } from "@/components/Driver";
 import { Review } from "@/components/Review";
 import { Sponsor } from "@/components/Sponsor";
+import { MediaPartner } from "@/components/MediaPartner";
 
 export default function Home() {
   const [carouselApi, setCarouselApi] = useState<CarouselApi>();
@@ -123,7 +124,7 @@ export default function Home() {
         ></iframe>
 
         <div className="space-y-4">
-          <h2 className="font-extrabold flex flex-col items-center text-2xl">
+          <h2 className="hidden font-extrabold flex-col items-center text-xl tablet:flex">
             <span className="bg-linear-to-r from-nogogeni-white to-nogogeni-orange bg-clip-text text-transparent">
               The Soul of
             </span>{" "}
@@ -131,6 +132,10 @@ export default function Home() {
             <span className="bg-linear-to-r from-nogogeni-white to-nogogeni-orange bg-clip-text text-transparent">
               Our Work
             </span>
+          </h2>
+
+          <h2 className="bg-linear-to-r from-nogogeni-white to-nogogeni-orange bg-clip-text text-transparent font-extrabold flex flex-col items-center text-2xl tablet:hidden">
+            The Soul of Our Work
           </h2>
 
           <p className="text-nogogeni-white font-medium text-justify text-sm">
@@ -142,6 +147,7 @@ export default function Home() {
 
       <Review />
       <Sponsor />
+      <MediaPartner />
     </>
   );
 }
