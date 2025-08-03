@@ -11,7 +11,7 @@ function Navbar() {
     <header
       className={`bg-[#1E1E1E] fixed z-20 top-0 left-0 right-0 flex justify-between items-center px-8 py-4 h-16 tablet:py-5 desktop:h-24 ${poppins.className}`}
     >
-      <div className="flex justify-between items-center gap-3">
+      <Link href="/" className="flex justify-between items-center gap-3">
         <div className="relative w-8 h-8">
           <Image
             fill
@@ -20,9 +20,8 @@ function Navbar() {
             className="object-contain object-center"
           />
         </div>
-
         <h2 className="font-bold text-sm desktop:text-xl">Nogogeni ITS Team</h2>
-      </div>
+      </Link>
 
       <button type="button" className="cursor-pointer tablet:hidden">
         <MenuIcon className="h-6 w-6" />

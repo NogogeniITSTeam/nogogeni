@@ -6,33 +6,33 @@ const competitions = [
     name: "Ethanol Urban Concept",
     result: "2nd Place KMHE",
     location: "Ancol Circuit, Jakarta",
-    imgPath: "/nogogeni_vii.png",
+    imgPath: "/hero_image_1.jpg",
     year: 2024,
   },
   {
     name: "Ethanol Urban Concept",
     result: "2nd Place KMHE",
     location: "Ancol Circuit, Jakarta",
-    imgPath: "/nogogeni_vii.png",
+    imgPath: "/hero_image_1.jpg",
     year: 2024,
   },
   {
     name: "Go-Kart Design",
     result: "3rd Place PLN ICE",
     location: "Sentul International Circuit, Bogor",
-    imgPath: "/nogogeni_vii.png",
+    imgPath: "/hero_image_1.jpg",
     year: 2024,
   },
 ];
 
 function Competition() {
   return (
-    <section className="bg-linear-to-r from-nogogeni-red to-nogogeni-orange px-8 py-6">
-      <h2 className="text-nogogeni-white font-extrabold text-center text-3xl mb-2">
+    <section className="bg-linear-to-r from-nogogeni-red to-nogogeni-orange px-8 py-6 tablet:px-16 tablet:py-12 desktop:px-32 desktop:py-16">
+      <h2 className="font-extrabold text-center text-3xl mb-2 tablet:text-[40px] tablet:mb-3 desktop:text-[80px] desktop:mb-4">
         Winner&apos;s Podium
       </h2>
 
-      <p className="text-nogogeni-white font-medium text-center text-xs max-w-3xs mx-auto mb-8">
+      <p className="font-medium text-center mx-auto text-sm max-w-72 mb-8 tablet:text-base tablet:max-w-96 desktop:text-[28px] desktop:max-w-2xl desktop:mb-12">
         Marking over a decade of continuous podium finishes at competition
       </p>
 
@@ -40,9 +40,9 @@ function Competition() {
         {competitions.map((competition, index) => (
           <li
             key={`${competition.name},${index}`}
-            className="group relative overflow-hidden aspect-4/5 w-full max-w-3xs px-3 py-2 rounded-lg tablet:basis-1/2 desktop:basis-1/3"
+            className="group relative overflow-hidden aspect-4/5 w-full rounded-lg max-w-3xs px-3 py-2 desktop:max-w-80 desktop:px-6 desktop:py-4"
           >
-            <Badge className="border-none rounded-none absolute z-10 top-2 right-3 bg-linear-to-r from-nogogeni-orange to-nogogeni-red text-nogogeni-white">
+            <Badge className="border-none rounded-none bg-linear-to-r from-nogogeni-orange to-nogogeni-red absolute z-10 top-2 right-3 desktop:top-4 desktop:right-6">
               {competition.year}
             </Badge>
 
@@ -53,11 +53,11 @@ function Competition() {
               className="object-cover object-center group-hover:scale-125 duration-300"
             />
 
-            <div className="absolute z-10 bottom-2 left-3 flex flex-col gap-1">
-              <h4 className="text-nogogeni-white font-medium text-sm">
+            <div className="flex flex-col gap-1 absolute z-10 bottom-2 left-3 desktop:bottom-4 desktop:left-6">
+              <h4 className="font-medium text-sm desktop:text-2xl">
                 {competition.result}
               </h4>
-              <p className="text-nogogeni-white text-xs">
+              <p className="text-xs desktop:text-sm">
                 {competition.name} <br />
                 <span>{competition.location}</span>
               </p>

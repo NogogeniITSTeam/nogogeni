@@ -26,7 +26,7 @@ export default function Home() {
           push the limits of technology, creativity, and sustainability.
         </p>
 
-        <p className="text-justify mx-auto max-w-[512px] text-sm mb-8 tablet:max-w-3xl tablet:text-xl tablet:mb-16 desktop:max-w-6xl desktop:text-[40px]">
+        <p className="text-justify mx-auto max-w-[512px] text-sm mb-8 tablet:max-w-3xl tablet:text-xl tablet:mb-12 desktop:max-w-6xl desktop:text-[40px]">
           Since 2012, we&lsquo;ve grown from a small team of dreamers into
           Indonesia&lsquo;s most decorated energy-efficient vehicle team — with
           groundbreaking innovations, national championships, and international
