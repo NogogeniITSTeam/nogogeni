@@ -15,6 +15,7 @@ import { Driver } from "@/components/Driver";
 import { Review } from "@/components/Review";
 import { Sponsor } from "@/components/Sponsor";
 import { MediaPartner } from "@/components/MediaPartner";
+import { Footer } from "@/components/Footer";
 
 export default function Home() {
   const [carouselApi, setCarouselApi] = useState<CarouselApi>();
@@ -148,6 +149,7 @@ export default function Home() {
       <Review />
       <Sponsor />
       <MediaPartner />
+      <Footer />
     </>
   );
 }
