@@ -47,23 +47,23 @@ export default function Home() {
       <Driver />
       <Competition />
 
-      <section className="bg-nogogeni-black pt-16 px-8 space-y-8">
+      <section className="bg-nogogeni-black text-center pt-16 px-8 tablet:px-16 tablet:pt-24 desktop:px-32 desktop:pt-32">
         <iframe
           allowFullScreen
           src="https://www.youtube.com/embed/___vZMEwlCc?si=uAXuCUFlykdeH-Ob"
           title="Nogogeni ITS Team: Company Profile"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerPolicy="strict-origin-when-cross-origin"
-          className="aspect-video w-full max-w-[512px] mx-auto"
+          className="aspect-video mx-auto w-full max-w-[512px] mb-8 tablet:max-w-2xl tablet:mb-10 desktop:max-w-5xl desktop:mb-12"
         ></iframe>
 
-        <div className="space-y-4">
-          <h2 className="hidden font-extrabold flex-col items-center text-xl tablet:flex">
-            <span className="bg-linear-to-r from-nogogeni-white to-nogogeni-orange bg-clip-text text-transparent">
+        <div className="space-y-4 tablet:space-y-0 tablet:flex tablet:justify-center tablet:items-center tablet:gap-6 desktop:gap-11">
+          <h2 className="font-extrabold flex-col text-[40px] hidden tablet:flex desktop:text-[80px]">
+            <span className="bg-linear-to-r from-nogogeni-white to-nogogeni-orange bg-clip-text text-transparent desktop:leading-tight">
               The Soul of
             </span>{" "}
             <br />{" "}
-            <span className="bg-linear-to-r from-nogogeni-white to-nogogeni-orange bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-nogogeni-white to-nogogeni-orange bg-clip-text text-transparent desktop:leading-tight">
               Our Work
             </span>
           </h2>
@@ -72,7 +72,7 @@ export default function Home() {
             The Soul of Our Work
           </h2>
 
-          <p className="text-nogogeni-white font-medium text-justify text-sm">
+          <p className="font-medium text-justify mx-auto text-sm max-w-80 tablet:mx-0 tablet:text-base desktop:text-[28px] desktop:max-w-[512px]">
             It is about building efficient vehicles through careful research,
             solid teamwork, and a commitment to sustainability.
           </p>
