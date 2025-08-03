@@ -60,8 +60,8 @@ function Review() {
   }, [carouselApi]);
 
   return (
-    <section className="bg-nogogeni-black py-16 px-8 space-y-8">
-      <h2 className="font-extrabold flex flex-col items-center text-3xl">
+    <section className="bg-nogogeni-black space-y-8 py-16 px-8 tablet:px-16 tablet:py-24 desktop:space-y-12 desktop:px-32 desktop:py-32">
+      <h2 className="font-extrabold flex flex-col items-center text-2xl tablet:text-[40px] desktop:text-[80px]">
         <span className="bg-linear-to-r from-nogogeni-white to-nogogeni-orange bg-clip-text text-transparent">
           What Notable Figures
         </span>{" "}
@@ -71,27 +71,34 @@ function Review() {
         </span>
       </h2>
 
-      <Carousel setApi={setCarouselApi} plugins={[Autoplay({ delay: 2000 })]}>
+      <Carousel
+        setApi={setCarouselApi}
+        plugins={[Autoplay({ delay: 2000 })]}
+        className="w-full tablet:mx-auto tablet:max-w-[532px] desktop:max-w-[1184px]"
+      >
         <CarouselContent>
           {reviews.map((review) => (
-            <CarouselItem key={review.reviewer}>
-              <article className="bg-[#BA271D] relative overflow-hidden aspect-4/5 rounded-md max-w-64 mx-auto p-6">
+            <CarouselItem
+              key={review.reviewer}
+              className="tablet:basis-1/2 tablet:max-w-fit tablet:pl-5 desktop:basis-1/3 desktop:pl-8"
+            >
+              <article className="bg-[#BA271D] relative overflow-hidden aspect-4/5 rounded-md max-w-64 mx-auto p-4 desktop:max-w-96 desktop:p-6">
                 <Image
                   fill
                   src={review.imgPath}
                   alt={`${review.reviewer}, ${review.position}`}
-                  className="object-contain object-center scale-90 translate-y-[78px] translate-x-[72px]"
+                  className="object-contain object-center scale-90 translate-y-[78px] translate-x-[72px] desktop:translate-y-[116px] desktop:translate-x-[116px]"
                 />
 
-                <p className="text-nogogeni-white text-justify relative z-10 text-sm">
+                <p className="text-justify relative z-10 text-sm desktop:text-xl">
                   &quot;{review.content}&quot;
                 </p>
 
-                <div className="absolute bottom-8 flex flex-col items-start max-w-48">
-                  <h3 className="text-nogogeni-white font-bold text-sm">
+                <div className="absolute bottom-8 flex flex-col max-w-48 desktop:max-w-64">
+                  <h3 className="font-bold text-sm desktop:text-xl">
                     - {review.reviewer},
                   </h3>
-                  <span className="text-nogogeni-white text-xs">
+                  <span className="text-xs desktop:text-base">
                     {review.position}
                   </span>
                 </div>
@@ -101,14 +108,14 @@ function Review() {
         </CarouselContent>
       </Carousel>
 
-      <div className="flex items-center justify-center gap-3">
+      <div className="flex items-center justify-center gap-3 desktop:gap-4">
         {Array.from({ length: reviews.length }).map((_, index) => (
           <button
             key={index}
             onClick={() => carouselApi?.scrollTo(index)}
-            className={`w-3 h-3 rounded-full transition-colors cursor-pointer ${
+            className={`w-3 h-3 rounded-full transition-colors cursor-pointer desktop:w-4 desktop:h-4 ${
               index + 1 === current ? "bg-nogogeni-orange" : "bg-nogogeni-white"
-            }`}
+            } tablet:nth-[5]:hidden desktop:nth-[4]:hidden`}
           />
         ))}
       </div>
