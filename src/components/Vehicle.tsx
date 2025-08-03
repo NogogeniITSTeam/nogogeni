@@ -38,7 +38,7 @@ function Vehicle() {
       <h2 className="text-nogogeni-orange font-extrabold text-2xl tablet:text-[40px] desktop:text-[80px]">
         Let&apos;s Explore
         <br />
-        <span>Our Vehicle</span>
+        <span className="text-nogogeni-white">Our Vehicle</span>
       </h2>
 
       <div className="mx-auto px-8 max-w-96 my-12 tablet:px-0 tablet:max-w-[512px] tablet:my-16 desktop:max-w-3xl desktop:my-24">

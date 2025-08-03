@@ -15,43 +15,40 @@ const drivers = [
 
 function Driver() {
   return (
-    <section className="bg-nogogeni-black pt-16 text-center">
-      <h2 className="text-nogogeni-orange font-extrabold text-2xl px-8 mb-8">
+    <section className="bg-nogogeni-black text-center pt-16 tablet:pt-24 desktop:pt-32">
+      <h2 className="text-nogogeni-orange font-extrabold text-2xl mb-8 tablet:text-[40px] tablet:mb-12 desktop:text-[80px]">
         These Are
         <br />
         <span className="text-nogogeni-white">Nogogeni&apos;s Drivers</span>
       </h2>
 
-      <div className="relative pb-16">
+      <div className="relative">
         <Image
           fill
           src="/hero_image_1.jpg"
           alt="Nogogeni VII"
           className="object-cover object-center"
         />
-
         <div className="absolute inset-0 bg-black/85" />
 
-        <ul className="relative z-10 flex justify-center items-center gap-8">
+        <ul className="relative z-10 flex flex-col items-center gap-8 p-8 tablet:gap-16 tablet:flex-row tablet:justify-center tablet:py-16">
           {drivers.map((driver) => (
             <li
               key={driver.name}
-              className="group basis-1/2 space-y-2 max-w-36 tablet:max-w-3xs desktop:max-w-[512px]"
+              className="group space-y-2 tablet:space-y-4 tablet:basis-1/2 tablet:max-w-fit"
             >
-              <div className="bg-nogogeni-orange relative overflow-hidden aspect-square rounded-md max-w-36 tablet:max-w-3xs desktop:max-w-[512px]">
+              <div className="bg-linear-to-br from-nogogeni-red to-nogogeni-orange relative overflow-hidden rounded-md aspect-square h-64">
                 <Image
                   fill
                   src={driver.imgPath}
                   alt={driver.name}
-                  className="object-contain object-center translate-y-20 scale-[185%] group-hover:scale-[210%] duration-300 tablet:translate-y-36"
+                  className="object-contain object-center duration-300 translate-y-40 scale-[185%] group-hover:scale-[210%]"
                 />
               </div>
 
               <div className="flex flex-col items-start">
-                <h3 className="text-nogogeni-white font-bold text-xs tablet:text-base">
-                  {driver.name}
-                </h3>
-                <span className="text-nogogeni-white font-semibold text-[8px] tablet:text-xs">
+                <h3 className="font-bold uppercase">{driver.name}</h3>
+                <span className="text-nogogeni-white/90 font-medium text-sm">
                   {driver.vehicleType}
                 </span>
               </div>
