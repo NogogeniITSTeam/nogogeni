@@ -34,14 +34,14 @@ function Vehicle() {
   }, [carouselApi]);
 
   return (
-    <section className="bg-nogogeni-black pt-16 px-8 text-center">
-      <h2 className="text-nogogeni-orange font-extrabold text-2xl">
+    <section className="bg-nogogeni-black text-center pt-16 px-8 tablet:px-16 tablet:pt-24 desktop:px-32 desktop:pt-32">
+      <h2 className="text-nogogeni-orange font-extrabold text-2xl tablet:text-[40px] desktop:text-[80px]">
         Let&apos;s Explore
         <br />
-        <span className="text-nogogeni-white">Our Vehicle</span>
+        <span>Our Vehicle</span>
       </h2>
 
-      <div className="px-4 my-12">
+      <div className="mx-auto px-8 max-w-96 my-12 tablet:px-0 tablet:max-w-[512px] tablet:my-16 desktop:max-w-3xl desktop:my-24">
         <Carousel
           setApi={setCarouselApi}
           opts={{ align: "center", loop: true }}
@@ -59,7 +59,7 @@ function Vehicle() {
                 >
                   <div className="flex flex-col justify-center items-center gap-4">
                     <div className="relative">
-                      <div className="bg-nogogeni-white rounded-full w-20 h-20">
+                      <div className="bg-nogogeni-white rounded-full w-20 h-20 tablet:w-28 tablet:h-28 desktop:w-32 desktop:h-32">
                         <Image
                           fill
                           src={vehicle.imgPath}
@@ -69,21 +69,19 @@ function Vehicle() {
                       </div>
                     </div>
 
-                    <div className="flex flex-col justify-center items-center text-nowrap">
-                      <span className="text-nogogeni-white text-xs bg-linear-to-r from-nogogeni-red to-nogogeni-orange font-semibold uppercase px-2 py-1">
+                    <div className="flex flex-col justify-center items-center text-nowrap text-xs tablet:text-xl">
+                      <span className="bg-linear-to-r from-nogogeni-red to-nogogeni-orange font-semibold uppercase px-2 py-1">
                         {vehicle.name}
                       </span>
-                      <span className="text-nogogeni-white text-xs">
-                        {vehicle.year}
-                      </span>
+                      <span>{vehicle.year}</span>
                     </div>
                   </div>
                 </div>
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="-left-8 size-6 [&_svg]:w-4 [&_svg]:h-4" />
-          <CarouselNext className="-right-8 size-6 [&_svg]:w-4 [&_svg]:h-4" />
+          <CarouselPrevious className="[&_svg]:text-nogogeni-black hover:bg-nogogeni-white/90 -left-12 size-6 [&_svg]:w-4 [&_svg]:h-4 tablet:-left-14 tablet:size-8 tablet:[&_svg]:w-6 tablet:[&_svg]:h-6" />
+          <CarouselNext className="[&_svg]:text-nogogeni-black hover:bg-nogogeni-white/90 -right-12 size-6 [&_svg]:w-4 [&_svg]:h-4 tablet:-right-14 tablet:size-8 tablet:[&_svg]:w-6 tablet:[&_svg]:h-6" />
         </Carousel>
       </div>
 
@@ -91,10 +89,10 @@ function Vehicle() {
         asChild
         type="button"
         size="sm"
-        className="bg-nogogeni-orange text-nogogeni-white hover:bg-nogogeni-orange/35 active:inset-shadow-md cursor-pointer rounded-full"
+        className="bg-nogogeni-orange hover:bg-nogogeni-orange/35 active:inset-shadow-md cursor-pointer rounded-full desktop:h-full desktop:text-[28px] desktop:px-6 desktop:py-3"
       >
         <Link href="/garage">
-          Explore Garage <ChevronRightIcon className="w-4 h-4" />
+          Explore Garage <ChevronRightIcon className="size-4 desktop:size-8" />
         </Link>
       </Button>
     </section>

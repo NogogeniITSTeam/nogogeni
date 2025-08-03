@@ -27,6 +27,7 @@ import { Instagram } from "./icons/Instagram";
 import { Tiktok } from "./icons/Tiktok";
 import { Youtube } from "./icons/Youtube";
 import { LinkedIn } from "./icons/LinkedIn";
+import { poppins } from "@/lib/fonts";
 
 const formSchema = z.object({
   email: z.email(),
@@ -60,7 +61,9 @@ function Footer() {
   }
 
   return (
-    <footer className="bg-linear-to-r from-nogogeni-red to-nogogeni-orange px-8 py-6">
+    <footer
+      className={`bg-linear-to-r from-nogogeni-red to-nogogeni-orange px-8 py-6 ${poppins.className}`}
+    >
       <div className="relative w-32 h-16">
         <Image
           fill
