@@ -10,6 +10,8 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import { ChevronRightIcon } from "lucide-react";
+import { Button } from "./ui/button";
+import Autoplay from "embla-carousel-autoplay";
 
 const vehicles = [
   { name: "Nogogeni VII", year: "2024", imgPath: "/nogogeni_vii.png" },
@@ -43,10 +45,11 @@ function Vehicle() {
         <Carousel
           setApi={setCarouselApi}
           opts={{ align: "center", loop: true }}
+          plugins={[Autoplay({ delay: 2000 })]}
         >
           <CarouselContent>
             {vehicles.map((vehicle, index) => (
-              <CarouselItem key={vehicle.name} className="basis-[50%]">
+              <CarouselItem key={vehicle.name} className="basis-1/2">
                 <div
                   className={`transition-all duration-500 ${
                     index === current
@@ -84,12 +87,16 @@ function Vehicle() {
         </Carousel>
       </div>
 
-      <Link
-        href="/garage"
-        className="bg-nogogeni-orange hover:bg-nogogeni-orange/35 active:inset-shadow-md transition-all text-sm font-medium text-nogogeni-white px-3 py-2 rounded-full flex justify-between items-center gap-2 w-fit mx-auto"
+      <Button
+        asChild
+        type="button"
+        size="sm"
+        className="bg-nogogeni-orange text-nogogeni-white hover:bg-nogogeni-orange/35 active:inset-shadow-md cursor-pointer rounded-full"
       >
-        Explore Garage <ChevronRightIcon className="w-4 h-4" />
-      </Link>
+        <Link href="/garage">
+          Explore Garage <ChevronRightIcon className="w-4 h-4" />
+        </Link>
+      </Button>
     </section>
   );
 }

@@ -1,7 +1,5 @@
-import { useEffect, useState } from "react";
 import {
   Carousel,
-  CarouselApi,
   CarouselContent,
   CarouselItem,
   CarouselNext,
@@ -9,6 +7,8 @@ import {
 } from "./ui/carousel";
 import Link from "next/link";
 import Image from "next/image";
+import Autoplay from "embla-carousel-autoplay";
+import { Button } from "./ui/button";
 
 const sponsors = [
   { company: "Pertamina Lubricants", imgPath: "/pertamina_lubricants.png" },
@@ -42,38 +42,28 @@ const sponsors = [
 ];
 
 function Sponsor() {
-  const [carouselApi, setCarouselApi] = useState<CarouselApi>();
-  const [current, setCurrent] = useState(0);
-
-  useEffect(() => {
-    if (carouselApi) {
-      setCurrent(carouselApi.selectedScrollSnap() + 1);
-      carouselApi.on("select", () => {
-        setCurrent(carouselApi.selectedScrollSnap() + 1);
-      });
-    }
-  }, [carouselApi]);
-
   return (
-    <section className="bg-nogogeni-white px-8 py-6">
-      <h2 className="text-nogogeni-black text-center text-xl mb-6">
+    <section className="bg-nogogeni-white text-center px-8 py-6">
+      <h2 className="text-nogogeni-black text-xl mb-6">
         <span className="font-bold">Supported by 50+</span>
         <br />
         companies from the beginning
       </h2>
 
-      <Link
-        href="/sponsor"
-        className="bg-nogogeni-orange hover:bg-nogogeni-red active:inset-shadow-md transition-all text-sm font-medium text-nogogeni-white px-3 py-2 rounded-full block w-32 text-center mx-auto mb-4"
+      <Button
+        asChild
+        type="button"
+        size="sm"
+        className="bg-nogogeni-orange text-nogogeni-white hover:bg-nogogeni-red active:inset-shadow-md cursor-pointer rounded-full"
       >
-        Our Sponsor
-      </Link>
+        <Link href="/sponsor">Our Sponsor</Link>
+      </Button>
 
       <div className="px-4">
-        <Carousel setApi={setCarouselApi}>
+        <Carousel plugins={[Autoplay({ delay: 2000 })]}>
           <CarouselContent>
             {sponsors.map((sponsor) => (
-              <CarouselItem key={sponsor.company} className="basis-1/2 pl-0">
+              <CarouselItem key={sponsor.company} className="basis-1/2">
                 <div className="relative w-32 h-32">
                   <Image
                     fill

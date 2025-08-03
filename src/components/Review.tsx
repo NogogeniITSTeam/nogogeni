@@ -6,6 +6,7 @@ import {
   CarouselContent,
   CarouselItem,
 } from "./ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 const reviews = [
   {
@@ -70,7 +71,7 @@ function Review() {
         </span>
       </h2>
 
-      <Carousel setApi={setCarouselApi}>
+      <Carousel setApi={setCarouselApi} plugins={[Autoplay({ delay: 2000 })]}>
         <CarouselContent>
           {reviews.map((review) => (
             <CarouselItem key={review.reviewer}>
