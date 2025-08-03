@@ -59,7 +59,7 @@ function Review() {
   }, [carouselApi]);
 
   return (
-    <section className="bg-nogogeni-black pt-16 px-8 space-y-8">
+    <section className="bg-nogogeni-black py-16 px-8 space-y-8">
       <h2 className="font-extrabold flex flex-col items-center text-3xl">
         <span className="bg-linear-to-r from-nogogeni-white to-nogogeni-orange bg-clip-text text-transparent">
           What Notable Figures

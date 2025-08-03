@@ -39,7 +39,7 @@ function Vehicle() {
         <span className="text-nogogeni-white">Our Vehicle</span>
       </h2>
 
-      <div className="px-8 my-12">
+      <div className="px-4 my-12">
         <Carousel
           setApi={setCarouselApi}
           opts={{ align: "center", loop: true }}
@@ -79,8 +79,8 @@ function Vehicle() {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="size-6 [&_svg]:w-4 [&_svg]:h-4" />
-          <CarouselNext className="size-6 [&_svg]:w-4 [&_svg]:h-4" />
+          <CarouselPrevious className="-left-8 size-6 [&_svg]:w-4 [&_svg]:h-4" />
+          <CarouselNext className="-right-8 size-6 [&_svg]:w-4 [&_svg]:h-4" />
         </Carousel>
       </div>
 

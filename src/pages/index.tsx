@@ -13,6 +13,7 @@ import { Vehicle } from "@/components/Vehicle";
 import { Competition } from "@/components/Competition";
 import { Driver } from "@/components/Driver";
 import { Review } from "@/components/Review";
+import { Sponsor } from "@/components/Sponsor";
 
 export default function Home() {
   const [carouselApi, setCarouselApi] = useState<CarouselApi>();
@@ -108,7 +109,6 @@ export default function Home() {
       </article>
 
       <Vehicle />
-
       <Driver />
       <Competition />
 
@@ -141,7 +141,7 @@ export default function Home() {
       </section>
 
       <Review />
-      <section className="pt-16"></section>
+      <Sponsor />
     </>
   );
 }
