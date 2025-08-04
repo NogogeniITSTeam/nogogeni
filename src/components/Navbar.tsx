@@ -1,10 +1,27 @@
 import { poppins } from "@/lib/fonts";
-import { MenuIcon } from "lucide-react";
+import {
+  BookImageIcon,
+  CalendarIcon,
+  CarFrontIcon,
+  ChevronDownIcon,
+  MenuIcon,
+  Newspaper,
+  TrophyIcon,
+} from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "./ui/dropdown-menu";
+import { useState } from "react";
 
 function Navbar() {
+  const [isGarageOpened, setIsGarageOpened] = useState(false);
+  const [isActivitiesOpened, setIsActivitiesOpened] = useState(false);
   const router = useRouter();
 
   return (
@@ -31,7 +48,7 @@ function Navbar() {
       <nav className="justify-between items-center gap-8 hidden tablet:flex">
         <Link
           href="/about-us"
-          className={`font-medium transition-all duration-300 border-b pb-0.5 desktop:text-xl ${
+          className={`hover:text-nogogeni-orange hover:border-b-nogogeni-orange font-medium transition-all duration-300 border-b pb-0.5 desktop:text-xl ${
             router.pathname === "/about-us"
               ? "text-nogogeni-orange border-b-nogogeni-orange"
               : "border-b-transparent"
@@ -39,18 +56,56 @@ function Navbar() {
         >
           About Us
         </Link>
-        <button
-          className={`cursor-pointer font-medium transition-all duration-300 border-b pb-0.5 desktop:text-xl ${
-            router.pathname === "/garage"
-              ? "text-nogogeni-orange border-b-nogogeni-orange"
-              : "border-b-transparent"
-          }`}
-        >
-          Garage
-        </button>
+
+        <DropdownMenu open={isGarageOpened} onOpenChange={setIsGarageOpened}>
+          <DropdownMenuTrigger asChild>
+            <button
+              className={`hover:text-nogogeni-orange hover:border-b-nogogeni-orange cursor-pointer outline-none font-medium transition-all duration-300 border-b pb-0.5 flex items-center gap-2 desktop:text-xl ${
+                router.pathname.startsWith("/garage")
+                  ? "text-nogogeni-orange border-b-nogogeni-orange"
+                  : "border-b-transparent"
+              }`}
+            >
+              Garage{" "}
+              <ChevronDownIcon
+                className={`transition-all duration-300 ${
+                  isGarageOpened ? "-rotate-180" : ""
+                }`}
+              />
+            </button>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent className="text-nogogeni-white border-none rounded-tl-none rounded-tr-none p-0 mt-4 desktop:mt-8">
+            <DropdownMenuItem
+              asChild
+              className={`cursor-pointer rounded-none font-semibold focus:bg-[#FF675D] focus:text-nogogeni-white px-3 py-1.5 desktop:text-base desktop:px-4 desktop:py-2 ${
+                router.pathname === "/garage/vehicle-types"
+                  ? "bg-[#FF675D]"
+                  : "bg-nogogeni-orange"
+              }`}
+            >
+              <Link href="/garage/vehicle-types">
+                <CarFrontIcon className="text-nogogeni-white" /> Vehicle Types
+              </Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem
+              asChild
+              className={`cursor-pointer rounded-none font-semibold focus:bg-[#FF675D] focus:text-nogogeni-white px-3 py-1.5 desktop:text-base desktop:px-4 desktop:py-2 ${
+                router.pathname === "/garage/vehicle-gallery"
+                  ? "bg-[#FF675D]"
+                  : "bg-nogogeni-orange"
+              }`}
+            >
+              <Link href="/garage/vehicle-gallery">
+                <BookImageIcon className="text-nogogeni-white" /> Vehicle
+                Gallery
+              </Link>
+            </DropdownMenuItem>
+          </DropdownMenuContent>
+        </DropdownMenu>
+
         <Link
           href="/our-team"
-          className={`font-medium transition-all duration-300 border-b pb-0.5 desktop:text-xl ${
+          className={`hover:text-nogogeni-orange hover:border-b-nogogeni-orange font-medium transition-all duration-300 border-b pb-0.5 desktop:text-xl ${
             router.pathname === "/our-team"
               ? "text-nogogeni-orange border-b-nogogeni-orange"
               : "border-b-transparent"
@@ -58,18 +113,71 @@ function Navbar() {
         >
           Our Team
         </Link>
-        <button
-          className={`cursor-pointer font-medium transition-all duration-300 border-b pb-0.5 desktop:text-xl ${
-            router.pathname === "/activities"
-              ? "text-nogogeni-orange border-b-nogogeni-orange"
-              : "border-b-transparent"
-          }`}
+
+        <DropdownMenu
+          open={isActivitiesOpened}
+          onOpenChange={setIsActivitiesOpened}
         >
-          Activities
-        </button>
+          <DropdownMenuTrigger asChild>
+            <button
+              className={`hover:text-nogogeni-orange hover:border-b-nogogeni-orange cursor-pointer outline-none font-medium transition-all duration-300 border-b pb-0.5 flex items-center gap-2 desktop:text-xl ${
+                router.pathname.startsWith("/activities")
+                  ? "text-nogogeni-orange border-b-nogogeni-orange"
+                  : "border-b-transparent"
+              }`}
+            >
+              Activities{" "}
+              <ChevronDownIcon
+                className={`transition-all duration-300 ${
+                  isActivitiesOpened ? "-rotate-180" : ""
+                }`}
+              />
+            </button>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent className="text-nogogeni-white border-none rounded-tl-none rounded-tr-none p-0 mt-4 desktop:mt-8">
+            <DropdownMenuItem
+              asChild
+              className={`cursor-pointer rounded-none font-semibold focus:bg-[#FF675D] focus:text-nogogeni-white px-3 py-1.5 desktop:text-base desktop:px-4 desktop:py-2 ${
+                router.pathname === "/activities/competition"
+                  ? "bg-[#FF675D]"
+                  : "bg-nogogeni-orange"
+              }`}
+            >
+              <Link href="/activities/competition">
+                <TrophyIcon className="text-nogogeni-white" /> Competition
+              </Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem
+              asChild
+              className={`cursor-pointer rounded-none font-semibold focus:bg-[#FF675D] focus:text-nogogeni-white px-3 py-1.5 desktop:text-base desktop:px-4 desktop:py-2 ${
+                router.pathname === "/activities/internal-and-external"
+                  ? "bg-[#FF675D]"
+                  : "bg-nogogeni-orange"
+              }`}
+            >
+              <Link href="/activities/internal-and-external">
+                <CalendarIcon className="text-nogogeni-white" /> Internal &
+                External
+              </Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem
+              asChild
+              className={`cursor-pointer rounded-none font-semibold focus:bg-[#FF675D] focus:text-nogogeni-white px-3 py-1.5 desktop:text-base desktop:px-4 desktop:py-2 ${
+                router.pathname === "/activities/newsroom"
+                  ? "bg-[#FF675D]"
+                  : "bg-nogogeni-orange"
+              }`}
+            >
+              <Link href="/activities/newsroom">
+                <Newspaper className="text-nogogeni-white" /> Newsroom
+              </Link>
+            </DropdownMenuItem>
+          </DropdownMenuContent>
+        </DropdownMenu>
+
         <Link
           href="/contact"
-          className={`font-medium transition-all duration-300 border-b pb-0.5 desktop:text-xl ${
+          className={`hover:text-nogogeni-orange hover:border-b-nogogeni-orange font-medium transition-all duration-300 border-b pb-0.5 desktop:text-xl ${
             router.pathname === "/contact"
               ? "text-nogogeni-orange border-b-nogogeni-orange"
               : "border-b-transparent"
