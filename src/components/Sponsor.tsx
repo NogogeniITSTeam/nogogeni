@@ -43,8 +43,8 @@ const sponsors = [
 
 function Sponsor() {
   return (
-    <section className="bg-nogogeni-white text-center px-8 py-6">
-      <h2 className="text-nogogeni-black text-xl mb-6">
+    <section className="bg-nogogeni-white text-center px-8 py-6 tablet:px-16 tablet:py-12 desktop:px-32 desktop:py-16">
+      <h2 className="text-nogogeni-black text-xl mb-6 tablet:text-4xl tablet:mb-8 desktop:text-[64px] desktop:mb-12">
         <span className="font-bold">Supported by 50+</span>
         <br />
         companies from the beginning
@@ -54,17 +54,24 @@ function Sponsor() {
         asChild
         type="button"
         size="sm"
-        className="bg-nogogeni-orange text-nogogeni-white hover:bg-nogogeni-red active:inset-shadow-md cursor-pointer rounded-full"
+        className="bg-nogogeni-orange text-nogogeni-white hover:bg-nogogeni-red active:inset-shadow-md cursor-pointer rounded-full mb-6 px-6"
       >
         <Link href="/sponsor">Our Sponsor</Link>
       </Button>
 
-      <div className="px-4">
-        <Carousel plugins={[Autoplay({ delay: 2000 })]}>
+      <div className="px-8">
+        <Carousel
+          plugins={[Autoplay({ delay: 2000 })]}
+          opts={{ align: "start" }}
+          className="w-full mx-auto max-w-[270px] tablet:max-w-[532px] desktop:max-w-[792px]"
+        >
           <CarouselContent>
             {sponsors.map((sponsor) => (
-              <CarouselItem key={sponsor.company} className="basis-1/2">
-                <div className="relative w-32 h-32">
+              <CarouselItem
+                key={sponsor.company}
+                className="max-w-fit basis-1/2 tablet:pl-5 desktop:pl-6"
+              >
+                <div className="relative w-32 h-32 tablet:w-64 tablet:h-64 desktop:w-96 desktop:h-96">
                   <Image
                     fill
                     src={sponsor.imgPath}
@@ -75,8 +82,8 @@ function Sponsor() {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="bg-nogogeni-orange hover:bg-nogogeni-red -left-8 size-6 [&_svg]:text-nogogeni-white [&_svg]:w-4 [&_svg]:h-4" />
-          <CarouselNext className="bg-nogogeni-orange hover:bg-nogogeni-red -right-8 size-6 [&_svg]:text-nogogeni-white [&_svg]:w-4 [&_svg]:h-4" />
+          <CarouselPrevious className="bg-nogogeni-orange hover:bg-nogogeni-red hover:text-nogogeni-white size-6 [&_svg]:w-4 [&_svg]:h-4 tablet:-left-14 tablet:size-8 tablet:[&_svg]:w-6 tablet:[&_svg]:h-6 desktop:-left-16 desktop:size-10 desktop:[&_svg]:w-8 desktop:[&_svg]:h-8" />
+          <CarouselNext className="bg-nogogeni-orange hover:bg-nogogeni-red hover:text-nogogeni-white size-6 [&_svg]:w-4 [&_svg]:h-4 tablet:-right-14 tablet:size-8 tablet:[&_svg]:w-6 tablet:[&_svg]:h-6 desktop:-right-16 desktop:size-10 desktop:[&_svg]:w-8 desktop:[&_svg]:h-8" />
         </Carousel>
       </div>
     </section>

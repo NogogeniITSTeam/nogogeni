@@ -74,13 +74,14 @@ function Review() {
       <Carousel
         setApi={setCarouselApi}
         plugins={[Autoplay({ delay: 2000 })]}
+        opts={{ align: "start" }}
         className="w-full tablet:mx-auto tablet:max-w-[532px] desktop:max-w-[1184px]"
       >
         <CarouselContent>
           {reviews.map((review) => (
             <CarouselItem
               key={review.reviewer}
-              className="tablet:basis-1/2 tablet:max-w-fit tablet:pl-5 desktop:basis-1/3 desktop:pl-8"
+              className="tablet:max-w-fit tablet:basis-1/2 tablet:pl-5 desktop:basis-1/3 desktop:pl-8"
             >
               <article className="bg-[#BA271D] relative overflow-hidden aspect-4/5 rounded-md max-w-64 mx-auto p-4 desktop:max-w-96 desktop:p-6">
                 <Image

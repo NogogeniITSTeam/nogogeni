@@ -80,8 +80,8 @@ function Vehicle() {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="[&_svg]:text-nogogeni-black hover:bg-nogogeni-white/90 -left-12 size-6 [&_svg]:w-4 [&_svg]:h-4 tablet:-left-14 tablet:size-8 tablet:[&_svg]:w-6 tablet:[&_svg]:h-6" />
-          <CarouselNext className="[&_svg]:text-nogogeni-black hover:bg-nogogeni-white/90 -right-12 size-6 [&_svg]:w-4 [&_svg]:h-4 tablet:-right-14 tablet:size-8 tablet:[&_svg]:w-6 tablet:[&_svg]:h-6" />
+          <CarouselPrevious className="[&_svg]:text-nogogeni-black hover:bg-nogogeni-white/90 size-6 [&_svg]:w-4 [&_svg]:h-4 tablet:-left-14 tablet:size-8 tablet:[&_svg]:w-6 tablet:[&_svg]:h-6" />
+          <CarouselNext className="[&_svg]:text-nogogeni-black hover:bg-nogogeni-white/90 size-6 [&_svg]:w-4 [&_svg]:h-4 tablet:-right-14 tablet:size-8 tablet:[&_svg]:w-6 tablet:[&_svg]:h-6" />
         </Carousel>
       </div>
 
