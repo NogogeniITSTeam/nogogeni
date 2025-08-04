@@ -54,7 +54,7 @@ function Sponsor() {
         asChild
         type="button"
         size="sm"
-        className="bg-nogogeni-orange text-nogogeni-white hover:bg-nogogeni-red active:inset-shadow-md cursor-pointer rounded-full mb-6 px-6"
+        className="bg-nogogeni-orange text-nogogeni-white hover:bg-nogogeni-red active:inset-shadow-md cursor-pointer rounded-full mb-6 px-6 desktop:mb-8"
       >
         <Link href="/sponsor">Our Sponsor</Link>
       </Button>
@@ -71,7 +71,7 @@ function Sponsor() {
                 key={sponsor.company}
                 className="max-w-fit basis-1/2 tablet:pl-5 desktop:pl-6"
               >
-                <div className="relative w-32 h-32 tablet:w-64 tablet:h-64 desktop:w-96 desktop:h-96">
+                <div className="relative w-32 h-32 tablet:w-64 desktop:w-96">
                   <Image
                     fill
                     src={sponsor.imgPath}
