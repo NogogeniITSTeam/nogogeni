@@ -17,18 +17,31 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "./ui/dropdown-menu";
-import { useState } from "react";
+import { RefObject, useRef, useState } from "react";
+import { useOnClickOutside } from "usehooks-ts";
 
 function Navbar() {
+  const ref = useRef(null);
   const [isGarageOpened, setIsGarageOpened] = useState(false);
   const [isActivitiesOpened, setIsActivitiesOpened] = useState(false);
+  const [isOpened, setIsOpened] = useState(false);
   const router = useRouter();
+
+  useOnClickOutside(
+    ref as unknown as RefObject<HTMLElement> | RefObject<HTMLElement>[],
+    () => setIsOpened(false)
+  );
 
   return (
     <header
+      ref={ref}
       className={`bg-[#1E1E1E] fixed z-20 top-0 left-0 right-0 flex justify-between items-center px-8 py-4 h-16 tablet:py-5 desktop:h-24 ${poppins.className}`}
     >
-      <Link href="/" className="flex justify-between items-center gap-3">
+      <Link
+        onClick={() => setIsOpened(false)}
+        href="/"
+        className="flex justify-between items-center gap-3"
+      >
         <div className="relative w-8 h-8">
           <Image
             fill
@@ -40,10 +53,61 @@ function Navbar() {
         <h2 className="font-bold text-sm desktop:text-xl">Nogogeni ITS Team</h2>
       </Link>
 
-      <button type="button" className="cursor-pointer tablet:hidden">
+      <button
+        onClick={() => setIsOpened(!isOpened)}
+        type="button"
+        className="cursor-pointer tablet:hidden"
+      >
         <MenuIcon className="h-6 w-6" />
         <span className="sr-only">Menu</span>
       </button>
+
+      {isOpened && (
+        <>
+          <div
+            onClick={() => setIsOpened(false)}
+            className="bg-black/75 fixed top-16 left-0 right-0 bottom-0 tablet:hidden"
+          ></div>
+
+          <nav className="bg-nogogeni-black fixed top-16 left-0 right-0 tablet:hidden">
+            <Link
+              href="/about-us"
+              className="hover:bg-[#3F3F3F] cursor-pointer block w-full px-6 py-4"
+              onClick={() => setIsOpened(false)}
+            >
+              About Us
+            </Link>
+            <Link
+              href="/garage/vehicle-types"
+              className="hover:bg-[#3F3F3F] cursor-pointer block w-full px-6 py-4"
+              onClick={() => setIsOpened(false)}
+            >
+              Garage
+            </Link>
+            <Link
+              href="/our-team"
+              className="hover:bg-[#3F3F3F] cursor-pointer block w-full px-6 py-4"
+              onClick={() => setIsOpened(false)}
+            >
+              Our Team
+            </Link>
+            <Link
+              href="/activities/competition"
+              className="hover:bg-[#3F3F3F] cursor-pointer block w-full px-6 py-4"
+              onClick={() => setIsOpened(false)}
+            >
+              Activities
+            </Link>
+            <Link
+              href="/contact-us"
+              className="hover:bg-[#3F3F3F] cursor-pointer block w-full px-6 py-4"
+              onClick={() => setIsOpened(false)}
+            >
+              Contact Us
+            </Link>
+          </nav>
+        </>
+      )}
 
       <nav className="justify-between items-center gap-8 hidden tablet:flex">
         <Link
