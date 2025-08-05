@@ -99,11 +99,11 @@ function Navbar() {
               Activities
             </Link>
             <Link
-              href="/contact-us"
+              href="/contact"
               className="hover:bg-[#3F3F3F] cursor-pointer block w-full px-6 py-4"
               onClick={() => setIsOpened(false)}
             >
-              Contact Us
+              Contact
             </Link>
           </nav>
         </>
