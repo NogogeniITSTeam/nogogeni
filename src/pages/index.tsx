@@ -7,6 +7,7 @@ import { Sponsor } from "@/components/Sponsor";
 import { MediaPartner } from "@/components/MediaPartner";
 import { Hero } from "@/components/Hero";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -42,6 +43,15 @@ export default function Home() {
           <Link href="/about-us">Learn Our History</Link>
         </Button>
       </article>
+
+      <div className="absolute w-40 h-40 -right-8 -translate-y-12 tablet:w-52 tablet:h-52 tablet:-right-10 tablet:-translate-y-16 desktop:w-64 desktop:h-64 desktop:-right-12 desktop:-translate-y-28">
+        <Image
+          fill
+          src="/pattern_right.png"
+          alt=""
+          className="object-contain object-center"
+        />
+      </div>
 
       <Vehicle />
       <Driver />

@@ -95,6 +95,15 @@ function Vehicle() {
           Explore Garage <ChevronRightIcon className="size-4 desktop:size-8" />
         </Link>
       </Button>
+
+      <div className="absolute w-40 h-40 -left-8 -translate-y-8 tablet:w-52 tablet:h-52 tablet:-left-10 tablet:-translate-y-24 desktop:w-64 desktop:h-64 desktop:-left-12">
+        <Image
+          fill
+          src="/pattern_left.png"
+          alt=""
+          className="object-contain object-center"
+        />
+      </div>
     </section>
   );
 }
