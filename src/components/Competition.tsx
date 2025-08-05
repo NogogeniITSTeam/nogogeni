@@ -6,21 +6,21 @@ const competitions = [
     name: "Ethanol Urban Concept",
     result: "2nd Place KMHE",
     location: "Ancol Circuit, Jakarta",
-    imgPath: "/hero_image_1.jpg",
+    imgPath: "/kmhe_full_team.png",
     year: 2024,
   },
   {
     name: "Ethanol Urban Concept",
     result: "2nd Place KMHE",
     location: "Ancol Circuit, Jakarta",
-    imgPath: "/hero_image_1.jpg",
+    imgPath: "/kmhe_second_place.png",
     year: 2024,
   },
   {
     name: "Go-Kart Design",
     result: "3rd Place PLN ICE",
     location: "Sentul International Circuit, Bogor",
-    imgPath: "/hero_image_1.jpg",
+    imgPath: "/pln_ice.jpg",
     year: 2024,
   },
 ];
@@ -42,7 +42,7 @@ function Competition() {
             key={`${competition.name},${index}`}
             className="group relative overflow-hidden aspect-4/5 w-full rounded-lg max-w-3xs px-3 py-2 desktop:max-w-80 desktop:px-6 desktop:py-4"
           >
-            <Badge className="border-none rounded-none bg-linear-to-r from-nogogeni-orange to-nogogeni-red absolute z-10 top-2 right-3 desktop:top-4 desktop:right-6">
+            <Badge className="border-none rounded-none bg-linear-to-r from-nogogeni-orange to-nogogeni-red absolute z-10 top-2 right-3 tablet:text-base desktop:top-4 desktop:right-6">
               {competition.year}
             </Badge>
 

@@ -95,7 +95,7 @@ function Review() {
                   &quot;{review.content}&quot;
                 </p>
 
-                <div className="absolute bottom-8 flex flex-col max-w-48 desktop:max-w-64">
+                <div className="bg-black/50 absolute bottom-8 flex flex-col px-3 py-1 left-4 right-4 desktop:left-6 desktop:right-6">
                   <h3 className="font-bold text-sm desktop:text-xl">
                     - {review.reviewer},
                   </h3>

@@ -87,7 +87,7 @@ function Subscription({ className, ...props }: ComponentProps<"div">) {
 
           {isDialogOpened ? (
             <AlertDialog open={isDialogOpened} onOpenChange={setIsDialogOpened}>
-              <AlertDialogContent>
+              <AlertDialogContent className="text-nogogeni-black w-96">
                 <AlertDialogHeader>
                   <AlertDialogTitle>
                     Please check your email again
@@ -96,7 +96,7 @@ function Subscription({ className, ...props }: ComponentProps<"div">) {
                 <AlertDialogFooter>
                   <AlertDialogCancel
                     disabled={isLoading}
-                    className="cursor-pointer"
+                    className="bg-nogogeni-orange hover:bg-nogogeni-orange/90 text-nogogeni-white hover:text-nogogeni-white cursor-pointer"
                   >
                     Cancel
                   </AlertDialogCancel>
@@ -111,7 +111,7 @@ function Subscription({ className, ...props }: ComponentProps<"div">) {
                         Loading
                       </>
                     ) : (
-                      "Submit"
+                      "Subscribe"
                     )}
                   </AlertDialogAction>
                 </AlertDialogFooter>

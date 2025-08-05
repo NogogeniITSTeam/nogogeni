@@ -9,9 +9,9 @@ import {
 } from "./ui/carousel";
 import Image from "next/image";
 import Link from "next/link";
-import { ChevronRightIcon } from "lucide-react";
 import { Button } from "./ui/button";
 import Autoplay from "embla-carousel-autoplay";
+import { ChevronRightIcon } from "lucide-react";
 
 const vehicles = [
   { name: "Nogogeni VII", year: "2024", imgPath: "/nogogeni_vii.png" },
@@ -57,9 +57,9 @@ function Vehicle() {
                       : "scale-50 opacity-50"
                   }`}
                 >
-                  <div className="flex flex-col justify-center items-center gap-4">
+                  <div className="flex flex-col justify-center items-center gap-4 desktop:gap-6">
                     <div className="relative">
-                      <div className="bg-nogogeni-white rounded-full w-20 h-20 tablet:w-28 tablet:h-28 desktop:w-32 desktop:h-32">
+                      <div className="bg-nogogeni-white rounded-full w-24 h-24 tablet:w-32 tablet:h-32 desktop:w-48 desktop:h-48">
                         <Image
                           fill
                           src={vehicle.imgPath}
@@ -89,7 +89,7 @@ function Vehicle() {
         asChild
         type="button"
         size="sm"
-        className="bg-nogogeni-orange hover:bg-nogogeni-orange/35 active:inset-shadow-md cursor-pointer rounded-full desktop:h-full desktop:text-[28px] desktop:px-6 desktop:py-3"
+        className="bg-nogogeni-orange hover:bg-nogogeni-orange/35 active:inset-shadow-md cursor-pointer rounded-full desktop:h-full desktop:text-[28px] desktop:has-[>svg]:px-6 desktop:py-3"
       >
         <Link href="/garage">
           Explore Garage <ChevronRightIcon className="size-4 desktop:size-8" />
