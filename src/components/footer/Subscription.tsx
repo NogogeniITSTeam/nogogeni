@@ -33,16 +33,34 @@ function Subscription({ className, ...props }: ComponentProps<"div">) {
     },
   });
 
-  const subscribe = (event: MouseEvent<HTMLButtonElement>) => {
+  const subscribe = async (event: MouseEvent<HTMLButtonElement>) => {
     event.preventDefault();
     setIsLoading(true);
 
-    setTimeout(() => {
-      setIsLoading(false);
-      setIsDialogOpened(false);
-      form.setValue("email", "");
+    try {
+      const res = await fetch("/api/subscription", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          email: form.getValues("email"),
+          subscribed_at: new Date().toISOString(),
+        }),
+      });
+
+      if (res.status !== 200) {
+        throw new Error(`failed to send email to google sheet`);
+      }
+
       toast.success("Thank you for subscribing!", { richColors: true });
-    }, 1000);
+      form.setValue("email", "");
+      setIsDialogOpened(false);
+    } catch (error) {
+      toast.error("Failed to subscribe, please try again later", {
+        richColors: true,
+      });
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   function onSubmit() {
