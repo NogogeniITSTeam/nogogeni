@@ -110,33 +110,39 @@ function Navbar() {
       )}
 
       <nav className="justify-between items-center gap-8 hidden tablet:flex">
-        <Link
-          href="/about-us"
-          className={`hover:text-nogogeni-orange hover:border-b-nogogeni-orange font-medium transition-all duration-300 border-b pb-0.5 desktop:text-xl ${
-            router.pathname === "/about-us"
-              ? "text-nogogeni-orange border-b-nogogeni-orange"
-              : "border-b-transparent"
-          }`}
-        >
-          About Us
-        </Link>
+        <div className="relative">
+          <Link
+            href="/about-us"
+            className={`peer hover:text-nogogeni-orange font-medium transition-all duration-300 desktop:text-xl ${
+              router.pathname === "/about-us" ? "text-nogogeni-orange" : ""
+            }`}
+          >
+            About Us
+          </Link>
+          <div className="bg-nogogeni-orange invisible h-0.5 w-0.5 mx-auto peer-hover:visible peer-hover:w-full transition-all duration-300"></div>
+        </div>
 
         <DropdownMenu open={isGarageOpened} onOpenChange={setIsGarageOpened}>
           <DropdownMenuTrigger asChild>
-            <button
-              className={`hover:text-nogogeni-orange hover:border-b-nogogeni-orange cursor-pointer outline-none font-medium transition-all duration-300 border-b pb-0.5 flex items-center gap-2 desktop:text-xl ${
-                router.pathname.startsWith("/garage")
-                  ? "text-nogogeni-orange border-b-nogogeni-orange"
-                  : "border-b-transparent"
-              }`}
-            >
-              Garage{" "}
-              <ChevronDownIcon
-                className={`transition-all duration-300 ${
-                  isGarageOpened ? "-rotate-180" : ""
+            <div className="relative">
+              <button
+                className={`peer group cursor-pointer outline-none font-medium flex items-center gap-2 desktop:text-xl ${
+                  router.pathname.startsWith("/garage")
+                    ? "text-nogogeni-orange"
+                    : ""
                 }`}
-              />
-            </button>
+              >
+                <span className="group-hover:text-nogogeni-orange transition-all duration-300">
+                  Garage
+                </span>
+                <ChevronDownIcon
+                  className={`group-hover:text-nogogeni-orange transition-all duration-300 ${
+                    isGarageOpened ? "-rotate-180" : ""
+                  }`}
+                />
+              </button>
+              <div className="bg-nogogeni-orange invisible h-0.5 w-0.5 mx-auto peer-hover:visible peer-hover:w-full transition-all duration-300"></div>
+            </div>
           </DropdownMenuTrigger>
           <DropdownMenuContent className="text-nogogeni-white border-none rounded-tl-none rounded-tr-none p-0 mt-4 desktop:mt-8">
             <DropdownMenuItem
@@ -167,36 +173,42 @@ function Navbar() {
           </DropdownMenuContent>
         </DropdownMenu>
 
-        <Link
-          href="/our-team"
-          className={`hover:text-nogogeni-orange hover:border-b-nogogeni-orange font-medium transition-all duration-300 border-b pb-0.5 desktop:text-xl ${
-            router.pathname === "/our-team"
-              ? "text-nogogeni-orange border-b-nogogeni-orange"
-              : "border-b-transparent"
-          }`}
-        >
-          Our Team
-        </Link>
+        <div className="relative">
+          <Link
+            href="/our-team"
+            className={`peer hover:text-nogogeni-orange font-medium transition-all duration-300 desktop:text-xl ${
+              router.pathname === "/our-team" ? "text-nogogeni-orange" : ""
+            }`}
+          >
+            Our Team
+          </Link>
+          <div className="bg-nogogeni-orange invisible h-0.5 w-0.5 mx-auto peer-hover:visible peer-hover:w-full transition-all duration-300"></div>
+        </div>
 
         <DropdownMenu
           open={isActivitiesOpened}
           onOpenChange={setIsActivitiesOpened}
         >
           <DropdownMenuTrigger asChild>
-            <button
-              className={`hover:text-nogogeni-orange hover:border-b-nogogeni-orange cursor-pointer outline-none font-medium transition-all duration-300 border-b pb-0.5 flex items-center gap-2 desktop:text-xl ${
-                router.pathname.startsWith("/activities")
-                  ? "text-nogogeni-orange border-b-nogogeni-orange"
-                  : "border-b-transparent"
-              }`}
-            >
-              Activities{" "}
-              <ChevronDownIcon
-                className={`transition-all duration-300 ${
-                  isActivitiesOpened ? "-rotate-180" : ""
+            <div className="relative">
+              <button
+                className={`peer group cursor-pointer outline-none font-medium flex items-center gap-2 desktop:text-xl ${
+                  router.pathname.startsWith("/activities")
+                    ? "text-nogogeni-orange"
+                    : ""
                 }`}
-              />
-            </button>
+              >
+                <span className="group-hover:text-nogogeni-orange transition-all duration-300">
+                  Activities
+                </span>
+                <ChevronDownIcon
+                  className={`group-hover:text-nogogeni-orange transition-all duration-300 ${
+                    isActivitiesOpened ? "-rotate-180" : ""
+                  }`}
+                />
+              </button>
+              <div className="bg-nogogeni-orange invisible h-0.5 w-0.5 mx-auto peer-hover:visible peer-hover:w-full transition-all duration-300"></div>
+            </div>
           </DropdownMenuTrigger>
           <DropdownMenuContent className="text-nogogeni-white border-none rounded-tl-none rounded-tr-none p-0 mt-4 desktop:mt-8">
             <DropdownMenuItem
@@ -239,16 +251,17 @@ function Navbar() {
           </DropdownMenuContent>
         </DropdownMenu>
 
-        <Link
-          href="/contact"
-          className={`hover:text-nogogeni-orange hover:border-b-nogogeni-orange font-medium transition-all duration-300 border-b pb-0.5 desktop:text-xl ${
-            router.pathname === "/contact"
-              ? "text-nogogeni-orange border-b-nogogeni-orange"
-              : "border-b-transparent"
-          }`}
-        >
-          Contact
-        </Link>
+        <div className="relative">
+          <Link
+            href="/contact"
+            className={`peer hover:text-nogogeni-orange font-medium transition-all duration-300 desktop:text-xl ${
+              router.pathname === "/contact" ? "text-nogogeni-orange" : ""
+            }`}
+          >
+            Contact
+          </Link>
+          <div className="bg-nogogeni-orange invisible h-0.5 w-0.5 mx-auto peer-hover:visible peer-hover:w-full transition-all duration-300"></div>
+        </div>
       </nav>
     </header>
   );

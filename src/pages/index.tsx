@@ -71,8 +71,7 @@ export default function Home() {
           <h2 className="font-extrabold flex-col text-[40px] hidden tablet:flex desktop:text-[80px]">
             <span className="bg-linear-to-r from-nogogeni-white to-nogogeni-orange bg-clip-text text-transparent desktop:leading-tight">
               The Soul of
-            </span>{" "}
-            <br />{" "}
+            </span>
             <span className="bg-linear-to-r from-nogogeni-white to-nogogeni-orange bg-clip-text text-transparent desktop:leading-tight">
               Our Work
             </span>

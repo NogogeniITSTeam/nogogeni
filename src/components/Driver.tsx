@@ -29,7 +29,7 @@ function Driver() {
           alt="Nogogeni VII"
           className="object-cover object-center"
         />
-        <div className="absolute inset-0 bg-black/85" />
+        <div className="absolute inset-0 bg-linear-to-b from-nogogeni-black to-black/85" />
 
         <ul className="relative z-10 flex flex-col items-center gap-8 p-8 tablet:gap-16 tablet:flex-row tablet:justify-center tablet:py-16">
           {drivers.map((driver) => (

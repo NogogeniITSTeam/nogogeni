@@ -64,8 +64,7 @@ function Review() {
       <h2 className="font-extrabold flex flex-col items-center text-2xl tablet:text-[40px] desktop:text-[80px]">
         <span className="bg-linear-to-r from-nogogeni-white to-nogogeni-orange bg-clip-text text-transparent">
           What Notable Figures
-        </span>{" "}
-        <br />{" "}
+        </span>
         <span className="bg-linear-to-r from-nogogeni-white to-nogogeni-orange bg-clip-text text-transparent">
           Said About Nogogeni
         </span>
