@@ -1,6 +1,8 @@
 import { formatDate, isDateValid } from "@/utils/date";
 import type { NextApiRequest, NextApiResponse } from "next";
 
+const GOOGLE_SHEET_ACTION_URL = process.env.GOOGLE_SHEET_ACTION_URL ?? "";
+
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<string>
@@ -11,17 +13,14 @@ export default async function handler(
   }
 
   try {
-    const result = await fetch(
-      "https://script.google.com/macros/s/AKfycbx0hfbB0WzyVEHOLH0W-7MQ2OIhl1miKQ-Mhx3FasGDDK65ncG9Mn1H5TuR47HC9rKu/exec?spreadsheetId=1aitglpd5ybBd67j58dnbM4xlL3XyH6R2iyQT7nG0WAg&sheetId=0&version=1",
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams({
-          Email: req.body.email ?? "",
-          "Subscribed At": formatDate(subscribedAt),
-        }),
-      }
-    );
+    const result = await fetch(GOOGLE_SHEET_ACTION_URL, {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams({
+        Email: req.body.email ?? "",
+        "Subscribed At": formatDate(subscribedAt),
+      }),
+    });
 
     if (result.status !== 200) {
       console.error(
