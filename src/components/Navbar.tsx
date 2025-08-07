@@ -17,8 +17,63 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "./ui/dropdown-menu";
-import { RefObject, useRef, useState } from "react";
-import { useOnClickOutside } from "usehooks-ts";
+import { Dispatch, RefObject, SetStateAction, useRef, useState } from "react";
+import { useOnClickOutside, useScrollLock } from "usehooks-ts";
+
+interface NavbarModalProps {
+  setIsOpened: Dispatch<SetStateAction<boolean>>;
+}
+
+function NavbarModal({ setIsOpened }: NavbarModalProps) {
+  useScrollLock();
+
+  return (
+    <>
+      <div
+        onClick={() => setIsOpened(false)}
+        className="bg-black/75 fixed top-16 left-0 right-0 bottom-0 tablet:hidden"
+      ></div>
+
+      <nav className="bg-nogogeni-black fixed top-16 left-0 right-0 tablet:hidden">
+        <Link
+          href="/about-us"
+          className="hover:bg-[#3F3F3F] cursor-pointer block w-full px-6 py-4"
+          onClick={() => setIsOpened(false)}
+        >
+          About Us
+        </Link>
+        <Link
+          href="/garage/vehicle-types"
+          className="hover:bg-[#3F3F3F] cursor-pointer block w-full px-6 py-4"
+          onClick={() => setIsOpened(false)}
+        >
+          Garage
+        </Link>
+        <Link
+          href="/our-team"
+          className="hover:bg-[#3F3F3F] cursor-pointer block w-full px-6 py-4"
+          onClick={() => setIsOpened(false)}
+        >
+          Our Team
+        </Link>
+        <Link
+          href="/activities/competition"
+          className="hover:bg-[#3F3F3F] cursor-pointer block w-full px-6 py-4"
+          onClick={() => setIsOpened(false)}
+        >
+          Activities
+        </Link>
+        <Link
+          href="/contact"
+          className="hover:bg-[#3F3F3F] cursor-pointer block w-full px-6 py-4"
+          onClick={() => setIsOpened(false)}
+        >
+          Contact
+        </Link>
+      </nav>
+    </>
+  );
+}
 
 function Navbar() {
   const ref = useRef(null);
@@ -62,52 +117,7 @@ function Navbar() {
         <span className="sr-only">Menu</span>
       </button>
 
-      {isOpened && (
-        <>
-          <div
-            onClick={() => setIsOpened(false)}
-            className="bg-black/75 fixed top-16 left-0 right-0 bottom-0 tablet:hidden"
-          ></div>
-
-          <nav className="bg-nogogeni-black fixed top-16 left-0 right-0 tablet:hidden">
-            <Link
-              href="/about-us"
-              className="hover:bg-[#3F3F3F] cursor-pointer block w-full px-6 py-4"
-              onClick={() => setIsOpened(false)}
-            >
-              About Us
-            </Link>
-            <Link
-              href="/garage/vehicle-types"
-              className="hover:bg-[#3F3F3F] cursor-pointer block w-full px-6 py-4"
-              onClick={() => setIsOpened(false)}
-            >
-              Garage
-            </Link>
-            <Link
-              href="/our-team"
-              className="hover:bg-[#3F3F3F] cursor-pointer block w-full px-6 py-4"
-              onClick={() => setIsOpened(false)}
-            >
-              Our Team
-            </Link>
-            <Link
-              href="/activities/competition"
-              className="hover:bg-[#3F3F3F] cursor-pointer block w-full px-6 py-4"
-              onClick={() => setIsOpened(false)}
-            >
-              Activities
-            </Link>
-            <Link
-              href="/contact"
-              className="hover:bg-[#3F3F3F] cursor-pointer block w-full px-6 py-4"
-              onClick={() => setIsOpened(false)}
-            >
-              Contact
-            </Link>
-          </nav>
-        </>
-      )}
+      {isOpened && <NavbarModal setIsOpened={setIsOpened} />}
 
       <nav className="justify-between items-center gap-8 hidden tablet:flex">
         <div className="relative">
