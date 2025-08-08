@@ -80,17 +80,12 @@ function Vehicle() {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="[&_svg]:text-nogogeni-black hover:bg-nogogeni-white/90 size-6 [&_svg]:w-4 [&_svg]:h-4 tablet:-left-14 tablet:size-8 tablet:[&_svg]:w-6 tablet:[&_svg]:h-6" />
-          <CarouselNext className="[&_svg]:text-nogogeni-black hover:bg-nogogeni-white/90 size-6 [&_svg]:w-4 [&_svg]:h-4 tablet:-right-14 tablet:size-8 tablet:[&_svg]:w-6 tablet:[&_svg]:h-6" />
+          <CarouselPrevious className="size-6 [&_svg]:w-4 [&_svg]:h-4 tablet:-left-14 tablet:size-8 tablet:[&_svg]:w-6 tablet:[&_svg]:h-6 desktop:-left-16 desktop:size-10 desktop:[&_svg]:w-8 desktop:[&_svg]:h-8" />
+          <CarouselNext className="size-6 [&_svg]:w-4 [&_svg]:h-4 tablet:-right-14 tablet:size-8 tablet:[&_svg]:w-6 tablet:[&_svg]:h-6 desktop:-right-16 desktop:size-10 desktop:[&_svg]:w-8 desktop:[&_svg]:h-8" />
         </Carousel>
       </div>
 
-      <Button
-        asChild
-        type="button"
-        size="sm"
-        className="bg-nogogeni-orange hover:bg-nogogeni-orange/35 active:inset-shadow-md cursor-pointer rounded-full desktop:h-full desktop:text-[28px] desktop:has-[>svg]:px-6 desktop:py-3"
-      >
+      <Button asChild className="text-sm tablet:text-base">
         <Link href="/garage">
           Explore Garage <ChevronRightIcon className="size-4 desktop:size-8" />
         </Link>

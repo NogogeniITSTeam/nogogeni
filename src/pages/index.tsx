@@ -34,12 +34,7 @@ export default function Home() {
           recognition to our name.
         </p>
 
-        <Button
-          asChild
-          type="button"
-          size="sm"
-          className="bg-nogogeni-orange hover:bg-nogogeni-orange/35 active:inset-shadow-md cursor-pointer rounded-full desktop:h-full desktop:text-[28px] desktop:px-6 desktop:py-3"
-        >
+        <Button asChild className="text-sm tablet:text-base">
           <Link href="/about-us">Learn Our History</Link>
         </Button>
       </article>

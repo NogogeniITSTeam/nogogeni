@@ -50,12 +50,7 @@ function Sponsor() {
         companies from the beginning
       </h2>
 
-      <Button
-        asChild
-        type="button"
-        size="sm"
-        className="bg-nogogeni-orange text-nogogeni-white hover:bg-nogogeni-red active:inset-shadow-md cursor-pointer rounded-full mb-6 px-6 desktop:mb-8"
-      >
+      <Button asChild className="text-sm tablet:text-base">
         <Link href="/sponsor">Our Sponsor</Link>
       </Button>
 
@@ -82,8 +77,14 @@ function Sponsor() {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="bg-nogogeni-orange hover:bg-nogogeni-red hover:text-nogogeni-white size-6 [&_svg]:w-4 [&_svg]:h-4 tablet:-left-14 tablet:size-8 tablet:[&_svg]:w-6 tablet:[&_svg]:h-6 desktop:-left-16 desktop:size-10 desktop:[&_svg]:w-8 desktop:[&_svg]:h-8" />
-          <CarouselNext className="bg-nogogeni-orange hover:bg-nogogeni-red hover:text-nogogeni-white size-6 [&_svg]:w-4 [&_svg]:h-4 tablet:-right-14 tablet:size-8 tablet:[&_svg]:w-6 tablet:[&_svg]:h-6 desktop:-right-16 desktop:size-10 desktop:[&_svg]:w-8 desktop:[&_svg]:h-8" />
+          <CarouselPrevious
+            variant="primary"
+            className="size-6 [&_svg]:w-4 [&_svg]:h-4 tablet:-left-14 tablet:size-8 tablet:[&_svg]:w-6 tablet:[&_svg]:h-6 desktop:-left-16 desktop:size-10 desktop:[&_svg]:w-8 desktop:[&_svg]:h-8"
+          />
+          <CarouselNext
+            variant="primary"
+            className="size-6 [&_svg]:w-4 [&_svg]:h-4 tablet:-right-14 tablet:size-8 tablet:[&_svg]:w-6 tablet:[&_svg]:h-6 desktop:-right-16 desktop:size-10 desktop:[&_svg]:w-8 desktop:[&_svg]:h-8"
+          />
         </Carousel>
       </div>
     </section>

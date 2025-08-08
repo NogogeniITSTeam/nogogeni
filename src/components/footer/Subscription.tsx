@@ -97,8 +97,9 @@ function Subscription({ className, ...props }: ComponentProps<"div">) {
           <Button
             disabled={isLoading || form.watch("email") === ""}
             type="submit"
-            size="sm"
-            className="bg-nogogeni-white hover:bg-nogogeni-white/90 text-nogogeni-black cursor-pointer rounded-full h-9 px-4"
+            variant="secondary"
+            size="small"
+            className="py-2"
           >
             Subscribe
           </Button>
@@ -112,16 +113,13 @@ function Subscription({ className, ...props }: ComponentProps<"div">) {
                   </AlertDialogTitle>
                 </AlertDialogHeader>
                 <AlertDialogFooter>
-                  <AlertDialogCancel
-                    disabled={isLoading}
-                    className="bg-nogogeni-orange hover:bg-nogogeni-orange/90 text-nogogeni-white hover:text-nogogeni-white cursor-pointer"
-                  >
+                  <AlertDialogCancel disabled={isLoading} className="py-2 px-6">
                     Cancel
                   </AlertDialogCancel>
                   <AlertDialogAction
                     disabled={isLoading}
                     onClick={subscribe}
-                    className="cursor-pointer"
+                    className="py-2 px-6"
                   >
                     {isLoading ? (
                       <>
