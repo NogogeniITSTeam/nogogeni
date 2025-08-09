@@ -7,48 +7,23 @@ import {
   CarouselItem,
 } from "../ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
+import { useWindowSize } from "usehooks-ts";
 
 const reviews = [
-  {
-    reviewer: "Prof. Dr. Dahlan Iskan",
-    content:
-      "I personally and the people of East Java fully support the Nogogeni ITS Team so that they continue to work and excel for Indonesian. May Allah always bless us all",
-    position: "Ex. Minister of State Owned Enterprises Period 2011-2024",
-    imgPath: "/dahlan.png",
-  },
-  {
-    reviewer: "Rudy Salim",
-    content:
-      "Nogogeni ITS Team has already well-answered the challenges given to students to develop the automotive sector for Indonesia. I hope the Nogogeni ITS Team will always create new moves and contribute to Indonesian automotive",
-    position: "Entepreneur and Influencer",
-    imgPath: "/rudy.png",
-  },
-  {
-    reviewer: "Sandiaga Uno",
-    content:
-      "As initial support for Indonesia's future as a leading country in the electrical energy industry, I appreciate and certainly hope the Nogogeni ITS Team will continue to be enthusiastic about working despite the Covid Pandemic and always suceed in various fields of competition",
-    position: "Ex. Minister of Tourism and Economy Creative",
-    imgPath: "/sandiaga.png",
-  },
+  { reviewer: "Prof. Dr. Dahlan Iskan", imgPath: "/dahlan.png" },
+  { reviewer: "Rudy Salim", imgPath: "/rudy.png" },
+  { reviewer: "Sandiaga Uno", imgPath: "/sandiaga.png" },
   {
     reviewer: "Ir. Bambang Pramujati, S.T., M.Sc.Eng., PhD",
-    content:
-      "The Nogogeni ITS Team has effectively addressed the challenges posed to students in advancing Indonesia's automotive sector. I hope the team continues to innovate and make meaningful contributions to the nation's automotive industry",
-    position: "Chancellor of ITS Campus",
     imgPath: "/bambang.png",
   },
-  {
-    reviewer: "Fitra Eri",
-    content:
-      "The Nogogeni ITS Team has effectively addressed the challenges posed to students in advancing Indonesia's automotive sector. I hope the team continues to innovate and make meaningful contributions to the nation's automotive industry",
-    position: "Race Car Driver and Influencer",
-    imgPath: "/fitra.png",
-  },
+  { reviewer: "Fitra Eri", imgPath: "/fitra.png" },
 ];
 
 function Review() {
   const [carouselApi, setCarouselApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
+  const { width = 0 } = useWindowSize({ initializeWithValue: false });
 
   useEffect(() => {
     if (carouselApi) {
@@ -82,27 +57,13 @@ function Review() {
               key={review.reviewer}
               className="tablet:max-w-fit tablet:basis-1/2 tablet:pl-5 desktop:basis-1/3 desktop:pl-8"
             >
-              <article className="bg-[#BA271D] relative overflow-hidden aspect-4/5 rounded-md max-w-64 mx-auto p-4 desktop:max-w-96 desktop:p-6">
-                <Image
-                  fill
-                  src={review.imgPath}
-                  alt={`${review.reviewer}, ${review.position}`}
-                  className="object-contain object-center scale-90 translate-y-[78px] translate-x-[72px] desktop:translate-y-[116px] desktop:translate-x-[116px]"
-                />
-
-                <p className="text-justify relative z-10 text-sm desktop:text-xl">
-                  &quot;{review.content}&quot;
-                </p>
-
-                <div className="bg-black/50 absolute bottom-8 flex flex-col px-3 py-1 left-4 right-4 desktop:left-6 desktop:right-6">
-                  <h3 className="font-bold text-sm desktop:text-xl">
-                    - {review.reviewer},
-                  </h3>
-                  <span className="text-xs desktop:text-base">
-                    {review.position}
-                  </span>
-                </div>
-              </article>
+              <Image
+                src={review.imgPath}
+                alt={review.reviewer}
+                width={width < 1440 ? 256 : 384}
+                height={width < 1440 ? 256 : 384}
+                className="mx-auto"
+              />
             </CarouselItem>
           ))}
         </CarouselContent>
