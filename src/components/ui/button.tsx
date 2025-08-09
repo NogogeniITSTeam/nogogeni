@@ -14,8 +14,8 @@ const buttonVariants = cva(
           "bg-nogogeni-white text-nogogeni-orange hover:bg-nogogeni-white/90 active:bg-nogogeni-white/35 active:text-nogogeni-white active:inset-shadow-md",
       },
       size: {
-        small: "text-sm [&_svg]:w-5 [&_svg]:h-5 gap-2 px-8 py-3",
-        medium: "text-base [&_svg]:w-6 [&_svg]:h-6 gap-2 px-8 py-3",
+        small: "text-sm [&_svg]:w-5 [&_svg]:h-5 gap-2 px-4 py-2",
+        medium: "text-base [&_svg]:w-6 [&_svg]:h-6 gap-2 px-4 py-2",
         icon: "size-9",
       },
     },

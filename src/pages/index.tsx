@@ -6,38 +6,14 @@ import { Review } from "@/components/Review";
 import { Sponsor } from "@/components/Sponsor";
 import { MediaPartner } from "@/components/MediaPartner";
 import { Hero } from "@/components/Hero";
-import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import { MiniAboutUs } from "@/components/MiniAboutUs";
 
 export default function Home() {
   return (
     <>
       <Hero />
-
-      <article className="bg-nogogeni-black text-center pt-16 px-8 tablet:px-16 tablet:pt-24 desktop:px-32 desktop:pt-32">
-        <h1 className="font-extrabold text-center text-3xl mb-6 tablet:text-[40px] desktop:text-[80px] desktop:mb-12">
-          Welcome To
-          <br />
-          <span className="text-red-500">Nogogeni ITS Team</span>
-        </h1>
-
-        <p className="text-justify mx-auto max-w-[512px] text-sm mb-4 tablet:max-w-3xl tablet:text-xl desktop:max-w-6xl desktop:text-[40px]">
-          An official student research team from Institut Teknologi Sepuluh
-          Nopember (ITS), dedicated to developing energy-efficient vehicles that
-          push the limits of technology, creativity, and sustainability.
-        </p>
-
-        <p className="text-justify mx-auto max-w-[512px] text-sm mb-8 tablet:max-w-3xl tablet:text-xl tablet:mb-12 desktop:max-w-6xl desktop:text-[40px]">
-          Since 2012, we&lsquo;ve grown from a small team of dreamers into
-          Indonesia&lsquo;s most decorated energy-efficient vehicle team — with
-          groundbreaking innovations, national championships, and international
-          recognition to our name.
-        </p>
-
-        <Button asChild className="text-sm tablet:text-base">
-          <Link href="/about-us">Learn Our History</Link>
-        </Button>
-      </article>
+      <MiniAboutUs />
 
       <div className="absolute w-40 h-40 -right-8 -translate-y-12 tablet:w-52 tablet:h-52 tablet:-right-10 tablet:-translate-y-16 desktop:w-64 desktop:h-64 desktop:-right-12 desktop:-translate-y-28">
         <Image
