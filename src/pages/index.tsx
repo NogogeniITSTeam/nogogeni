@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { Vehicle } from "@/components/Vehicle";
 import { Competition } from "@/components/Competition";
 import { Driver } from "@/components/Driver";
@@ -29,6 +28,10 @@ export default function Home() {
       <Competition />
 
       <section className="bg-nogogeni-black text-center pt-16 px-8 tablet:px-16 tablet:pt-24 desktop:px-32 desktop:pt-32">
+        <h2 className="bg-linear-to-r from-nogogeni-white to-nogogeni-orange bg-clip-text text-transparent font-extrabold flex flex-col items-center text-2xl mb-6 tablet:text-3xl tablet:mb-8 desktop:text-[64px] desktop:mb-10">
+          The Soul of Our Work
+        </h2>
+
         <iframe
           allowFullScreen
           src="https://www.youtube.com/embed/___vZMEwlCc?si=uAXuCUFlykdeH-Ob"
@@ -37,26 +40,6 @@ export default function Home() {
           referrerPolicy="strict-origin-when-cross-origin"
           className="aspect-video mx-auto w-full max-w-[512px] mb-8 tablet:max-w-2xl tablet:mb-10 desktop:max-w-5xl desktop:mb-12"
         ></iframe>
-
-        <div className="space-y-4 tablet:space-y-0 tablet:flex tablet:justify-center tablet:items-center tablet:gap-6 desktop:gap-11">
-          <h2 className="font-extrabold flex-col text-[40px] hidden tablet:flex desktop:text-[80px]">
-            <span className="bg-linear-to-r from-nogogeni-white to-nogogeni-orange bg-clip-text text-transparent desktop:leading-tight">
-              The Soul of
-            </span>
-            <span className="bg-linear-to-r from-nogogeni-white to-nogogeni-orange bg-clip-text text-transparent desktop:leading-tight">
-              Our Work
-            </span>
-          </h2>
-
-          <h2 className="bg-linear-to-r from-nogogeni-white to-nogogeni-orange bg-clip-text text-transparent font-extrabold flex flex-col items-center text-2xl tablet:hidden">
-            The Soul of Our Work
-          </h2>
-
-          <p className="font-medium text-justify mx-auto text-sm max-w-80 tablet:mx-0 tablet:text-base desktop:text-[28px] desktop:max-w-[512px]">
-            It is about building efficient vehicles through careful research,
-            solid teamwork, and a commitment to sustainability.
-          </p>
-        </div>
       </section>
 
       <Review />
