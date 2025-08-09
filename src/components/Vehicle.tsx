@@ -35,13 +35,13 @@ function Vehicle() {
 
   return (
     <section className="bg-nogogeni-black text-center pt-16 px-8 tablet:px-16 tablet:pt-24 desktop:px-32 desktop:pt-32">
-      <h2 className="text-nogogeni-orange font-extrabold text-2xl tablet:text-[40px] desktop:text-[80px]">
+      <h2 className="text-nogogeni-orange font-extrabold text-2xl tablet:text-3xl desktop:text-[64px]">
         Let&apos;s Explore
         <br />
         <span className="text-nogogeni-white">Our Vehicle</span>
       </h2>
 
-      <div className="mx-auto px-8 max-w-96 my-12 tablet:px-0 tablet:max-w-[512px] tablet:my-16 desktop:max-w-3xl desktop:my-24">
+      <div className="mx-auto px-8 max-w-96 my-12 tablet:px-0 tablet:max-w-[512px] tablet:my-12 desktop:max-w-3xl desktop:my-16">
         <Carousel
           setApi={setCarouselApi}
           opts={{ align: "center", loop: true }}
@@ -80,14 +80,26 @@ function Vehicle() {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="size-6 [&_svg]:w-4 [&_svg]:h-4 tablet:-left-14 tablet:size-8 tablet:[&_svg]:w-6 tablet:[&_svg]:h-6 desktop:-left-16 desktop:size-10 desktop:[&_svg]:w-8 desktop:[&_svg]:h-8" />
-          <CarouselNext className="size-6 [&_svg]:w-4 [&_svg]:h-4 tablet:-right-14 tablet:size-8 tablet:[&_svg]:w-6 tablet:[&_svg]:h-6 desktop:-right-16 desktop:size-10 desktop:[&_svg]:w-8 desktop:[&_svg]:h-8" />
+          <CarouselPrevious
+            variant="secondary"
+            className="-left-10 size-6 [&_svg]:w-4 [&_svg]:h-4 tablet:-left-16 tablet:size-8 tablet:[&_svg]:w-6 tablet:[&_svg]:h-6 desktop:-left-20 desktop:size-10 desktop:[&_svg]:w-8 desktop:[&_svg]:h-8"
+          />
+          <CarouselNext
+            variant="secondary"
+            className="-right-10 size-6 [&_svg]:w-4 [&_svg]:h-4 tablet:-right-16 tablet:size-8 tablet:[&_svg]:w-6 tablet:[&_svg]:h-6 desktop:-right-20 desktop:size-10 desktop:[&_svg]:w-8 desktop:[&_svg]:h-8"
+          />
         </Carousel>
       </div>
 
-      <Button asChild className="text-sm tablet:text-base">
+      <Button asChild size="small" className="tablet:hidden">
         <Link href="/garage">
-          Explore Garage <ChevronRightIcon className="size-4 desktop:size-8" />
+          Explore Garage <ChevronRightIcon className="size-4" />
+        </Link>
+      </Button>
+
+      <Button asChild size="medium" className="hidden tablet:inline-flex">
+        <Link href="/garage">
+          Explore Garage <ChevronRightIcon />
         </Link>
       </Button>
 
