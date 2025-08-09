@@ -4,7 +4,7 @@ import {
   CarouselApi,
   CarouselContent,
   CarouselItem,
-} from "./ui/carousel";
+} from "../ui/carousel";
 import Image from "next/image";
 import Autoplay from "embla-carousel-autoplay";
 import Link from "next/link";

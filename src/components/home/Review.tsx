@@ -5,7 +5,7 @@ import {
   CarouselApi,
   CarouselContent,
   CarouselItem,
-} from "./ui/carousel";
+} from "../ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 
 const reviews = [

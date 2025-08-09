@@ -4,11 +4,11 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "./ui/carousel";
+} from "../ui/carousel";
 import Link from "next/link";
 import Image from "next/image";
 import Autoplay from "embla-carousel-autoplay";
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 
 const sponsors = [
   { company: "Pertamina Lubricants", imgPath: "/pertamina_lubricants.png" },

@@ -1,12 +1,12 @@
-import { Vehicle } from "@/components/Vehicle";
-import { Competition } from "@/components/Competition";
-import { Driver } from "@/components/Driver";
-import { Review } from "@/components/Review";
-import { Sponsor } from "@/components/Sponsor";
-import { MediaPartner } from "@/components/MediaPartner";
-import { Hero } from "@/components/Hero";
+import { Vehicle } from "@/components/home/Vehicle";
+import { Competition } from "@/components/home/Competition";
+import { Driver } from "@/components/home/Driver";
+import { Review } from "@/components/home/Review";
+import { Sponsor } from "@/components/home/Sponsor";
+import { MediaPartner } from "@/components/home/MediaPartner";
+import { Hero } from "@/components/home/Hero";
 import Image from "next/image";
-import { MiniAboutUs } from "@/components/MiniAboutUs";
+import { MiniAboutUs } from "@/components/home/MiniAboutUs";
 
 export default function Home() {
   return (

@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { Badge } from "./ui/badge";
-import { Button } from "./ui/button";
+import { Badge } from "../ui/badge";
+import { Button } from "../ui/button";
 import Link from "next/link";
 
 const competitions = [

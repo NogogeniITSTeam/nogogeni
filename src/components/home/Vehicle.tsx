@@ -6,10 +6,10 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "./ui/carousel";
+} from "../ui/carousel";
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 import Autoplay from "embla-carousel-autoplay";
 import { ChevronRightIcon } from "lucide-react";
 
