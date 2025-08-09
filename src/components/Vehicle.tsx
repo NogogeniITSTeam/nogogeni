@@ -64,7 +64,11 @@ function Vehicle() {
                           fill
                           src={vehicle.imgPath}
                           alt={vehicle.name}
-                          className="object-contain object-center scale-150"
+                          className={`object-contain object-center ${
+                            vehicle.name === "Ng-5000"
+                              ? "scale-125"
+                              : "scale-150"
+                          }`}
                         />
                       </div>
                     </div>

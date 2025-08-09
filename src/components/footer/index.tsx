@@ -11,7 +11,7 @@ function Footer() {
     >
       <div className="w-full tablet:mx-auto tablet:max-w-3xl desktop:max-w-5xl">
         {/* Mobile Footer */}
-        <div className="relative w-32 h-16 tablet:hidden">
+        <div className="relative w-32 h-16 mb-4 tablet:hidden">
           <Image
             fill
             src="/nogogeni_logo_full.png"
