@@ -44,17 +44,19 @@ const sponsors = [
 function Sponsor() {
   return (
     <section className="bg-nogogeni-white text-center px-8 py-6 tablet:px-16 tablet:py-12 desktop:px-32 desktop:py-16">
-      <h2 className="text-nogogeni-black text-xl mb-6 tablet:text-4xl tablet:mb-8 desktop:text-[64px] desktop:mb-12">
-        <span className="font-bold">Supported by 50+</span>
-        <br />
-        companies from the beginning
+      <h2 className="text-nogogeni-black font-bold mx-auto max-w-80 text-xl mb-6 tablet:max-w-md tablet:text-[28px] tablet:mb-8 desktop:max-w-4xl desktop:text-[56px] desktop:mb-12">
+        Supported by 50+ companies from the beginning
       </h2>
 
-      <Button asChild className="text-sm tablet:text-base">
+      <Button asChild size="small" className="tablet:hidden">
         <Link href="/sponsor">Our Sponsor</Link>
       </Button>
 
-      <div className="px-8">
+      <Button asChild size="medium" className="hidden tablet:inline-flex">
+        <Link href="/sponsor">Our Sponsor</Link>
+      </Button>
+
+      <div className="px-8 mt-3 tablet:mt-4 desktop:mt-6">
         <Carousel
           plugins={[Autoplay({ delay: 2000 })]}
           opts={{ align: "start" }}
