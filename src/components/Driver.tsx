@@ -16,7 +16,7 @@ const drivers = [
 function Driver() {
   return (
     <section className="bg-nogogeni-black text-center pt-16 tablet:pt-24 desktop:pt-32">
-      <h2 className="text-nogogeni-orange font-extrabold text-2xl mb-8 tablet:text-[40px] tablet:mb-12 desktop:text-[80px]">
+      <h2 className="text-nogogeni-orange font-extrabold text-2xl tablet:text-3xl desktop:text-[64px]">
         These Are
         <br />
         <span className="text-nogogeni-white">Nogogeni&apos;s Drivers</span>
@@ -37,18 +37,20 @@ function Driver() {
               key={driver.name}
               className="group space-y-2 tablet:space-y-4 tablet:basis-1/2 tablet:max-w-fit"
             >
-              <div className="bg-linear-to-br from-nogogeni-red to-nogogeni-orange relative overflow-hidden rounded-md aspect-square h-64">
+              <div className="bg-linear-to-br from-nogogeni-red to-nogogeni-orange relative overflow-hidden rounded-md aspect-square h-64 desktop:h-96">
                 <Image
                   fill
                   src={driver.imgPath}
                   alt={driver.name}
-                  className="object-contain object-center duration-300 translate-y-40 scale-[185%] group-hover:scale-[210%]"
+                  className="object-contain object-center duration-300 translate-y-40 scale-[185%] group-hover:scale-[210%] desktop:translate-y-56"
                 />
               </div>
 
               <div className="flex flex-col items-start">
-                <h3 className="font-bold uppercase">{driver.name}</h3>
-                <span className="text-nogogeni-white/90 font-medium text-sm">
+                <h3 className="font-bold uppercase desktop:text-2xl">
+                  {driver.name}
+                </h3>
+                <span className="text-nogogeni-white/90 font-medium text-sm desktop:text-lg">
                   {driver.vehicleType}
                 </span>
               </div>
