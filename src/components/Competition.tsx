@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { Badge } from "./ui/badge";
+import { Button } from "./ui/button";
+import Link from "next/link";
 
 const competitions = [
   {
@@ -28,15 +30,15 @@ const competitions = [
 function Competition() {
   return (
     <section className="bg-linear-to-r from-nogogeni-red to-nogogeni-orange px-8 py-6 tablet:px-16 tablet:py-12 desktop:px-32 desktop:py-16">
-      <h2 className="font-extrabold text-center text-3xl mb-2 tablet:text-[40px] tablet:mb-3 desktop:text-[80px] desktop:mb-4">
+      <h2 className="font-extrabold text-center text-2xl mb-2 tablet:text-3xl tablet:mb-3 desktop:text-[64px] desktop:mb-4">
         Winner&apos;s Podium
       </h2>
 
-      <p className="font-medium text-center mx-auto text-sm max-w-72 mb-8 tablet:text-base tablet:max-w-96 desktop:text-[28px] desktop:max-w-2xl desktop:mb-12">
+      <p className="font-medium text-center mx-auto text-sm max-w-72 tablet:text-base tablet:max-w-96 desktop:text-2xl desktop:max-w-xl">
         Marking over a decade of continuous podium finishes at competition
       </p>
 
-      <ul className="flex items-center gap-8 flex-col tablet:flex-row tablet:justify-center">
+      <ul className="flex items-center flex-col gap-8 my-8 tablet:flex-row tablet:justify-center desktop:my-10">
         {competitions.map((competition, index) => (
           <li
             key={`${competition.name},${index}`}
@@ -65,6 +67,26 @@ function Competition() {
           </li>
         ))}
       </ul>
+
+      <div className="text-center">
+        <Button
+          asChild
+          variant="secondary"
+          size="small"
+          className="tablet:hidden"
+        >
+          <Link href="/activities/competition">More Achievement</Link>
+        </Button>
+
+        <Button
+          asChild
+          variant="secondary"
+          size="medium"
+          className="hidden tablet:inline-flex"
+        >
+          <Link href="/activities/competition">More Achievement</Link>
+        </Button>
+      </div>
     </section>
   );
 }
