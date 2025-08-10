@@ -80,7 +80,7 @@ export default function AboutUs() {
             have represented Indonesia in competitions such as the Shell Eco
             Marathon (SEM-Asia), the Formula Society of Automotive Engineers
             (FSAE-Australasia), and TÜBİTAK TEKNOFEST. These opportunities have
-            allowed us to bring home several awards that mark our team's
+            allowed us to bring home several awards that mark our team&apos;s
             achievements in the field of energy-efficient vehicles.
           </p>
         </article>

@@ -54,7 +54,7 @@ function Subscription({ className, ...props }: ComponentProps<"div">) {
       toast.success("Thank you for subscribing!", { richColors: true });
       form.setValue("email", "");
       setIsDialogOpened(false);
-    } catch (error) {
+    } catch {
       toast.error("Failed to subscribe, please try again later", {
         richColors: true,
       });

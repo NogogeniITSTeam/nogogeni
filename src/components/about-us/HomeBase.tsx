@@ -42,7 +42,7 @@ function HomeBase() {
   return (
     <article className="bg-nogogeni-black py-16 px-8 tablet:px-16 tablet:py-24 desktop:px-32 desktop:py-32">
       <h2 className="font-extrabold text-center text-3xl mb-6">
-        Nogogeni's Home Base
+        Nogogeni&apos;s Home Base
       </h2>
 
       <p className="text-justify mx-auto max-w-lg text-sm mb-8">

@@ -67,7 +67,7 @@ export default function Home() {
           title="Nogogeni ITS Team: Company Profile"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerPolicy="strict-origin-when-cross-origin"
-          className="aspect-video mx-auto w-full max-w-[512px] mb-8 tablet:max-w-2xl tablet:mb-10 desktop:max-w-5xl desktop:mb-12"
+          className="aspect-video mx-auto w-full max-w-[512px] tablet:max-w-2xl desktop:max-w-5xl"
         ></iframe>
       </section>
 

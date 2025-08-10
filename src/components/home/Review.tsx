@@ -10,14 +10,14 @@ import Autoplay from "embla-carousel-autoplay";
 import { useWindowSize } from "usehooks-ts";
 
 const reviews = [
-  { reviewer: "Prof. Dr. Dahlan Iskan", imgPath: "/dahlan.png" },
-  { reviewer: "Rudy Salim", imgPath: "/rudy.png" },
-  { reviewer: "Sandiaga Uno", imgPath: "/sandiaga.png" },
+  { reviewer: "Prof. Dr. Dahlan Iskan", imgPath: "/home/dahlan.png" },
+  { reviewer: "Rudy Salim", imgPath: "/home/rudy.png" },
+  { reviewer: "Sandiaga Uno", imgPath: "/home/sandiaga.png" },
   {
     reviewer: "Ir. Bambang Pramujati, S.T., M.Sc.Eng., PhD",
-    imgPath: "/bambang.png",
+    imgPath: "/home/bambang.png",
   },
-  { reviewer: "Fitra Eri", imgPath: "/fitra.png" },
+  { reviewer: "Fitra Eri", imgPath: "/home/fitra.png" },
 ];
 
 function Review() {

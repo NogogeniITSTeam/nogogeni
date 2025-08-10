@@ -14,10 +14,14 @@ import Autoplay from "embla-carousel-autoplay";
 import { ChevronRightIcon } from "lucide-react";
 
 const vehicles = [
-  { name: "Nogogeni VII", year: "2024", imgPath: "/nogogeni_vii.png" },
-  { name: "Nogogeni IX Evo", year: "2024", imgPath: "/nogogeni_ix_evo.png" },
-  { name: "Gokart", year: "2024", imgPath: "/gokart.png" },
-  { name: "Ng-5000", year: "2024", imgPath: "/ng_5000.png" },
+  { name: "Nogogeni VII", year: "2024", imgPath: "/home/nogogeni_vii.png" },
+  {
+    name: "Nogogeni IX Evo",
+    year: "2024",
+    imgPath: "/home/nogogeni_ix_evo.png",
+  },
+  { name: "Gokart", year: "2024", imgPath: "/home/gokart.png" },
+  { name: "Ng-5000", year: "2024", imgPath: "/home/ng_5000.png" },
 ];
 
 function Vehicle() {
