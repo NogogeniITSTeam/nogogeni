@@ -11,7 +11,7 @@ export default function AboutUs() {
         <div className="relative h-[calc(100vh-64px)] desktop:h-[calc(100vh-96px)]">
           <Image
             fill
-            src="/about_us_hero.jpg"
+            src="/about-us/hero.jpg"
             alt="Nogogeni V Evo"
             className="object-cover object-center"
           />
@@ -55,7 +55,7 @@ export default function AboutUs() {
         <div className="group relative overflow-hidden aspect-4/5 w-full mx-auto max-w-xs mb-8">
           <Image
             fill
-            src="/first_place.png"
+            src="/about-us/first_place.png"
             alt="First place in Urban Electricity category at IEMC 2013"
             className="object-cover object-center group-hover:scale-125 duration-300"
           />

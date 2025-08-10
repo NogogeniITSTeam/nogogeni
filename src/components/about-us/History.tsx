@@ -9,19 +9,19 @@ import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 
 const histories = [
-  { year: 2011, imgPath: "/history_1.png" },
-  { year: 2013, imgPath: "/history_2.png" },
-  { year: 2014, imgPath: "/history_3.png" },
-  { year: 2015, imgPath: "/history_4.png" },
-  { year: 2016, imgPath: "/history_5.png" },
-  { year: 2017, imgPath: "/history_6.png" },
-  { year: 2018, imgPath: "/history_7.png" },
-  { year: 2019, imgPath: "/history_8.png" },
-  { year: 2020, imgPath: "/history_9.png" },
-  { year: 2021, imgPath: "/history_10.png" },
-  { year: 2022, imgPath: "/history_11.png" },
-  { year: 2023, imgPath: "/history_12.png" },
-  { year: 2024, imgPath: "/history_13.png" },
+  { year: 2011, imgPath: "/about-us/history_1.png" },
+  { year: 2013, imgPath: "/about-us/history_2.png" },
+  { year: 2014, imgPath: "/about-us/history_3.png" },
+  { year: 2015, imgPath: "/about-us/history_4.png" },
+  { year: 2016, imgPath: "/about-us/history_5.png" },
+  { year: 2017, imgPath: "/about-us/history_6.png" },
+  { year: 2018, imgPath: "/about-us/history_7.png" },
+  { year: 2019, imgPath: "/about-us/history_8.png" },
+  { year: 2020, imgPath: "/about-us/history_9.png" },
+  { year: 2021, imgPath: "/about-us/history_10.png" },
+  { year: 2022, imgPath: "/about-us/history_11.png" },
+  { year: 2023, imgPath: "/about-us/history_12.png" },
+  { year: 2024, imgPath: "/about-us/history_13.png" },
 ];
 
 function History() {

@@ -10,17 +10,17 @@ import { useEffect, useState } from "react";
 
 const carouselItems = [
   {
-    imgPath: "/history_1.png",
+    imgPath: "/about-us/history_1.png",
     title: "Foo",
     location: "Foo Bar",
   },
   {
-    imgPath: "/history_2.png",
+    imgPath: "/about-us/history_2.png",
     title: "Bar",
     location: "Bar Foo",
   },
   {
-    imgPath: "/history_3.png",
+    imgPath: "/about-us/history_3.png",
     title: "Baz",
     location: "Foo Baz",
   },
