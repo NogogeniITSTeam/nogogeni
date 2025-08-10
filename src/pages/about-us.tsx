@@ -1,5 +1,6 @@
 import { History } from "@/components/about-us/History";
-import { ChevronDownCircleIcon } from "lucide-react";
+import { HomeBase } from "@/components/about-us/HomeBase";
+import { ChevronDownCircleIcon, ChevronRightIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -51,7 +52,7 @@ export default function AboutUs() {
       </article>
 
       <section className="bg-linear-to-r from-nogogeni-red to-nogogeni-orange px-8 py-6 tablet:px-16 tablet:py-12 desktop:px-32 desktop:py-16">
-        <div className="group relative overflow-hidden aspect-4/5 rounded-lg w-full mx-auto max-w-xs mb-8">
+        <div className="group relative overflow-hidden aspect-4/5 w-full mx-auto max-w-xs mb-8">
           <Image
             fill
             src="/first_place.png"
@@ -60,8 +61,8 @@ export default function AboutUs() {
           />
 
           <div className="bg-black/50 absolute z-10 bottom-0 left-0 right-0 py-4">
-            <div className="w-full mx-auto max-w-48 space-y-2">
-              <h4 className="font-medium">
+            <div className="w-full mx-auto max-w-48 space-y-1">
+              <h4 className="font-bold">
                 Achieved 1st place in Urban Electricity category at IEMC 2013
               </h4>
               <p className="text-sm">Kenjeran Circuit, Surabaya</p>
@@ -84,6 +85,34 @@ export default function AboutUs() {
           </p>
         </article>
       </section>
+
+      <article className="bg-nogogeni-black space-y-8 pt-16 px-8 tablet:px-16 tablet:pt-24 desktop:px-32 desktop:pt-32">
+        <p className="text-center w-full mx-auto max-w-xs text-sm">
+          In everything we do, we hold onto one powerful belief:
+        </p>
+
+        <h2 className="font-bold flex justify-center items-center gap-1 text-3xl">
+          <span className="bg-linear-to-r from-nogogeni-red to-nogogeni-orange bg-clip-text text-transparent">
+            Work
+          </span>{" "}
+          <ChevronRightIcon />{" "}
+          <span className="bg-linear-to-r from-nogogeni-red to-nogogeni-orange bg-clip-text text-transparent">
+            Pray
+          </span>{" "}
+          <ChevronRightIcon />
+          <span className="bg-linear-to-r from-nogogeni-red to-nogogeni-orange bg-clip-text text-transparent">
+            Trust
+          </span>
+        </h2>
+
+        <p className="text-justify mx-auto max-w-lg text-sm">
+          With every project, we commit to advancing sustainable vehicle
+          research, inspiring thousands of students across generations, and
+          proudly representing Indonesia on the global stage.
+        </p>
+      </article>
+
+      <HomeBase />
     </>
   );
 }
