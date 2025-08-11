@@ -40,11 +40,11 @@ export default function AboutUs() {
       <History />
 
       <article className="bg-nogogeni-black py-16 px-8 tablet:px-16 tablet:py-24 desktop:px-32 desktop:py-32">
-        <h2 className="font-extrabold text-center mx-auto max-w-lg text-3xl mb-8 desktop:text-[64px] desktop:mb-12">
+        <h2 className="font-extrabold text-center mx-auto max-w-lg text-3xl mb-8 desktop:max-w-5xl desktop:text-[64px] desktop:mb-12">
           Back to Where It All Started on the Race Track
         </h2>
 
-        <p className="text-justify mx-auto max-w-lg text-sm">
+        <p className="text-justify w-full mx-auto max-w-lg text-sm tablet:max-w-xl tablet:text-base desktop:max-w-5xl desktop:text-2xl">
           Since 2012, our team has continuously developed our vehicle designs,
           adapting to the evolving challenges and demands of each competition we
           join. This journey began to show results in 2013, when we achieved our
@@ -53,8 +53,8 @@ export default function AboutUs() {
         </p>
       </article>
 
-      <section className="bg-linear-to-r from-nogogeni-red to-nogogeni-orange px-8 py-6 tablet:px-16 tablet:py-12 desktop:px-32 desktop:py-16">
-        <div className="group relative overflow-hidden aspect-4/5 w-full mx-auto max-w-xs mb-8">
+      <section className="bg-linear-to-r from-nogogeni-red to-nogogeni-orange px-8 py-6 tablet:px-16 tablet:py-12 desktop:grid desktop:grid-cols-2 desktop:gap-16 desktop:px-32 desktop:py-16">
+        <div className="group relative overflow-hidden w-full mx-auto aspect-4/5 max-w-xs mb-8 tablet:aspect-5/4 tablet:max-w-xl desktop:max-w-full desktop:h-full">
           <Image
             fill
             src="/about-us/first_place.png"
@@ -72,18 +72,20 @@ export default function AboutUs() {
           </div>
         </div>
 
-        <article className="w-full mx-auto max-w-lg">
-          <p className="text-justify text-sm">
+        <article className="w-full mx-auto max-w-lg tablet:max-w-xl desktop:max-w-full">
+          <p className="text-justify text-sm tablet:text-base desktop:text-2xl">
             We have consistently taken part in various national competitions
             such as IEMC, PLN Innovation and Competition in Electricity (PLN
             ICE), and Kontes Mobil Hemat Energi (KMHE). Through these events, we
             proudly recorded a milestone as the only team to secure five
-            consecutive 1st place wins at KMHE. On the international stage, we
-            have represented Indonesia in competitions such as the Shell Eco
-            Marathon (SEM-Asia), the Formula Society of Automotive Engineers
-            (FSAE-Australasia), and TÜBİTAK TEKNOFEST. These opportunities have
-            allowed us to bring home several awards that mark our team&apos;s
-            achievements in the field of energy-efficient vehicles.
+            consecutive 1st place wins at KMHE.
+            <br />
+            On the international stage, we have represented Indonesia in
+            competitions such as the Shell Eco Marathon (SEM-Asia), the Formula
+            Society of Automotive Engineers (FSAE-Australasia), and TÜBİTAK
+            TEKNOFEST. These opportunities have allowed us to bring home several
+            awards that mark our team&apos;s achievements in the field of
+            energy-efficient vehicles.
           </p>
         </article>
       </section>
