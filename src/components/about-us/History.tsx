@@ -30,7 +30,7 @@ function History() {
       id="history"
       className="bg-nogogeni-black text-center pt-16 px-8 tablet:px-16 tablet:pt-24 desktop:px-32 desktop:pt-32"
     >
-      <p className="text-justify mx-auto max-w-[512px] text-sm mb-4 tablet:max-w-xl tablet:text-base desktop:max-w-4xl desktop:text-2xl">
+      <p className="text-justify mx-auto max-w-[512px] text-sm mb-8 tablet:max-w-xl tablet:text-base tablet:mb-12 desktop:max-w-4xl desktop:text-2xl desktop:mb-16">
         <span className="text-nogogeni-orange font-bold">
           Nogogeni ITS Team
         </span>{" "}
@@ -43,16 +43,19 @@ function History() {
         day.
       </p>
 
-      <div className="mx-auto px-8 max-w-96 mt-8">
+      <div className="w-full mx-auto px-8 max-w-96 mt-8 tablet:px-0 tablet:max-w-[660px] desktop:max-w-[1008px]">
         <Carousel
-          opts={{ align: "start" }}
+          opts={{ align: "center" }}
           plugins={[Autoplay({ delay: 2000 })]}
         >
           <CarouselContent>
             {histories.map((history) => (
-              <CarouselItem key={history.year}>
+              <CarouselItem
+                key={history.year}
+                className="tablet:basis-1/2 tablet:pl-5 desktop:basis-1/3 desktop:pl-6"
+              >
                 <div className="space-y-4">
-                  <div className="relative overflow-hidden rounded-xl aspect-video">
+                  <div className="relative overflow-hidden rounded-xl aspect-video tablet:w-xs">
                     <Image
                       fill
                       src={history.imgPath}
@@ -60,13 +63,15 @@ function History() {
                       className="object-cover object-center"
                     />
                   </div>
-                  <span className="font-bold text-lg">{history.year}</span>
+                  <span className="font-bold flex justify-start items-center text-lg tablet:text-xl">
+                    {history.year}
+                  </span>
                 </div>
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="-left-10 size-6 [&_svg]:w-4 [&_svg]:h-4 tablet:-left-16 tablet:size-8 tablet:[&_svg]:w-6 tablet:[&_svg]:h-6 desktop:-left-20 desktop:size-10 desktop:[&_svg]:w-8 desktop:[&_svg]:h-8" />
-          <CarouselNext className="-right-10 size-6 [&_svg]:w-4 [&_svg]:h-4 tablet:-right-16 tablet:size-8 tablet:[&_svg]:w-6 tablet:[&_svg]:h-6 desktop:-right-20 desktop:size-10 desktop:[&_svg]:w-8 desktop:[&_svg]:h-8" />
+          <CarouselPrevious className="-left-10 size-6 [&_svg]:w-4 [&_svg]:h-4 tablet:-left-16 tablet:size-8 tablet:[&_svg]:w-6 tablet:[&_svg]:h-6 desktop:size-9 desktop:[&_svg]:w-7 desktop:[&_svg]:h-7" />
+          <CarouselNext className="-right-10 size-6 [&_svg]:w-4 [&_svg]:h-4 tablet:-right-16 tablet:size-8 tablet:[&_svg]:w-6 tablet:[&_svg]:h-6 desktop:size-9 desktop:[&_svg]:w-7 desktop:[&_svg]:h-7" />
         </Carousel>
       </div>
     </article>
