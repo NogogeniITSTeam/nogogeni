@@ -91,25 +91,25 @@ export default function AboutUs() {
       </section>
 
       <article className="bg-nogogeni-black space-y-8 pt-16 px-8 tablet:px-16 tablet:pt-24 desktop:px-32 desktop:pt-32">
-        <p className="text-center w-full mx-auto max-w-xs text-sm">
+        <p className="text-center w-full mx-auto max-w-xs text-sm tablet:text-base desktop:max-w-full desktop:text-2xl">
           In everything we do, we hold onto one powerful belief:
         </p>
 
-        <h2 className="font-bold flex justify-center items-center gap-1 text-3xl">
+        <h2 className="font-bold flex justify-center items-center gap-1 text-3xl desktop:text-[64px]">
           <span className="bg-linear-to-r from-nogogeni-red to-nogogeni-orange bg-clip-text text-transparent">
             Work
           </span>{" "}
-          <ChevronRightIcon />{" "}
+          <ChevronRightIcon className="size-12" />{" "}
           <span className="bg-linear-to-r from-nogogeni-red to-nogogeni-orange bg-clip-text text-transparent">
             Pray
           </span>{" "}
-          <ChevronRightIcon />
+          <ChevronRightIcon className="size-12" />
           <span className="bg-linear-to-r from-nogogeni-red to-nogogeni-orange bg-clip-text text-transparent">
             Trust
           </span>
         </h2>
 
-        <p className="text-justify mx-auto max-w-lg text-sm">
+        <p className="text-justify mx-auto max-w-lg text-sm tablet:text-base desktop:max-w-4xl desktop:text-2xl">
           With every project, we commit to advancing sustainable vehicle
           research, inspiring thousands of students across generations, and
           proudly representing Indonesia on the global stage.
