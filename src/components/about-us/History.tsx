@@ -9,19 +9,75 @@ import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 
 const histories = [
-  { year: 2011, imgPath: "/about-us/history_1.png" },
-  { year: 2013, imgPath: "/about-us/history_2.png" },
-  { year: 2014, imgPath: "/about-us/history_3.png" },
-  { year: 2015, imgPath: "/about-us/history_4.png" },
-  { year: 2016, imgPath: "/about-us/history_5.png" },
-  { year: 2017, imgPath: "/about-us/history_6.png" },
-  { year: 2018, imgPath: "/about-us/history_7.png" },
-  { year: 2019, imgPath: "/about-us/history_8.png" },
-  { year: 2020, imgPath: "/about-us/history_9.png" },
-  { year: 2021, imgPath: "/about-us/history_10.png" },
-  { year: 2022, imgPath: "/about-us/history_11.png" },
-  { year: 2023, imgPath: "/about-us/history_12.png" },
-  { year: 2024, imgPath: "/about-us/history_13.png" },
+  {
+    description:
+      "Appreciation from Dahlan Iskan, Minister of BUMN at that time",
+    year: 2011,
+    imgPath: "/about-us/history_1.png",
+  },
+  {
+    description: "1st Place in IEMC Urban Electricity Category 100.1 Km/Kwh",
+    year: 2013,
+    imgPath: "/about-us/history_2.png",
+  },
+  {
+    description: "1st Place in IEMC Urban Electricity Category 109,452 Km/Kwh",
+    year: 2014,
+    imgPath: "/about-us/history_3.png",
+  },
+  {
+    description: "Runner Up KMHE Urban Category Electricity 64.9 Km/Kwh",
+    year: 2015,
+    imgPath: "/about-us/history_4.png",
+  },
+  {
+    description: "Runner Up KMHE Urban Electricity Category 152,587 Km/Kwh",
+    year: 2016,
+    imgPath: "/about-us/history_5.png",
+  },
+  {
+    description:
+      "3rd Place in SEM-Asia Battery Electrical Urban Concept Category 100.12 Km/Kwh",
+    year: 2017,
+    imgPath: "/about-us/history_6.png",
+  },
+  {
+    description: "1st Place in KMHE Urban Ethanol Category 233.83 Km/L",
+    year: 2018,
+    imgPath: "/about-us/history_7.png",
+  },
+  {
+    description: "1st Place in KMHE Urban Electricity Category 151,077 Km/Kwh",
+    year: 2019,
+    imgPath: "/about-us/history_8.png",
+  },
+  {
+    description: "1st Place in KMHE Electric and Control System Urban Category",
+    year: 2020,
+    imgPath: "/about-us/history_9.png",
+  },
+  {
+    description:
+      "1st Place in KMHE Urban Electric Category and Eco Race Electric Category",
+    year: 2021,
+    imgPath: "/about-us/history_10.png",
+  },
+  {
+    description: "1st Place in KMHE Urban Electric Category 100.12 Km/Kwh",
+    year: 2022,
+    imgPath: "/about-us/history_11.png",
+  },
+  {
+    description:
+      "1st Place in KMHE Urban Motor Electric Category 188,69 Km/Kwh",
+    year: 2023,
+    imgPath: "/about-us/history_12.png",
+  },
+  {
+    description: "2nd Place in KMHE Urban MPD Ethanol Category",
+    year: 2024,
+    imgPath: "/about-us/history_13.png",
+  },
 ];
 
 function History() {
@@ -54,7 +110,7 @@ function History() {
                 key={history.year}
                 className="tablet:basis-1/2 tablet:pl-5 desktop:basis-1/3 desktop:pl-6"
               >
-                <div className="space-y-4">
+                <div className="space-y-2 desktop:space-y-3">
                   <div className="relative overflow-hidden rounded-xl aspect-video tablet:w-xs">
                     <Image
                       fill
@@ -62,7 +118,16 @@ function History() {
                       alt={`${history.year}`}
                       className="object-cover object-center"
                     />
+
+                    <div className="bg-black/50 absolute z-10 bottom-0 left-0 right-0 p-4">
+                      <p className="w-full mx-auto max-w-lg text-xs tablet:text-sm desktop:text-base">
+                        {history.description}
+                      </p>
+                    </div>
+
+                    <div className="absolute inset-0 bg-linear-to-t from-nogogeni-black to-transparent" />
                   </div>
+
                   <span className="font-bold flex justify-start items-center text-lg tablet:text-xl">
                     {history.year}
                   </span>

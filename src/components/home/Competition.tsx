@@ -12,7 +12,7 @@ const competitions = [
     year: 2024,
   },
   {
-    name: "Ethanol Urban Concept",
+    name: "Electric Urban Concept",
     result: "2nd Place KMHE",
     location: "Ancol Circuit, Jakarta",
     imgPath: "/home/kmhe_second_place.png",

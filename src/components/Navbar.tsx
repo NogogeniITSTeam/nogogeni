@@ -154,7 +154,7 @@ function Navbar() {
               <div className="bg-nogogeni-orange invisible h-0.5 w-0.5 mx-auto peer-hover:visible peer-hover:w-full transition-all duration-300"></div>
             </div>
           </DropdownMenuTrigger>
-          <DropdownMenuContent className="text-nogogeni-white border-none rounded-tl-none rounded-tr-none p-0 mt-4 desktop:mt-8">
+          <DropdownMenuContent className="text-nogogeni-white border-none rounded-tl-none rounded-tr-none p-0 mt-3.5 desktop:mt-7">
             <DropdownMenuItem
               asChild
               className={`cursor-pointer rounded-none font-semibold focus:bg-[#FF675D] focus:text-nogogeni-white px-3 py-1.5 desktop:text-base desktop:px-4 desktop:py-2 ${
@@ -220,7 +220,7 @@ function Navbar() {
               <div className="bg-nogogeni-orange invisible h-0.5 w-0.5 mx-auto peer-hover:visible peer-hover:w-full transition-all duration-300"></div>
             </div>
           </DropdownMenuTrigger>
-          <DropdownMenuContent className="text-nogogeni-white border-none rounded-tl-none rounded-tr-none p-0 mt-4 desktop:mt-8">
+          <DropdownMenuContent className="text-nogogeni-white border-none rounded-tl-none rounded-tr-none p-0 mt-3.5 desktop:mt-7">
             <DropdownMenuItem
               asChild
               className={`cursor-pointer rounded-none font-semibold focus:bg-[#FF675D] focus:text-nogogeni-white px-3 py-1.5 desktop:text-base desktop:px-4 desktop:py-2 ${

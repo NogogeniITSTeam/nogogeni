@@ -25,7 +25,7 @@ function Driver() {
       <div className="relative">
         <Image
           fill
-          src="/hero_image_1.jpg"
+          src="/home/hero_image_1.jpg"
           alt="Nogogeni VII"
           className="object-cover object-center"
         />
