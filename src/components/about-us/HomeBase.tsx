@@ -63,7 +63,7 @@ function HomeBase() {
         >
           <CarouselContent>
             {carouselItems.map((item) => (
-              <CarouselItem key={item.title}>
+              <CarouselItem key={item.imgPath}>
                 <div className="relative overflow-hidden w-full mx-auto aspect-4/5 max-w-xs tablet:aspect-video tablet:max-w-lg desktop:max-w-xl">
                   <Image
                     fill

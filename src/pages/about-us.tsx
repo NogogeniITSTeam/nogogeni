@@ -1,5 +1,7 @@
 import { History } from "@/components/about-us/History";
 import { HomeBase } from "@/components/about-us/HomeBase";
+import { Pattern } from "@/components/icons/Pattern";
+import { WhiteBlurredStar } from "@/components/icons/WhiteBlurredStar";
 import { ChevronDownCircleIcon, ChevronRightIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -39,7 +41,9 @@ export default function AboutUs() {
 
       <History />
 
-      <article className="bg-nogogeni-black py-16 px-8 tablet:px-16 tablet:py-24 desktop:px-32 desktop:py-32">
+      <article className="bg-nogogeni-black relative w-fit mx-auto py-16 px-8 tablet:px-16 tablet:py-24 desktop:px-32 desktop:py-32">
+        <Pattern className="scale-x-[-1] w-32 absolute top-32 left-0 tablet:w-40 tablet:top-16 desktop:w-64 desktop:top-20" />
+
         <h2 className="font-extrabold text-center mx-auto max-w-lg text-3xl mb-8 desktop:max-w-5xl desktop:text-[64px] desktop:mb-12">
           Back to Where It All Started on the Race Track
         </h2>
@@ -51,16 +55,20 @@ export default function AboutUs() {
           first victory by winning 1st place in the Urban Electricity category
           at the Indonesia Energy Marathon Challenge (IEMC).
         </p>
+
+        <Pattern className="w-16 absolute top-48 right-0 tablet:w-20 tablet:top-36 desktop:w-32 desktop:top-48" />
       </article>
 
       <section className="bg-linear-to-r from-nogogeni-red to-nogogeni-orange px-8 py-6 tablet:px-16 tablet:py-12 desktop:grid desktop:grid-cols-2 desktop:gap-16 desktop:px-32 desktop:py-16">
-        <div className="group relative overflow-hidden w-full mx-auto aspect-4/5 max-w-xs mb-8 tablet:aspect-5/4 tablet:max-w-xl desktop:max-w-full desktop:h-full">
-          <Image
-            fill
-            src="/about-us/first_place.png"
-            alt="First place in Urban Electricity category at IEMC 2013"
-            className="object-cover object-center group-hover:scale-125 duration-300"
-          />
+        <div className="group relative w-full mx-auto aspect-4/5 max-w-xs mb-8 tablet:aspect-5/4 tablet:max-w-xl desktop:max-w-full desktop:h-full">
+          <div className="relative overflow-hidden w-full mx-auto aspect-4/5 max-w-xs mb-8 tablet:aspect-5/4 tablet:max-w-xl desktop:max-w-full desktop:h-full">
+            <Image
+              fill
+              src="/about-us/first_place.png"
+              alt="First place in Urban Electricity category at IEMC 2013"
+              className="object-cover object-center group-hover:scale-125 duration-300"
+            />
+          </div>
 
           <div className="bg-black/50 absolute z-10 bottom-0 left-0 right-0 py-4">
             <div className="w-full mx-auto max-w-48 space-y-1">
@@ -70,16 +78,20 @@ export default function AboutUs() {
               <p className="text-sm">Kenjeran Circuit, Surabaya</p>
             </div>
           </div>
+
+          <WhiteBlurredStar className="absolute -left-8 top-16 w-16 h-16 tablet:w-20 tablet:h-20 tablet:-left-10 desktop:w-24 desktop:h-24 desktop:-left-12" />
         </div>
 
-        <article className="w-full mx-auto max-w-lg tablet:max-w-xl desktop:max-w-full">
+        <article className="w-full mx-auto max-w-lg space-y-3 tablet:max-w-xl tablet:space-y-4 desktop:max-w-full desktop:space-y-5">
           <p className="text-justify text-sm tablet:text-base desktop:text-2xl">
             We have consistently taken part in various national competitions
             such as IEMC, PLN Innovation and Competition in Electricity (PLN
             ICE), and Kontes Mobil Hemat Energi (KMHE). Through these events, we
             proudly recorded a milestone as the only team to secure five
             consecutive 1st place wins at KMHE.
-            <br />
+          </p>
+
+          <p className="text-justify text-sm tablet:text-base desktop:text-2xl">
             On the international stage, we have represented Indonesia in
             competitions such as the Shell Eco Marathon (SEM-Asia), the Formula
             Society of Automotive Engineers (FSAE-Australasia), and TÜBİTAK

@@ -86,18 +86,30 @@ function History() {
       id="history"
       className="bg-nogogeni-black text-center pt-16 px-8 tablet:px-16 tablet:pt-24 desktop:px-32 desktop:pt-32"
     >
-      <p className="text-justify mx-auto max-w-[512px] text-sm mb-8 tablet:max-w-xl tablet:text-base tablet:mb-12 desktop:max-w-4xl desktop:text-2xl desktop:mb-16">
-        <span className="text-nogogeni-orange font-bold">
-          Nogogeni ITS Team
-        </span>{" "}
-        was established in 2011. The team originated from a final project by a
-        student from the 2009-2010 cohort of the Diploma III in Industrial
-        Mechanical Engineering at ITS. This project was later developed by
-        junior students into a dedicated team. Initially named Nagageni upon its
-        founding in 2011, the team was renamed Pancasona the following year.
-        Since 2013, it has been known as Nogogeni, a name it retains to this
-        day.
-      </p>
+      <div className="w-fit mx-auto relative">
+        <div className="absolute -top-12 -left-12">
+          <Image src="/star.png" alt="" width={128} height={128} />
+          <div className="bg-nogogeni-black/85 absolute inset-0 -translate-x-8 -translate-y-8 w-32 h-32 rounded-full blur-xl"></div>
+        </div>
+
+        <p className="relative z-10 text-justify max-w-[512px] text-sm mb-8 tablet:max-w-xl tablet:text-base tablet:mb-12 desktop:max-w-4xl desktop:text-2xl desktop:mb-16">
+          <span className="text-nogogeni-orange font-bold">
+            Nogogeni ITS Team
+          </span>{" "}
+          was established in 2011. The team originated from a final project by a
+          student from the 2009-2010 cohort of the Diploma III in Industrial
+          Mechanical Engineering at ITS. This project was later developed by
+          junior students into a dedicated team. Initially named Nagageni upon
+          its founding in 2011, the team was renamed Pancasona the following
+          year. Since 2013, it has been known as Nogogeni, a name it retains to
+          this day.
+        </p>
+
+        <div className="absolute -bottom-12 -right-12">
+          <Image src="/star.png" alt="" width={128} height={128} />
+          <div className="bg-nogogeni-black/85 absolute inset-0 translate-x-8 translate-y-8 w-32 h-32 rounded-full blur-xl"></div>
+        </div>
+      </div>
 
       <div className="w-full mx-auto px-8 max-w-96 mt-8 tablet:px-0 tablet:max-w-[660px] desktop:max-w-[1008px]">
         <Carousel
