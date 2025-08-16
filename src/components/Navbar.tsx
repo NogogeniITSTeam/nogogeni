@@ -90,7 +90,7 @@ function Navbar() {
   return (
     <header
       ref={ref}
-      className={`bg-[#1E1E1E] fixed z-20 top-0 left-0 right-0 flex justify-between items-center px-8 py-4 h-16 tablet:py-5 desktop:h-24 ${poppins.className}`}
+      className={`bg-[#1E1E1E] fixed z-50 top-0 left-0 right-0 flex justify-between items-center px-8 py-4 h-16 tablet:py-5 desktop:h-24 ${poppins.className}`}
     >
       <Link
         onClick={() => setIsOpened(false)}

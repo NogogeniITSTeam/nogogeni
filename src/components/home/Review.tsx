@@ -35,7 +35,7 @@ function Review() {
   }, [carouselApi]);
 
   return (
-    <section className="bg-nogogeni-black space-y-8 py-16 px-8 tablet:px-16 tablet:py-24 desktop:space-y-12 desktop:px-32 desktop:py-32">
+    <section className="bg-nogogeni-black relative w-fit mx-auto space-y-8 py-16 px-8 tablet:px-16 tablet:py-24 desktop:space-y-12 desktop:px-32 desktop:py-32">
       <h2 className="font-extrabold flex flex-col items-center text-2xl tablet:text-[40px] desktop:text-[80px]">
         <span className="bg-linear-to-r from-nogogeni-white to-nogogeni-orange bg-clip-text text-transparent">
           What Notable Figures
@@ -49,8 +49,32 @@ function Review() {
         setApi={setCarouselApi}
         plugins={[Autoplay({ delay: 2000 })]}
         opts={{ align: "start" }}
-        className="w-full tablet:mx-auto tablet:max-w-[532px] desktop:max-w-[1184px]"
+        className="relative w-full tablet:mx-auto tablet:max-w-[532px] desktop:max-w-[1184px]"
       >
+        <div className="absolute -top-12 -right-12 desktop:-top-12 desktop:-right-12">
+          <div className="relative w-24 h-24 desktop:w-32 desktop:h-32">
+            <Image
+              fill
+              src="/star.png"
+              alt=""
+              className="object-contain object-center"
+            />
+          </div>
+          <div className="bg-nogogeni-black/85 absolute inset-0 translate-x-8 -translate-y-8 w-32 h-32 rounded-full blur-xl"></div>
+        </div>
+
+        <div className="absolute -bottom-12 -left-12 desktop:-bottom-12 desktop:-left-12">
+          <div className="relative w-24 h-24 desktop:w-32 desktop:h-32">
+            <Image
+              fill
+              src="/star.png"
+              alt=""
+              className="object-contain object-center"
+            />
+          </div>
+          <div className="bg-nogogeni-black/85 absolute inset-0 -translate-x-8 translate-y-8 w-32 h-32 rounded-full blur-xl"></div>
+        </div>
+
         <CarouselContent>
           {reviews.map((review) => (
             <CarouselItem
