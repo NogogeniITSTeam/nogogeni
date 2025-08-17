@@ -43,7 +43,7 @@ function NavbarModal({ setIsOpened }: NavbarModalProps) {
           About Us
         </Link>
         <Link
-          href="/garage/vehicle-types"
+          href="/garage"
           className="hover:bg-[#3F3F3F] cursor-pointer block w-full px-6 py-4"
           onClick={() => setIsOpened(false)}
         >
@@ -158,24 +158,24 @@ function Navbar() {
             <DropdownMenuItem
               asChild
               className={`cursor-pointer rounded-none font-semibold focus:bg-[#FF675D] focus:text-nogogeni-white px-3 py-1.5 desktop:text-base desktop:px-4 desktop:py-2 ${
-                router.pathname === "/garage/vehicle-types"
+                router.pathname === "/garage#vehicle-types"
                   ? "bg-[#FF675D]"
                   : "bg-nogogeni-orange"
               }`}
             >
-              <Link href="/garage/vehicle-types">
+              <Link href="/garage#vehicle-types">
                 <CarFrontIcon className="text-nogogeni-white" /> Vehicle Types
               </Link>
             </DropdownMenuItem>
             <DropdownMenuItem
               asChild
               className={`cursor-pointer rounded-none font-semibold focus:bg-[#FF675D] focus:text-nogogeni-white px-3 py-1.5 desktop:text-base desktop:px-4 desktop:py-2 ${
-                router.pathname === "/garage/vehicle-gallery"
+                router.pathname === "/garage#vehicle-gallery"
                   ? "bg-[#FF675D]"
                   : "bg-nogogeni-orange"
               }`}
             >
-              <Link href="/garage/vehicle-gallery">
+              <Link href="/garage#vehicle-gallery">
                 <BookImageIcon className="text-nogogeni-white" /> Vehicle
                 Gallery
               </Link>
