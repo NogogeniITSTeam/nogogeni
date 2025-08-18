@@ -47,7 +47,13 @@ function Review() {
 
       <Carousel
         setApi={setCarouselApi}
-        plugins={[Autoplay({ delay: 2000 })]}
+        plugins={[
+          Autoplay({
+            delay: 2000,
+            stopOnInteraction: false,
+            stopOnFocusIn: false,
+          }),
+        ]}
         opts={{ align: "start" }}
         className="relative w-full tablet:mx-auto tablet:max-w-[532px] desktop:max-w-[1184px]"
       >

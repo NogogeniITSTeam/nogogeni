@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { useMemo, useState } from "react";
 import { Button } from "../ui/button";
+import { VehicleItem } from "./VehicleItem";
 
 type VehicleType = "urban_car" | "gokart" | "motorcycle";
 interface Vehicle {
@@ -72,7 +73,7 @@ vehicles.set("motorcycle", [
   },
 ]);
 
-function VehicleTypes() {
+function VehicleList() {
   const [selectedVehicleType, setSelectedVehicleType] = useState<
     "urban_car" | "gokart" | "motorcycle"
   >("urban_car");
@@ -80,8 +81,6 @@ function VehicleTypes() {
   const selectedVehicle = useMemo(() => {
     return vehicles.get(selectedVehicleType);
   }, [selectedVehicleType]);
-
-  console.log(selectedVehicle);
 
   return (
     <>
@@ -131,8 +130,19 @@ function VehicleTypes() {
           </div>
         </div>
       </section>
+
+      {selectedVehicle ? (
+        <section>
+          {selectedVehicle.map((vehicle) => (
+            <VehicleItem key={vehicle.name} vehicle={vehicle} />
+          ))}
+        </section>
+      ) : (
+        <></>
+      )}
     </>
   );
 }
 
-export { VehicleTypes };
+export { VehicleList };
+export type { Vehicle };

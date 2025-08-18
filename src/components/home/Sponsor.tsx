@@ -61,7 +61,13 @@ function Sponsor() {
 
       <div className="px-8 mt-3 tablet:mt-4 desktop:mt-6">
         <Carousel
-          plugins={[Autoplay({ delay: 2000 })]}
+          plugins={[
+            Autoplay({
+              delay: 2000,
+              stopOnInteraction: false,
+              stopOnFocusIn: false,
+            }),
+          ]}
           opts={{ align: "start" }}
           className="w-full mx-auto max-w-[270px] tablet:max-w-[532px] desktop:max-w-[792px]"
         >

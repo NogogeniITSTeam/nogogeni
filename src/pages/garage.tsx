@@ -1,9 +1,9 @@
-import { VehicleTypes } from "@/components/garage/VehicleTypes";
+import { VehicleList } from "@/components/garage/VehicleList";
 
 export default function Garage() {
   return (
     <>
-      <VehicleTypes />
+      <VehicleList />
     </>
   );
 }
