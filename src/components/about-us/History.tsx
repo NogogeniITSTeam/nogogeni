@@ -114,7 +114,13 @@ function History() {
       <div className="w-full mx-auto px-8 max-w-96 mt-8 tablet:px-0 tablet:max-w-[660px] desktop:max-w-[1008px]">
         <Carousel
           opts={{ align: "center" }}
-          plugins={[Autoplay({ delay: 2000 })]}
+          plugins={[
+            Autoplay({
+              delay: 2000,
+              stopOnInteraction: false,
+              stopOnFocusIn: false,
+            }),
+          ]}
         >
           <CarouselContent>
             {histories.map((history) => (

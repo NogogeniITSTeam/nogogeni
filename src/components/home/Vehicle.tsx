@@ -49,7 +49,13 @@ function Vehicle() {
         <Carousel
           setApi={setCarouselApi}
           opts={{ align: "center", loop: true }}
-          plugins={[Autoplay({ delay: 2000 })]}
+          plugins={[
+            Autoplay({
+              delay: 2000,
+              stopOnInteraction: false,
+              stopOnFocusIn: false,
+            }),
+          ]}
         >
           <CarouselContent>
             {vehicles.map((vehicle, index) => (

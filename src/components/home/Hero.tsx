@@ -31,7 +31,16 @@ function Hero() {
 
   return (
     <section className="relative bg-nogogeni-black mt-16 desktop:mt-24">
-      <Carousel setApi={setCarouselApi} plugins={[Autoplay({ delay: 2000 })]}>
+      <Carousel
+        setApi={setCarouselApi}
+        plugins={[
+          Autoplay({
+            delay: 2000,
+            stopOnInteraction: false,
+            stopOnFocusIn: false,
+          }),
+        ]}
+      >
         <CarouselContent>
           {heroImages.map((img) => (
             <CarouselItem
@@ -52,7 +61,7 @@ function Hero() {
 
       <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4">
         <Link
-          href="/garage/vehicle-types"
+          href="/garage"
           className="text-sm font-semibold flex justify-center items-center gap-2 tablet:text-base tablet:gap-3 desktop:hidden"
         >
           Discover <ChevronRightCircleIcon className="size-4 tablet:size-5" />

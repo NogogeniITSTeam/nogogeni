@@ -57,7 +57,13 @@ function HomeBase() {
       <div>
         <Carousel
           setApi={setCarouselApi}
-          plugins={[Autoplay({ delay: 2000 })]}
+          plugins={[
+            Autoplay({
+              delay: 2000,
+              stopOnInteraction: false,
+              stopOnFocusIn: false,
+            }),
+          ]}
           opts={{ align: "center", loop: true }}
           className="mb-8"
         >
