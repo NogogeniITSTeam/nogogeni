@@ -94,35 +94,32 @@ function VehicleList() {
           />
         </div>
 
-        <div className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-full max-w-sm space-y-4 desktop:max-w-3xl desktop::space-y-6">
-          <div className="max-w-64 mx-auto mb-16">
+        <div className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-full max-w-64 space-y-4 tablet:max-w-xl desktop:max-w-3xl desktop::space-y-6">
+          <div className="mb-16 desktop:mb-24">
             <h1 className="font-extrabold text-3xl mb-4 desktop:text-[64px]">
               Our Vehicle Types
             </h1>
-            <p className="text-sm mb-6">
+            <p className="text-sm mb-6 tablet:text-base desktop:text-2xl desktop:mb-8">
               Discover the different types of high-performance vehicles we race.
             </p>
-            <div className="bg-gradient-to-r from-nogogeni-black/5 via-nogogeni-orange to-nogogeni-black/5 h-0.5"></div>
+            <div className="bg-gradient-to-r from-nogogeni-black/5 via-nogogeni-orange to-nogogeni-black/5 h-0.5 desktop:h-1"></div>
           </div>
 
-          <div className="flex flex-wrap justify-center items-center gap-6 max-w-64 mx-auto">
+          <div className="flex flex-wrap justify-center items-center gap-6">
             <Button
-              size="small"
-              className="bg-nogogeni-black hover:bg-nogogeni-white/50 border border-nogogeni-white"
+              className="bg-nogogeni-black hover:bg-nogogeni-white/50 border border-nogogeni-white text-sm desktop:text-base"
               onClick={() => setSelectedVehicleType("urban_car")}
             >
               Urban Car
             </Button>
             <Button
-              size="small"
-              className="bg-nogogeni-black hover:bg-nogogeni-white/50 border border-nogogeni-white"
+              className="bg-nogogeni-black hover:bg-nogogeni-white/50 border border-nogogeni-white text-sm desktop:text-base"
               onClick={() => setSelectedVehicleType("gokart")}
             >
               Gokart
             </Button>
             <Button
-              size="small"
-              className="bg-nogogeni-black hover:bg-nogogeni-white/50 border border-nogogeni-white"
+              className="bg-nogogeni-black hover:bg-nogogeni-white/50 border border-nogogeni-white text-sm desktop:text-base"
               onClick={() => setSelectedVehicleType("motorcycle")}
             >
               Motorcycle
@@ -132,7 +129,7 @@ function VehicleList() {
       </section>
 
       {selectedVehicle ? (
-        <section>
+        <section id="vehicle-types">
           {selectedVehicle.map((vehicle) => (
             <VehicleItem key={vehicle.name} vehicle={vehicle} />
           ))}
