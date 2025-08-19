@@ -102,7 +102,7 @@ function VehicleList() {
             <p className="text-sm mb-6">
               Discover the different types of high-performance vehicles we race.
             </p>
-            <div className="bg-gradient-to-r from-nogogeni-black/5 via-nogogeni-orange to-nogogeni-black/from-nogogeni-black/5 h-0.5"></div>
+            <div className="bg-gradient-to-r from-nogogeni-black/5 via-nogogeni-orange to-nogogeni-black/5 h-0.5"></div>
           </div>
 
           <div className="flex flex-wrap justify-center items-center gap-6 max-w-64 mx-auto">

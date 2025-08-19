@@ -29,7 +29,7 @@ function VehicleItem({ vehicle }: VehicleProps) {
 
   return (
     <>
-      <div className="bg-radial from-nogogeni-orange to-nogogeni-red relative grid place-items-center w-screen h-64">
+      <div className="bg-radial from-nogogeni-orange to-nogogeni-red/50 relative grid place-items-center w-screen h-64">
         <h2 className="bg-linear-to-r from-nogogeni-red to-nogogeni-orange absolute top-0 left-0 uppercase font-semibold w-fit text-lg py-2.5 px-4">
           {vehicle.name}
         </h2>
