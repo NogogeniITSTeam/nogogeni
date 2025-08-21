@@ -4,12 +4,12 @@ const drivers = [
   {
     name: "Roland Khusnu Winada",
     vehicleType: "Urban Ethanol Car",
-    imgPath: "/home/roland.png",
+    imgPath: "/our-team/roland.png",
   },
   {
     name: "Saputra Ardyan Syah",
     vehicleType: "Urban Electric Car",
-    imgPath: "/home/saputra.png",
+    imgPath: "/our-team/saputra.png",
   },
 ];
 
