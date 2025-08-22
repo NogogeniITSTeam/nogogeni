@@ -107,19 +107,31 @@ function VehicleList() {
 
           <div className="flex flex-wrap justify-center items-center gap-6">
             <Button
-              className="bg-nogogeni-black hover:bg-nogogeni-white/50 border border-nogogeni-white text-sm desktop:text-base"
+              className={`${
+                selectedVehicleType === "urban_car"
+                  ? "bg-nogogeni-white/50"
+                  : "bg-nogogeni-black"
+              } hover:bg-nogogeni-white/50 border border-nogogeni-white text-sm desktop:text-base`}
               onClick={() => setSelectedVehicleType("urban_car")}
             >
               Urban Car
             </Button>
             <Button
-              className="bg-nogogeni-black hover:bg-nogogeni-white/50 border border-nogogeni-white text-sm desktop:text-base"
+              className={`${
+                selectedVehicleType === "gokart"
+                  ? "bg-nogogeni-white/50"
+                  : "bg-nogogeni-black"
+              } hover:bg-nogogeni-white/50 border border-nogogeni-white text-sm desktop:text-base`}
               onClick={() => setSelectedVehicleType("gokart")}
             >
               Gokart
             </Button>
             <Button
-              className="bg-nogogeni-black hover:bg-nogogeni-white/50 border border-nogogeni-white text-sm desktop:text-base"
+              className={`${
+                selectedVehicleType === "motorcycle"
+                  ? "bg-nogogeni-white/50"
+                  : "bg-nogogeni-black"
+              } hover:bg-nogogeni-white/50 border border-nogogeni-white text-sm desktop:text-base`}
               onClick={() => setSelectedVehicleType("motorcycle")}
             >
               Motorcycle
