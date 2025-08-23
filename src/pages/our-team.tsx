@@ -38,7 +38,7 @@ export default function OurTeam() {
 
       <article
         id="description"
-        className="bg-nogogeni-black text-center pt-16 px-8 mb-8 tablet:px-16 tablet:pt-24 tablet:mb-12 desktop:px-32 desktop:pt-32 desktop:mb-16"
+        className="bg-nogogeni-black text-center pt-16 px-8 tablet:px-16 tablet:pt-24 desktop:px-32 desktop:pt-32"
       >
         <div className="relative w-full mx-auto max-w-[512px] tablet:max-w-xl desktop:max-w-4xl">
           <div className="absolute -top-12 -left-12">

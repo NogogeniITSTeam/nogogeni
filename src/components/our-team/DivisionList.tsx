@@ -143,7 +143,7 @@ departments.set("technical", [
         name: "Mahendra Stia Pamuji",
         position: "Expert Staff",
         imgPath: "/our-team/mahendra.png",
-        linkedInURL: "https://id.linkedin.com/in/raihan-fathoni-4bab56205", // TODO
+        linkedInURL: "https://example.com",
       },
       {
         name: "Andika Bakti Pambudi",
@@ -345,13 +345,13 @@ function DivisionList() {
 
   return (
     <>
-      <div className="relative z-10 flex flex-wrap justify-center items-center gap-6">
+      <section className="relative z-10 flex flex-wrap justify-center items-center gap-6 pt-16 px-8 tablet:px-16 tablet:pt-24 desktop:px-32 desktop:pt-32">
         <Button
           className={`${
             department === "managers"
               ? "bg-nogogeni-white/50"
               : "bg-nogogeni-black"
-          } hover:bg-nogogeni-white/50 border border-nogogeni-white w-full max-w-64 text-sm desktop:text-base`}
+          } hover:bg-nogogeni-white/50 border border-nogogeni-white w-full max-w-64 text-sm tablet:max-w-48 desktop:text-base`}
           onClick={() => setDepartment("managers")}
         >
           Managers
@@ -361,7 +361,7 @@ function DivisionList() {
             department === "technical"
               ? "bg-nogogeni-white/50"
               : "bg-nogogeni-black"
-          } hover:bg-nogogeni-white/50 border border-nogogeni-white w-full max-w-64 text-sm desktop:text-base`}
+          } hover:bg-nogogeni-white/50 border border-nogogeni-white w-full max-w-64 text-sm tablet:max-w-48 desktop:text-base`}
           onClick={() => setDepartment("technical")}
         >
           Technical
@@ -371,7 +371,7 @@ function DivisionList() {
             department === "non-technical"
               ? "bg-nogogeni-white/50"
               : "bg-nogogeni-black"
-          } hover:bg-nogogeni-white/50 border border-nogogeni-white w-full max-w-64 text-sm desktop:text-base`}
+          } hover:bg-nogogeni-white/50 border border-nogogeni-white w-full max-w-64 text-sm tablet:max-w-48 desktop:text-base`}
           onClick={() => setDepartment("non-technical")}
         >
           Non-Technical
@@ -381,12 +381,12 @@ function DivisionList() {
             department === "finance"
               ? "bg-nogogeni-white/50"
               : "bg-nogogeni-black"
-          } hover:bg-nogogeni-white/50 border border-nogogeni-white w-full max-w-64 text-sm desktop:text-base`}
+          } hover:bg-nogogeni-white/50 border border-nogogeni-white w-full max-w-64 text-sm tablet:max-w-48 desktop:text-base`}
           onClick={() => setDepartment("finance")}
         >
           Finance
         </Button>
-      </div>
+      </section>
 
       {selectedDepartment ? (
         <section className="pt-16 px-8 tablet:px-16 tablet:pt-24 desktop:px-32 desktop:pt-32">
