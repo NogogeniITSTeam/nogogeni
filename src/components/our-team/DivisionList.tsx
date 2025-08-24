@@ -143,7 +143,7 @@ departments.set("technical", [
         name: "Mahendra Stia Pamuji",
         position: "Expert Staff",
         imgPath: "/our-team/mahendra.png",
-        linkedInURL: "https://example.com",
+        linkedInURL: "https://www.linkedin.com/in/mahendra-stia-pamuji",
       },
       {
         name: "Andika Bakti Pambudi",
