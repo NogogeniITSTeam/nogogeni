@@ -33,23 +33,23 @@ export default function Competition() {
 
         <div className="absolute inset-0 bg-linear-to-b from-black/50 to-black/50" />
 
-        <div className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-full max-w-sm space-y-8 px-8 desktop:max-w-3xl desktop::space-y-6">
-          <h1 className="text-center font-bold text-3xl">
+        <div className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-full max-w-sm space-y-8 px-8 tablet:max-w-lg tablet:px-0 desktop:max-w-6xl desktop:space-y-12">
+          <h1 className="text-center font-bold text-3xl desktop:text-[64px]">
             The Only Team in Indonesia Who Achieve{" "}
             <span className="text-nogogeni-orange">a Quintrick Victory</span> in
             KMHE Urban Electric Category
           </h1>
 
-          <div className="flex flex-col gap-6">
+          <ul className="flex flex-col gap-6 tablet:flex-row tablet:justify-between">
             {achievements.map((achievement) => (
-              <div className="text-center w-full mx-auto flex flex-col gap-1 max-w-36">
-                <span className="text-nogogeni-orange font-extrabold text-3xl">
+              <li className="text-center w-full mx-auto flex flex-col gap-1 max-w-36 tablet:max-w-64">
+                <span className="text-nogogeni-orange font-extrabold text-3xl desktop:text-[64px]">
                   {achievement.value}
                 </span>
-                <p className="font-bold">{achievement.name}</p>
-              </div>
+                <p className="font-bold desktop:text-2xl">{achievement.name}</p>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </section>
 

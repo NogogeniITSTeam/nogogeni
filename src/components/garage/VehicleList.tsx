@@ -94,7 +94,7 @@ function VehicleList() {
           />
         </div>
 
-        <div className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-full max-w-64 space-y-4 tablet:max-w-xl desktop:max-w-3xl desktop::space-y-6">
+        <div className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-full max-w-64 space-y-4 tablet:max-w-xl desktop:max-w-3xl desktop:space-y-6">
           <div className="mb-16 desktop:mb-24">
             <h1 className="font-extrabold text-3xl mb-4 desktop:text-[64px]">
               Our Vehicle Types

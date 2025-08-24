@@ -62,7 +62,7 @@ function CompetitionList() {
 
   return (
     <>
-      <section className="flex flex-wrap justify-center items-center gap-6 pt-16 px-8 tablet:px-16 tablet:pt-24 desktop:px-32 desktop:pt-32">
+      <section className="flex flex-wrap justify-center items-center gap-6 w-full mx-auto max-w-sm pt-16 px-8 tablet:max-w-2xl tablet:px-0 tablet:pt-24 desktop:max-w-3xl desktop:pt-32">
         <Button
           className={`${
             competition === "kmhe"

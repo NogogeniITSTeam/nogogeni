@@ -22,7 +22,7 @@ export default function AboutUs() {
 
         <div className="absolute inset-0 bg-linear-to-b from-black/50 to-black/50" />
 
-        <div className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-full max-w-sm space-y-4 desktop:max-w-3xl desktop::space-y-6">
+        <div className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-full max-w-sm space-y-4 desktop:max-w-3xl desktop:space-y-6">
           <h1 className="uppercase flex flex-col">
             <span className="font-bold desktop:text-2xl">Nogogeni History</span>{" "}
             <span className="font-extrabold text-3xl desktop:text-[64px]">

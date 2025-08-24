@@ -21,18 +21,22 @@ function CompetitionItem({ name, description, imgPath }: CompetitionItemProps) {
 
   return (
     <article className="py-16 px-8 tablet:px-16 tablet:py-24 desktop:px-32 desktop:py-32">
-      <h2 className="text-center font-bold text-2xl">{name}</h2>
-      <div className="relative mx-auto w-64 h-32 my-16">
-        <Image
-          fill
-          src={imgPath}
-          alt={name}
-          className={`${imgColor} object-contain object-center`}
-        />
+      <h2 className="text-center font-bold text-[28px] desktop:text-[56px]">
+        {name}
+      </h2>
+      <div className="my-16 tablet:flex tablet:items-center tablet:gap-12 desktop:my-20 desktop:gap-16">
+        <div className="shrink-0 relative mx-auto w-64 h-32tablet:w-80 tablet:h-40 desktop:w-md desktop:h-56">
+          <Image
+            fill
+            src={imgPath}
+            alt={name}
+            className={`${imgColor} object-contain object-center`}
+          />
+        </div>
+        <p className="text-justify w-full mx-auto max-w-lg text-sm tablet:max-w-xl tablet:text-base desktop:max-w-4xl desktop:text-2xl">
+          {description}
+        </p>
       </div>
-      <p className="text-justify w-full mx-auto max-w-lg text-sm tablet:max-w-xl tablet:text-base desktop:max-w-4xl desktop:text-2xl">
-        {description}
-      </p>
     </article>
   );
 }
