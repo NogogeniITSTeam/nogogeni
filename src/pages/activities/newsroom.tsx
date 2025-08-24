@@ -104,12 +104,12 @@ export default function Newsroom() {
 
   return (
     <>
-      <section className="bg-nogogeni-black py-16 px-8 mt-16 tablet:px-16 tablet:py-24 desktop:px-32 desktop:py-32 desktop:mt-24">
-        <h1 className="text-nogogeni-orange text-center font-extrabold text-3xl mb-8 desktop:text-[64px] desktop:mb-12">
+      <section className="bg-nogogeni-black w-full mx-auto py-16 px-8 mt-16 tablet:px-0 tablet:py-24 desktop:max-w-7xl desktop:py-32 desktop:mt-24">
+        <h1 className="text-nogogeni-orange text-center font-extrabold text-3xl tablet:text-[64px]">
           News
         </h1>
 
-        <div className="flex flex-wrap justify-center items-center gap-6">
+        <div className="flex flex-wrap justify-center items-center gap-6 my-12 tablet:my-16">
           <Button
             className={`${
               newsType === "achievement"
@@ -143,14 +143,16 @@ export default function Newsroom() {
         </div>
 
         {selectedNewsList ? (
-          <div className="mt-16 flex flex-col gap-8">
+          <div className="flex flex-col gap-8 tablet:flex-row tablet:flex-wrap">
             {selectedNewsList.map((news) => (
               <div
                 key={news.articleURL}
-                onClick={() => clickURL(news.articleURL)}
-                className="cursor-pointer w-full mx-auto max-w-64"
+                className="w-full mx-auto max-w-64 tablet:max-w-sm"
               >
-                <div className="relative w-full h-40">
+                <div
+                  onClick={() => clickURL(news.articleURL)}
+                  className="cursor-pointer relative w-full h-40 tablet:h-56"
+                >
                   <Image
                     fill
                     src={news.imgPath}
@@ -160,16 +162,21 @@ export default function Newsroom() {
                 </div>
 
                 <div className="w-full flex justify-between items-center gap-2 mt-2 mb-4">
-                  <span className="text-nogogeni-orange shrink-0 text-xs">
+                  <span className="text-nogogeni-orange shrink-0 text-xs tablet:text-sm">
                     {news.date}
                   </span>
                   <span className="bg-nogogeni-orange w-full h-[1px]"></span>
-                  <span className="text-nogogeni-orange shrink-0 capitalize text-xs">
+                  <span className="text-nogogeni-orange shrink-0 capitalize text-xs tablet:text-sm">
                     {newsType}
                   </span>
                 </div>
 
-                <h2 className="font-bold text-sm">{news.title}</h2>
+                <h2
+                  onClick={() => clickURL(news.articleURL)}
+                  className="cursor-pointer font-bold text-sm tablet:text-base"
+                >
+                  {news.title}
+                </h2>
               </div>
             ))}
           </div>
