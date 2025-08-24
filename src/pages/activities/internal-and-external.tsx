@@ -60,7 +60,7 @@ export default function InternalAndExternal() {
 
         <div className="absolute inset-0 bg-linear-to-b from-black/50 to-black/50" />
 
-        <div className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-full max-w-sm space-y-4 px-8 desktop:max-w-3xl desktop:space-y-6">
+        <div className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-full max-w-sm space-y-4 px-8 desktop:max-w-6xl desktop:space-y-6">
           <h1 className="font-extrabold text-3xl desktop:text-[64px]">
             Connecting Through{" "}
             <span className="leading-snug border-b-4 border-b-nogogeni-orange">
@@ -83,22 +83,22 @@ export default function InternalAndExternal() {
 
       <section
         id="activities"
-        className="bg-nogogeni-black py-16 px-8 tablet:px-16 tablet:py-24 desktop:px-32 desktop:py-32"
+        className="bg-nogogeni-black w-full mx-auto pt-16 px-8 tablet:px-16 tablet:pt-24 desktop:max-w-7xl desktop:px-0 desktop:pt-32"
       >
-        <h2 className="font-extrabold text-center text-3xl mb-8">
+        <h2 className="font-extrabold text-center text-3xl mb-8 desktop:text-[64px] desktop:mb-16">
           External Activities
         </h2>
 
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-8 desktop:flex-row">
           {externalActivities.map((activity) => (
             <article
               key={activity.imgPath}
-              className="relative overflow-hidden rounded-tr-3xl rounded-bl-3xl w-full mx-auto max-w-64"
+              className="relative overflow-hidden rounded-tr-3xl rounded-bl-3xl w-full mx-auto max-w-xs tablet:max-w-sm"
             >
-              <h3 className="absolute z-10 top-[calc(128px-16px)] left-1/2 -translate-x-1/2 rounded-tr-2xl rounded-bl-2xl text-nowrap bg-linear-to-r from-nogogeni-black to-nogogeni-orange font-bold text-xl px-6 py-0.5">
+              <h3 className="absolute z-10 top-[calc(160px-16px)] left-1/2 -translate-x-1/2 rounded-tr-2xl rounded-bl-2xl text-nowrap bg-linear-to-r from-nogogeni-black to-nogogeni-orange font-bold text-xl px-6 py-0.5 tablet:top-[calc(192px-16px)] desktop:top-[calc(192px-18px)] desktop:text-2xl">
                 {activity.name}
               </h3>
-              <div className="relative w-full h-32">
+              <div className="relative w-full h-40 tablet:h-48">
                 <Image
                   fill
                   src={activity.imgPath}
@@ -106,7 +106,7 @@ export default function InternalAndExternal() {
                   className="object-cover object-center"
                 />
               </div>
-              <p className="bg-nogogeni-white text-nogogeni-black text-justify text-xs py-8 px-6">
+              <p className="bg-nogogeni-white text-nogogeni-black text-justify text-sm py-8 px-6 tablet:text-base desktop:h-[280px]">
                 {activity.description}
               </p>
             </article>
@@ -114,21 +114,21 @@ export default function InternalAndExternal() {
         </div>
       </section>
 
-      <section className="bg-nogogeni-black py-16 px-8 tablet:px-16 tablet:py-24 desktop:px-32 desktop:py-32">
-        <h2 className="font-extrabold text-center text-3xl mb-8">
+      <section className="bg-nogogeni-black w-full mx-auto py-16 px-8 tablet:px-16 tablet:py-24 desktop:max-w-7xl desktop:px-0 desktop:py-32">
+        <h2 className="font-extrabold text-center text-3xl mb-8 desktop:text-[64px] desktop:mb-16">
           Internal Activities
         </h2>
 
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-8 desktop:flex-row">
           {internalActivities.map((activity) => (
             <article
               key={activity.imgPath}
-              className="relative overflow-hidden rounded-tr-3xl rounded-bl-3xl w-full mx-auto max-w-64"
+              className="relative overflow-hidden rounded-tr-3xl rounded-bl-3xl w-full mx-auto max-w-xs tablet:max-w-sm"
             >
-              <h3 className="absolute z-10 top-[calc(128px-16px)] left-1/2 -translate-x-1/2 rounded-tr-2xl rounded-bl-2xl text-nowrap bg-linear-to-r from-nogogeni-black to-nogogeni-orange font-bold text-xl px-6 py-0.5">
+              <h3 className="absolute z-10 top-[calc(160px-16px)] left-1/2 -translate-x-1/2 rounded-tr-2xl rounded-bl-2xl text-nowrap bg-linear-to-r from-nogogeni-black to-nogogeni-orange font-bold text-xl px-6 py-0.5 tablet:top-[calc(192px-16px)] desktop:top-[calc(192px-18px)] desktop:text-2xl">
                 {activity.name}
               </h3>
-              <div className="relative w-full h-32">
+              <div className="relative w-full h-40 tablet:h-48">
                 <Image
                   fill
                   src={activity.imgPath}
@@ -136,7 +136,7 @@ export default function InternalAndExternal() {
                   className="object-cover object-center"
                 />
               </div>
-              <p className="bg-nogogeni-white text-nogogeni-black text-justify text-xs py-8 px-6">
+              <p className="bg-nogogeni-white text-nogogeni-black text-justify text-sm py-8 px-6 tablet:text-base desktop:h-[280px]">
                 {activity.description}
               </p>
             </article>
