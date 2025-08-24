@@ -76,7 +76,7 @@ const histories = [
   {
     description: "2nd Place in KMHE Urban MPD Ethanol Category",
     year: 2024,
-    imgPath: "/about-us/history_13.png",
+    imgPath: "/about-us/history_13.jpg",
   },
 ];
 

@@ -12,7 +12,7 @@ const vehicles = [
   { name: "Nogogeni III EVO", imgPath: "/garage/nogogeni_iii_evo.png" },
   { name: "Nogogeni II", imgPath: "/garage/nogogeni_ii.jpg" },
   { name: "Pancasona", imgPath: "/garage/pancasona.jpg" },
-  { name: "Nagageni I", imgPath: "/garage/nogogeni_i.jpg" },
+  { name: "Nagageni I", imgPath: "/garage/nogogeni_i.png" },
 ];
 
 function VehicleGallery() {

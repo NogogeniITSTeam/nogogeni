@@ -8,7 +8,7 @@ const competitions = [
     name: "Ethanol Urban Concept",
     result: "2nd Place KMHE",
     location: "Ancol Circuit, Jakarta",
-    imgPath: "/home/kmhe_full_team.png",
+    imgPath: "/home/second_place_kmhe.jpg",
     year: 2024,
   },
   {
