@@ -71,7 +71,7 @@ const histories = [
     description:
       "1st Place in KMHE Urban Motor Electric Category 188,69 Km/Kwh",
     year: 2023,
-    imgPath: "/about-us/history_12.png",
+    imgPath: "/about-us/history_12.jpg",
   },
   {
     description: "2nd Place in KMHE Urban MPD Ethanol Category",
