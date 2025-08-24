@@ -1,5 +1,4 @@
 import { CompetitionList } from "@/components/activities/competition/CompetitionList";
-import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
 const achievements = [
@@ -42,7 +41,10 @@ export default function Competition() {
 
           <ul className="flex flex-col gap-6 tablet:flex-row tablet:justify-between">
             {achievements.map((achievement) => (
-              <li className="text-center w-full mx-auto flex flex-col gap-1 max-w-36 tablet:max-w-64">
+              <li
+                key={`${achievement.name}:${achievement.value}`}
+                className="text-center w-full mx-auto flex flex-col gap-1 max-w-36 tablet:max-w-64"
+              >
                 <span className="text-nogogeni-orange font-extrabold text-3xl desktop:text-[64px]">
                   {achievement.value}
                 </span>
