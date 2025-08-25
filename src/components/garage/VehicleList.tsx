@@ -141,7 +141,10 @@ function VehicleList() {
       </section>
 
       {selectedVehicle ? (
-        <section id="vehicle-types">
+        <section
+          id="vehicle-types"
+          className="scroll-mt-16 desktop:scroll-mt-24"
+        >
           {selectedVehicle.map((vehicle) => (
             <VehicleItem key={vehicle.name} vehicle={vehicle} />
           ))}

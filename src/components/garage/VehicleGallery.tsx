@@ -56,46 +56,48 @@ function VehicleGallery() {
       id="vehicle-gallery"
       className="bg-nogogeni-black py-16 px-8 tablet:px-16 tablet:py-24 desktop:px-32 desktop:py-32"
     >
-      <p className="font-semibold text-center mb-3 tablet:text-lg desktop:text-4xl">
-        Developed Vehicles Over the Years
-      </p>
+      <div className="w-full mx-auto max-w-7xl">
+        <p className="font-semibold text-center mb-3 tablet:text-lg desktop:text-4xl">
+          Developed Vehicles Over the Years
+        </p>
 
-      <h2 className="font-extrabold text-center text-3xl mb-4 desktop:text-[64px]">
-        Vehicle Showcase Gallery
-      </h2>
+        <h2 className="font-extrabold text-center text-3xl mb-4 desktop:text-[64px]">
+          Vehicle Showcase Gallery
+        </h2>
 
-      <p className="text-nogogeni-white/90 text-center w-full mx-auto max-w-64 text-sm mb-8 tablet:max-w-md tablet:text-base tablet:mb-12 desktop:max-w-2xl desktop:text-2xl desktop:mb-16">
-        A collection of our designs, prototypes, and race cars on track
-        throughout the years.
-      </p>
+        <p className="text-nogogeni-white/90 text-center w-full mx-auto max-w-64 text-sm mb-8 tablet:max-w-md tablet:text-base tablet:mb-12 desktop:max-w-2xl desktop:text-2xl desktop:mb-16">
+          A collection of our designs, prototypes, and race cars on track
+          throughout the years.
+        </p>
 
-      {rows.map((row, index) => (
-        <div
-          key={index}
-          className={`grid gap-4 mb-4 last:mb-0 tablet:gap-6 tablet:mb-6 desktop:gap-8 desktop:mb-8 ${
-            row.isOddRow
-              ? "grid-cols-1 tablet:grid-cols-2"
-              : "grid-cols-2 tablet:grid-cols-3"
-          }`}
-        >
-          {row.vehicles.map((vehicle, index) => (
-            <div
-              key={`${vehicle.imgPath}:${index}`}
-              className="relative w-full h-32 tablet:h-48 desktop:h-64"
-            >
-              <Image
-                fill
-                src={vehicle.imgPath}
-                alt={vehicle.name}
-                className="object-cover object-center"
-              />
-              <p className="absolute bottom-0 left-0 right-0 bg-linear-to-t from-nogogeni-orange to-transparent font-semibold text-xs p-1 tablet:text-base tablet:p-2 desktop:text-2xl desktop:p-4">
-                {vehicle.name}
-              </p>
-            </div>
-          ))}
-        </div>
-      ))}
+        {rows.map((row, index) => (
+          <div
+            key={index}
+            className={`grid gap-4 mb-4 last:mb-0 tablet:gap-6 tablet:mb-6 desktop:gap-8 desktop:mb-8 ${
+              row.isOddRow
+                ? "grid-cols-1 tablet:grid-cols-2"
+                : "grid-cols-2 tablet:grid-cols-3"
+            }`}
+          >
+            {row.vehicles.map((vehicle, index) => (
+              <div
+                key={`${vehicle.imgPath}:${index}`}
+                className="relative w-full h-32 tablet:h-48 desktop:h-64"
+              >
+                <Image
+                  fill
+                  src={vehicle.imgPath}
+                  alt={vehicle.name}
+                  className="object-cover object-center"
+                />
+                <p className="absolute bottom-0 left-0 right-0 bg-linear-to-t from-nogogeni-orange to-transparent font-semibold text-xs p-1 tablet:text-base tablet:p-2 desktop:text-2xl desktop:p-4">
+                  {vehicle.name}
+                </p>
+              </div>
+            ))}
+          </div>
+        ))}
+      </div>
     </section>
   );
 }

@@ -390,9 +390,11 @@ function DivisionList() {
 
       {selectedDepartment ? (
         <section className="pt-16 px-8 tablet:px-16 tablet:pt-24 desktop:px-32 desktop:pt-32">
-          {selectedDepartment.map((division) => (
-            <DivisionItem key={division.name} division={division} />
-          ))}
+          <div className="w-full mx-auto max-w-7xl">
+            {selectedDepartment.map((division) => (
+              <DivisionItem key={division.name} division={division} />
+            ))}
+          </div>
         </section>
       ) : (
         <></>
