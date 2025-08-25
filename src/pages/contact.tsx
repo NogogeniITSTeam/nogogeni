@@ -110,7 +110,7 @@ export default function Contact() {
           <CardHeader>
             <CardTitle className="text-nogogeni-white flex flex-col">
               <span className="font-medium text-sm desktop:text-2xl">
-                Let's Connect with
+                Let&apos;s Connect with
               </span>
               <span className="font-semibold text-lg desktop:text-4xl">
                 Nogogeni ITS Team
