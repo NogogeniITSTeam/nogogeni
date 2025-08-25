@@ -36,13 +36,17 @@ function Subscription({ className, ...props }: ComponentProps<"div">) {
   const subscribe = async (event: MouseEvent<HTMLButtonElement>) => {
     event.preventDefault();
     setIsLoading(true);
+    const email = form.getValues("email");
 
     try {
       const res = await fetch("/api/subscription", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          email: form.getValues("email"),
+          email,
+          name: email.split("@")[0],
+          phone: "",
+          message: "",
           subscribed_at: new Date().toISOString(),
         }),
       });
@@ -86,7 +90,7 @@ function Subscription({ className, ...props }: ComponentProps<"div">) {
                   <Input
                     required
                     placeholder="example@gmail.com"
-                    className="text-sm placeholder:text-nogogeni-white/90 ring-nogogeni-white focus-visible:ring-transparent focus-visible:border-nogogeni-white/50 rounded-full"
+                    className="text-sm placeholder:text-nogogeni-white/90 ring-nogogeni-white focus-visible:ring-transparent focus-visible:border-nogogeni-white/50 rounded-md"
                     {...field}
                   />
                 </FormControl>
@@ -99,7 +103,7 @@ function Subscription({ className, ...props }: ComponentProps<"div">) {
             type="submit"
             variant="secondary"
             size="small"
-            className="py-2"
+            className="py-2 rounded-md"
           >
             Subscribe
           </Button>

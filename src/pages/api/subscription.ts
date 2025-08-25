@@ -17,8 +17,11 @@ export default async function handler(
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams({
-        Email: req.body.email ?? "",
-        "Subscribed At": formatDate(subscribedAt),
+        name: req.body.name ?? "",
+        email: req.body.email ?? "",
+        phone: req.body.phone ?? "",
+        message: req.body.message ?? "",
+        subscribed_at: formatDate(subscribedAt),
       }),
     });
 
