@@ -1,5 +1,5 @@
+import { NewsCard } from "@/components/activities/NewsCard";
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
 import { useMemo, useState } from "react";
 
 type NewsType = "achievement" | "article" | "event";
@@ -145,39 +145,14 @@ export default function Newsroom() {
         {selectedNewsList ? (
           <div className="flex flex-col gap-8 tablet:flex-row tablet:flex-wrap">
             {selectedNewsList.map((news) => (
-              <div
+              <NewsCard
                 key={news.articleURL}
-                className="w-full mx-auto max-w-64 tablet:max-w-sm"
-              >
-                <div
-                  onClick={() => clickURL(news.articleURL)}
-                  className="cursor-pointer relative w-full h-40 tablet:h-56"
-                >
-                  <Image
-                    fill
-                    src={news.imgPath}
-                    alt={news.title}
-                    className="object-cover object-center"
-                  />
-                </div>
-
-                <div className="w-full flex justify-between items-center gap-2 mt-2 mb-4">
-                  <span className="text-nogogeni-orange shrink-0 text-xs tablet:text-sm">
-                    {news.date}
-                  </span>
-                  <span className="bg-nogogeni-orange w-full h-[1px]"></span>
-                  <span className="text-nogogeni-orange shrink-0 capitalize text-xs tablet:text-sm">
-                    {newsType}
-                  </span>
-                </div>
-
-                <h2
-                  onClick={() => clickURL(news.articleURL)}
-                  className="cursor-pointer font-bold text-sm tablet:text-base"
-                >
-                  {news.title}
-                </h2>
-              </div>
+                articleURL={news.articleURL}
+                date={news.date}
+                imgPath={news.imgPath}
+                title={news.title}
+                newsType={newsType}
+              />
             ))}
           </div>
         ) : (
@@ -187,3 +162,5 @@ export default function Newsroom() {
     </>
   );
 }
+
+export type { News, NewsType };

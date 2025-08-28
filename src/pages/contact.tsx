@@ -89,7 +89,7 @@ export default function Contact() {
               Your Support Matters
             </span>{" "}
             <span className="font-extrabold text-3xl desktop:text-[64px]">
-              Be Parat of Our Journey
+              Be Part of Our Journey
             </span>
           </h1>
 
