@@ -72,7 +72,7 @@ export default function AboutUs() {
             </div>
 
             <div className="bg-black/50 absolute z-10 bottom-0 left-0 right-0 py-4">
-              <div className="w-full mx-auto max-w-48 space-y-1">
+              <div className="w-full mx-auto max-w-48 space-y-1 desktop:max-w-lg">
                 <h4 className="font-bold">
                   Achieved 1st place in Urban Electricity category at IEMC 2013
                 </h4>
