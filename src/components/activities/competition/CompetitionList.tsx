@@ -358,17 +358,23 @@ function CompetitionList() {
                     (achievement, index) => (
                       <CarouselItem
                         key={`${achievement.imgPath}:${achievement.ranking}`}
-                        className="basis-1/2"
+                        className={`${
+                          selectedCompetition.achievements.length === 1
+                            ? ""
+                            : "basis-1/2"
+                        }`}
                       >
                         <div
                           className={`transition-all duration-500 ${
                             index === current
+                              ? ""
+                              : selectedCompetition.achievements.length < 3
                               ? "scale-100 opacity-100"
                               : "scale-85 opacity-50"
                           }`}
                         >
                           <div className="flex flex-col justify-center items-center gap-2">
-                            <div className="relative w-full h-40">
+                            <div className="relative w-full h-40 tablet:h-[448px]">
                               <Image
                                 fill
                                 src={achievement.imgPath}
@@ -376,21 +382,21 @@ function CompetitionList() {
                                 className="object-cover object-center"
                               />
 
-                              <div className="text-center absolute bottom-4 left-0 right-0">
-                                <p className="text-nogogeni-orange font-bold text-xs">
+                              <div className="text-center absolute bottom-4 left-0 right-0 tablet:bottom-8">
+                                <p className="text-nogogeni-orange font-bold text-xs tablet:text-lg">
                                   {achievement.ranking}
                                 </p>
-                                <h4 className="font-bold text-xs">
+                                <h4 className="font-bold text-xs tablet:text-lg">
                                   {achievement.name}
                                 </h4>
                               </div>
                             </div>
 
-                            <div className="w-full flex flex-col items-start gap-1">
-                              <span className="text-xs">
+                            <div className="w-full flex flex-col items-start">
+                              <span className="text-xs tablet:text-2xl">
                                 {achievement.year}
                               </span>
-                              <h3 className="font-bold text-xs">
+                              <h3 className="font-bold text-xs tablet:text-2xl">
                                 {achievement.location}
                               </h3>
                             </div>
