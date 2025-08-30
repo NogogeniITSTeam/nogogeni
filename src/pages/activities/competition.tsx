@@ -1,18 +1,19 @@
 import { CompetitionList } from "@/components/activities/competition/CompetitionList";
+import { CountingNumber } from "@/components/ui/counting-number";
 import Image from "next/image";
 
 const achievements = [
   {
     name: "Years of Active Innovation",
-    value: "13+",
+    value: 13,
   },
   {
     name: "Different Vehicle Generations",
-    value: "8+",
+    value: 8,
   },
   {
     name: "Podium Titles",
-    value: "20+",
+    value: 20,
   },
 ];
 
@@ -45,9 +46,10 @@ export default function Competition() {
                 key={`${achievement.name}:${achievement.value}`}
                 className="text-center w-full mx-auto flex flex-col gap-1 max-w-36 tablet:max-w-64"
               >
-                <span className="text-nogogeni-orange font-extrabold text-3xl desktop:text-[64px]">
-                  {achievement.value}
-                </span>
+                <div className="flex justify-center items-center text-nogogeni-orange font-extrabold text-3xl desktop:text-[64px]">
+                  <CountingNumber number={achievement.value} />+
+                </div>
+
                 <p className="font-bold desktop:text-2xl">{achievement.name}</p>
               </li>
             ))}
