@@ -11,6 +11,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { ChevronDownCircleIcon, LoaderCircleIcon } from "lucide-react";
+import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -70,6 +71,36 @@ export default function Contact() {
 
   return (
     <>
+      <Head>
+        <title>Nogogeni - Contact Us</title>
+        <meta
+          name="description"
+          content="Ready to join our journey? Contact us to learn more and get involved."
+        />
+
+        <meta property="og:title" content="Nogogeni - Contact Us" />
+        <meta
+          property="og:description"
+          content="Ready to join our journey? Contact us to learn more and get involved."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="/public/favicon.ico" />
+        <meta property="og:url" content="https://www.nogogeniits.com/contact" />
+
+        <meta property="twitter:title" content="Nogogeni - Contact Us" />
+        <meta
+          property="twitter:description"
+          content="Ready to join our journey? Contact us to learn more and get involved."
+        />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:image" content="/public/favicon.ico" />
+        <meta
+          property="twitter:url"
+          content="https://www.nogogeniits.com/contact"
+        />
+        <meta property="twitter:domain" content="nogogeniits.com" />
+      </Head>
+
       <section className="text-center relative bg-nogogeni-black mt-16 desktop:mt-24">
         <div className="relative h-[calc(100vh-64px)] desktop:h-[calc(100vh-96px)]">
           <Image
@@ -101,7 +132,6 @@ export default function Contact() {
           </Link>
         </div>
       </section>
-
       <div
         id="form"
         className="py-16 px-8 tablet:px-16 tablet:py-24 desktop:px-32 desktop:py-32"

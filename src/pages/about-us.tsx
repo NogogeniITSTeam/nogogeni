@@ -3,12 +3,46 @@ import { HomeBase } from "@/components/about-us/HomeBase";
 import { Pattern } from "@/components/icons/Pattern";
 import { WhiteBlurredStar } from "@/components/icons/WhiteBlurredStar";
 import { ChevronDownCircleIcon, ChevronRightIcon } from "lucide-react";
+import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function AboutUs() {
   return (
     <>
+      <Head>
+        <title>Nogogeni - About Us</title>
+        <meta
+          name="description"
+          content="Nogogeni ITS Team was established in 2011. The team originated from a final project by a student from the 2009-2010 cohort of the Diploma III in Industrial Mechanical Engineering at ITS."
+        />
+
+        <meta property="og:title" content="Nogogeni - About Us" />
+        <meta
+          property="og:description"
+          content="Nogogeni ITS Team was established in 2011. The team originated from a final project by a student from the 2009-2010 cohort of the Diploma III in Industrial Mechanical Engineering at ITS."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="/public/favicon.ico" />
+        <meta
+          property="og:url"
+          content="https://www.nogogeniits.com/about-us"
+        />
+
+        <meta property="twitter:title" content="Nogogeni - About Us" />
+        <meta
+          property="twitter:description"
+          content="Nogogeni ITS Team was established in 2011. The team originated from a final project by a student from the 2009-2010 cohort of the Diploma III in Industrial Mechanical Engineering at ITS."
+        />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:image" content="/public/favicon.ico" />
+        <meta
+          property="twitter:url"
+          content="https://www.nogogeniits.com/about-us"
+        />
+        <meta property="twitter:domain" content="nogogeniits.com" />
+      </Head>
+
       <section className="text-center relative bg-nogogeni-black mt-16 desktop:mt-24">
         <div className="relative h-[calc(100vh-64px)] desktop:h-[calc(100vh-96px)]">
           <Image

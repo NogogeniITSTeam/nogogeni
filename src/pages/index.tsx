@@ -8,10 +8,38 @@ import { Hero } from "@/components/home/Hero";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import Head from "next/head";
 
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Nogogeni - ITS Research Team</title>
+        <meta
+          name="description"
+          content="An official student research team from Institut Teknologi Sepuluh Nopember (ITS), dedicated to developing energy-efficient vehicles that push the limits of technology, creativity, and sustainability."
+        />
+
+        <meta property="og:title" content="Nogogeni - ITS Research Team" />
+        <meta
+          property="og:description"
+          content="An official student research team from Institut Teknologi Sepuluh Nopember (ITS), dedicated to developing energy-efficient vehicles that push the limits of technology, creativity, and sustainability."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="/public/favicon.ico" />
+        <meta property="og:url" content="https://www.nogogeniits.com" />
+
+        <meta property="twitter:title" content="Nogogeni - ITS Research Team" />
+        <meta
+          property="twitter:description"
+          content="An official student research team from Institut Teknologi Sepuluh Nopember (ITS), dedicated to developing energy-efficient vehicles that push the limits of technology, creativity, and sustainability."
+        />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:image" content="/public/favicon.ico" />
+        <meta property="twitter:url" content="https://www.nogogeniits.com" />
+        <meta property="twitter:domain" content="nogogeniits.com" />
+      </Head>
+
       <Hero />
 
       <article className="bg-nogogeni-black text-center pt-16 px-8 tablet:px-16 tablet:pt-24 desktop:px-32 desktop:pt-32">

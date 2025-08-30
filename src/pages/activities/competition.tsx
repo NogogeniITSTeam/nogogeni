@@ -1,5 +1,6 @@
 import { CompetitionList } from "@/components/activities/competition/CompetitionList";
 import { CountingNumber } from "@/components/ui/counting-number";
+import Head from "next/head";
 import Image from "next/image";
 
 const achievements = [
@@ -20,6 +21,39 @@ const achievements = [
 export default function Competition() {
   return (
     <>
+      <Head>
+        <title>Nogogeni - Competitions</title>
+        <meta
+          name="description"
+          content="The Only Team in Indonesia Who Achieve a Quintrick Victory in KMHE Urban Electric Category."
+        />
+
+        <meta property="og:title" content="Nogogeni - Competitions" />
+        <meta
+          property="og:description"
+          content="The Only Team in Indonesia Who Achieve a Quintrick Victory in KMHE Urban Electric Category."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="/public/favicon.ico" />
+        <meta
+          property="og:url"
+          content="https://www.nogogeniits.com/activities/competition"
+        />
+
+        <meta property="twitter:title" content="Nogogeni - Competitions" />
+        <meta
+          property="twitter:description"
+          content="The Only Team in Indonesia Who Achieve a Quintrick Victory in KMHE Urban Electric Category."
+        />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:image" content="/public/favicon.ico" />
+        <meta
+          property="twitter:url"
+          content="https://www.nogogeniits.com/activities/competition"
+        />
+        <meta property="twitter:domain" content="nogogeniits.com" />
+      </Head>
+
       <section className="relative bg-nogogeni-black mt-16 desktop:mt-24">
         <div className="relative h-[calc(100vh-64px)] desktop:h-[calc(100vh-96px)]">
           <Image

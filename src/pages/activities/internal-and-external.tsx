@@ -1,4 +1,5 @@
 import { ChevronDownCircleIcon } from "lucide-react";
+import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -47,6 +48,45 @@ const internalActivities = [
 export default function InternalAndExternal() {
   return (
     <>
+      <Head>
+        <title>Nogogeni - Internal & External Activities</title>
+        <meta
+          name="description"
+          content="View our current activities and collaborative projects with partners and community organizations."
+        />
+
+        <meta
+          property="og:title"
+          content="Nogogeni - Internal & External Activities"
+        />
+        <meta
+          property="og:description"
+          content="View our current activities and collaborative projects with partners and community organizations."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="/public/favicon.ico" />
+        <meta
+          property="og:url"
+          content="https://www.nogogeniits.com/activities/internal-and-external"
+        />
+
+        <meta
+          property="twitter:title"
+          content="Nogogeni - Internal & External Activities"
+        />
+        <meta
+          property="twitter:description"
+          content="View our current activities and collaborative projects with partners and community organizations."
+        />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:image" content="/public/favicon.ico" />
+        <meta
+          property="twitter:url"
+          content="https://www.nogogeniits.com/activities/internal-and-external"
+        />
+        <meta property="twitter:domain" content="nogogeniits.com" />
+      </Head>
+
       <section className="text-center relative bg-nogogeni-black mt-16 desktop:mt-24">
         <div className="relative h-[calc(100vh-64px)] desktop:h-[calc(100vh-96px)]">
           <Image

@@ -1,11 +1,45 @@
 import { DivisionList } from "@/components/our-team/DivisionList";
 import { ChevronDownCircleIcon } from "lucide-react";
+import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function OurTeam() {
   return (
     <>
+      <Head>
+        <title>Nogogeni - Our Team</title>
+        <meta
+          name="description"
+          content="The people behind Nogogeni ITS that work together to design, build, and develop energy-efficient vehicles."
+        />
+
+        <meta property="og:title" content="Nogogeni - Our Team" />
+        <meta
+          property="og:description"
+          content="The people behind Nogogeni ITS that work together to design, build, and develop energy-efficient vehicles."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="/public/favicon.ico" />
+        <meta
+          property="og:url"
+          content="https://www.nogogeniits.com/our-team"
+        />
+
+        <meta property="twitter:title" content="Nogogeni - Our Team" />
+        <meta
+          property="twitter:description"
+          content="The people behind Nogogeni ITS that work together to design, build, and develop energy-efficient vehicles."
+        />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:image" content="/public/favicon.ico" />
+        <meta
+          property="twitter:url"
+          content="https://www.nogogeniits.com/our-team"
+        />
+        <meta property="twitter:domain" content="nogogeniits.com" />
+      </Head>
+
       <section className="text-center relative bg-nogogeni-black mt-16 desktop:mt-24">
         <div className="relative h-[calc(100vh-64px)] desktop:h-[calc(100vh-96px)]">
           <Image

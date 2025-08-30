@@ -1,5 +1,6 @@
 import { NewsCard } from "@/components/activities/NewsCard";
 import { Button } from "@/components/ui/button";
+import Head from "next/head";
 import { useMemo, useState } from "react";
 
 type NewsType = "achievement" | "article" | "event";
@@ -93,17 +94,41 @@ export default function Newsroom() {
     return newsList.get(newsType);
   }, [newsType]);
 
-  const clickURL = (articleURL: string) => {
-    const a = document.createElement("a");
-    a.setAttribute("href", articleURL);
-    a.setAttribute("target", "_blank");
-    a.setAttribute("rel", "noopener");
-    a.click();
-    a.remove();
-  };
-
   return (
     <>
+      <Head>
+        <title>Nogogeni - Newsroom</title>
+        <meta
+          name="description"
+          content="See what others are saying about Nogogeni."
+        />
+
+        <meta property="og:title" content="Nogogeni - Newsroom" />
+        <meta
+          property="og:description"
+          content="See what others are saying about Nogogeni."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="/public/favicon.ico" />
+        <meta
+          property="og:url"
+          content="https://www.nogogeniits.com/activities/newsroom"
+        />
+
+        <meta property="twitter:title" content="Nogogeni - Newsroom" />
+        <meta
+          property="twitter:description"
+          content="See what others are saying about Nogogeni."
+        />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:image" content="/public/favicon.ico" />
+        <meta
+          property="twitter:url"
+          content="https://www.nogogeniits.com/activities/newsroom"
+        />
+        <meta property="twitter:domain" content="nogogeniits.com" />
+      </Head>
+
       <section className="bg-nogogeni-black w-full mx-auto py-16 px-8 mt-16 tablet:px-0 tablet:py-24 desktop:max-w-7xl desktop:py-32 desktop:mt-24">
         <h1 className="text-nogogeni-orange text-center font-extrabold text-3xl tablet:text-[64px]">
           News
