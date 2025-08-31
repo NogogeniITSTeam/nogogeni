@@ -49,6 +49,7 @@ function Hero() {
             >
               <Image
                 fill
+                priority
                 src={img.path}
                 alt={img.alt}
                 className="object-cover object-center"

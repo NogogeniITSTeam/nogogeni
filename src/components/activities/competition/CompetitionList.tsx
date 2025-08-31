@@ -386,9 +386,9 @@ function CompetitionList() {
                                 <p className="text-nogogeni-orange font-bold text-xs tablet:text-lg">
                                   {achievement.ranking}
                                 </p>
-                                <h4 className="font-bold text-xs tablet:text-lg">
+                                <h3 className="font-bold text-xs tablet:text-lg">
                                   {achievement.name}
-                                </h4>
+                                </h3>
                               </div>
                             </div>
 

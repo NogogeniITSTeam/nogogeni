@@ -47,6 +47,7 @@ export default function AboutUs() {
         <div className="relative h-[calc(100vh-64px)] desktop:h-[calc(100vh-96px)]">
           <Image
             fill
+            priority
             src="/about-us/hero.jpg"
             alt="Nogogeni V Evo"
             className="object-cover object-center"
@@ -69,6 +70,7 @@ export default function AboutUs() {
             className="flex justify-center items-center"
           >
             <ChevronDownCircleIcon className="tablet:size-8 desktop:size-12" />
+            <span className="sr-only">Learn Our History</span>
           </Link>
         </div>
       </section>
@@ -107,9 +109,9 @@ export default function AboutUs() {
 
             <div className="bg-black/50 absolute z-10 bottom-0 left-0 right-0 py-4">
               <div className="w-full mx-auto max-w-48 space-y-1 desktop:max-w-lg">
-                <h4 className="font-bold">
+                <h3 className="font-bold">
                   Achieved 1st place in Urban Electricity category at IEMC 2013
-                </h4>
+                </h3>
                 <p className="text-sm">Kenjeran Circuit, Surabaya</p>
               </div>
             </div>

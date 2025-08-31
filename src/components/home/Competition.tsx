@@ -56,9 +56,9 @@ function Competition() {
             />
 
             <div className="flex flex-col gap-1 absolute z-10 bottom-2 left-3 desktop:bottom-4 desktop:left-6">
-              <h4 className="font-medium text-sm desktop:text-2xl">
+              <h3 className="font-medium text-sm desktop:text-2xl">
                 {competition.result}
-              </h4>
+              </h3>
               <p className="text-xs desktop:text-sm">
                 {competition.name} <br />
                 <span>{competition.location}</span>

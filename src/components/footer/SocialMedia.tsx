@@ -19,6 +19,7 @@ function SocialMedia({ className, ...props }: ComponentProps<"ul">) {
           rel="noopener"
         >
           <Instagram className="fill-nogogeni-white w-10 h-10" />
+          <span className="sr-only">Instagram</span>
         </Link>
       </li>
       <li>
@@ -28,6 +29,7 @@ function SocialMedia({ className, ...props }: ComponentProps<"ul">) {
           rel="noopener"
         >
           <Tiktok className="fill-nogogeni-white w-10 h-10" />
+          <span className="sr-only">Tiktok</span>
         </Link>
       </li>
       <li>
@@ -37,6 +39,7 @@ function SocialMedia({ className, ...props }: ComponentProps<"ul">) {
           rel="noopener"
         >
           <Youtube className="fill-nogogeni-white w-10 h-10" />
+          <span className="sr-only">Youtube</span>
         </Link>
       </li>
       <li>
@@ -46,6 +49,7 @@ function SocialMedia({ className, ...props }: ComponentProps<"ul">) {
           rel="noopener"
         >
           <LinkedIn className="fill-nogogeni-white w-10 h-10" />
+          <span className="sr-only">LinkedIn</span>
         </Link>
       </li>
     </ul>

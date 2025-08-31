@@ -105,6 +105,7 @@ export default function Contact() {
         <div className="relative h-[calc(100vh-64px)] desktop:h-[calc(100vh-96px)]">
           <Image
             fill
+            priority
             src="/about-us/history_13.jpg"
             alt="Nogogeni Team"
             className="object-cover object-center"
@@ -129,6 +130,7 @@ export default function Contact() {
             className="flex justify-center items-center"
           >
             <ChevronDownCircleIcon className="tablet:size-8 desktop:size-12" />
+            <span className="sr-only">Contact Us</span>
           </Link>
         </div>
       </section>

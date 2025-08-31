@@ -44,6 +44,7 @@ export default function OurTeam() {
         <div className="relative h-[calc(100vh-64px)] desktop:h-[calc(100vh-96px)]">
           <Image
             fill
+            priority
             src="/our-team/hero.jpg"
             alt="Nogogeni Team"
             className="object-cover object-center"
@@ -66,6 +67,7 @@ export default function OurTeam() {
             className="flex justify-center items-center"
           >
             <ChevronDownCircleIcon className="tablet:size-8 desktop:size-12" />
+            <span className="sr-only">Meet Our Team</span>
           </Link>
         </div>
       </section>

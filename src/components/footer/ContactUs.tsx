@@ -6,7 +6,7 @@ import { ComponentProps } from "react";
 function ContactUs({ className, ...props }: ComponentProps<"div">) {
   return (
     <div className={cn("space-y-4", className)} {...props}>
-      <h3 className="font-bold text-xl desktop:text-[28px]">Contact Us</h3>
+      <h2 className="font-bold text-xl desktop:text-[28px]">Contact Us</h2>
 
       <ul className="flex flex-col gap-4">
         <li className="flex gap-3">

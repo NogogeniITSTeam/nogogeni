@@ -88,6 +88,7 @@ function VehicleList() {
         <div className="relative h-[calc(100vh-64px)] desktop:h-[calc(100vh-96px)]">
           <Image
             fill
+            priority
             src="/garage/hero.png"
             alt=""
             className="object-cover object-center"

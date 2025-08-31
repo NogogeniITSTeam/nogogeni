@@ -91,6 +91,7 @@ export default function InternalAndExternal() {
         <div className="relative h-[calc(100vh-64px)] desktop:h-[calc(100vh-96px)]">
           <Image
             fill
+            priority
             src="/activities/hero.png"
             alt="Nogogeni Team"
             className="object-cover object-center"
@@ -117,6 +118,9 @@ export default function InternalAndExternal() {
             className="flex justify-center items-center"
           >
             <ChevronDownCircleIcon className="size-8 desktop:size-12" />
+            <span className="sr-only">
+              View Our Internal and External Activities
+            </span>
           </Link>
         </div>
       </section>

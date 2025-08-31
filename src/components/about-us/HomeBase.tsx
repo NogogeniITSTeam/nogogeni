@@ -81,7 +81,7 @@ function HomeBase() {
 
                     <div className="bg-black/50 absolute z-10 bottom-0 left-0 right-0 py-4">
                       <div className="w-full mx-auto max-w-48 space-y-1 tablet:mx-0 tablet:max-w-max tablet:ml-8 desktop:ml-12">
-                        <h4 className="font-bold">{item.title}</h4>
+                        <h3 className="font-bold">{item.title}</h3>
                         <p className="text-sm">{item.location}</p>
                       </div>
                     </div>

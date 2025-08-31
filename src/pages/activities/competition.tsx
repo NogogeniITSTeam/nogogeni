@@ -58,6 +58,7 @@ export default function Competition() {
         <div className="relative h-[calc(100vh-64px)] desktop:h-[calc(100vh-96px)]">
           <Image
             fill
+            priority
             src="/about-us/history_12.jpg"
             alt="First Place in KMHE Urban Motor Electric Category 188,69 Km/Kwh"
             className="object-cover object-center"
