@@ -76,7 +76,7 @@ export default function Sponsor() {
 
         <div className="grid grid-cols-2 gap-4 tablet:grid-cols-4 desktop:grid-cols-5">
           {sponsors.map((sponsor) => (
-            <div className="relative h-24 desktop:h-32">
+            <div key={sponsor.imgPath} className="relative h-24 desktop:h-32">
               <Image
                 fill
                 src={sponsor.imgPath}
