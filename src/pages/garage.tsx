@@ -1,4 +1,3 @@
-import { VehicleGallery } from "@/components/garage/VehicleGallery";
 import { VehicleList } from "@/components/garage/VehicleList";
 import Head from "next/head";
 
@@ -36,7 +35,6 @@ export default function Garage() {
       </Head>
 
       <VehicleList />
-      <VehicleGallery />
     </>
   );
 }

@@ -2,81 +2,113 @@ import Image from "next/image";
 import { useMemo, useState } from "react";
 import { Button } from "../ui/button";
 import { VehicleItem } from "./VehicleItem";
+import { VehicleGallery } from "./VehicleGallery";
 
-type VehicleType = "urban_car" | "gokart" | "motorcycle";
+type VehicleType =
+  | "electric_urban_car"
+  | "ethanol_urban_car"
+  | "gokart"
+  | "motorcycle";
+
 interface Vehicle {
   name: string;
   imgPath: string;
   specification: Record<string, string>;
+  gallery: {
+    name: string;
+    imgPath: string;
+  }[];
 }
 
-const vehicles = new Map<VehicleType, Vehicle[]>();
-vehicles.set("urban_car", [
-  {
-    name: "Nogogeni IX Evo",
-    imgPath: "/home/nogogeni_ix_evo.png",
-    specification: {
-      chasis: "ALUMINIUM HOLLOW 6016",
-      steering: "ACKERMAN",
-      body: "CARBON FIBER",
-      motor: "1000 WATT",
-      transmission: "CHAIN AND SPROCKET",
-      fuel: "LITHIUM BATTERY",
-      brake: "HYDRAULIC DISC",
-    },
+const vehicles = new Map<VehicleType, Vehicle>();
+vehicles.set("electric_urban_car", {
+  name: "Nogogeni IX Evo",
+  imgPath: "/home/nogogeni_ix_evo.png",
+  specification: {
+    chasis: "ALUMINIUM HOLLOW 6016",
+    steering: "ACKERMAN",
+    body: "CARBON FIBER",
+    motor: "1000 WATT",
+    transmission: "CHAIN AND SPROCKET",
+    fuel: "LITHIUM BATTERY",
+    brake: "HYDRAULIC DISC",
   },
-  {
-    name: "Nogogeni VII",
-    imgPath: "/home/nogogeni_vii.png",
-    specification: {
-      chasis: "ALUMINIUM HOLLOW 6016",
-      steering: "ACKERMAN",
-      body: "CARBON FIBER",
-      engine: "125 CC",
-      transmission: "CHAIN AND SPROCKET",
-      fuel: "LITHIUM BATTERY",
-      brake: "HYDRAULIC DISC",
-    },
-  },
-]);
+  gallery: [
+    { name: "Nogogeni IX EVO", imgPath: "/home/hero_image_2.jpg" },
+    { name: "Nogogeni VIII EVO", imgPath: "/garage/electric_viii_evo.png" },
+    { name: "Nogogeni VII EVO", imgPath: "/garage/electric_vii_evo.png" },
+    { name: "Nogogeni VI EVO", imgPath: "/garage/electric_vi_evo.png" },
+    { name: "Nogogeni V EVO", imgPath: "/garage/electric_v_evo.png" },
+    { name: "Nogogeni IV EVO", imgPath: "/garage/electric_iv_evo.png" },
+    { name: "Nogogeni III EVO", imgPath: "/garage/electric_iii_evo.png" },
+    { name: "Nogogeni II", imgPath: "/garage/electric_ii.jpg" },
+    { name: "Pancasona", imgPath: "/garage/electric_pancasona.jpg" },
+    { name: "Nagageni I", imgPath: "/garage/electric_i.png" },
+  ],
+});
 
-vehicles.set("gokart", [
-  {
-    name: "Gokart Electric",
-    imgPath: "/home/gokart.png",
-    specification: {
-      steering: "ACKERMAN",
-      motor: "Mid Drive Brushless DC",
-      transmission: "CHAIN AND SPROCKET",
-      fuel: "LITHIUM BATTERY",
-      brake: "HYDRAULIC DISC",
-      battery: "LITHIUM IRON PHOSPHAT 72V/40AH",
-      "power output": "3000 W",
-      "max speed": "78 KM/H",
-    },
+vehicles.set("ethanol_urban_car", {
+  name: "Nogogeni VII",
+  imgPath: "/home/nogogeni_vii.png",
+  specification: {
+    chasis: "ALUMINIUM HOLLOW 6016",
+    steering: "ACKERMAN",
+    body: "CARBON FIBER",
+    engine: "125 CC",
+    transmission: "CHAIN AND SPROCKET",
+    fuel: "LITHIUM BATTERY",
+    brake: "HYDRAULIC DISC",
   },
-]);
+  gallery: [
+    { name: "Nogogeni VII", imgPath: "/home/hero_image_1.jpg" },
+    { name: "Nogogeni VI", imgPath: "/home/hero_image_2.jpg" },
+    { name: "Nogogeni V", imgPath: "/garage/ethanol_v.png" },
+    { name: "Nogogeni IV", imgPath: "/garage/ethanol_iv.png" },
+    { name: "Nogogeni III", imgPath: "/garage/ethanol_iii.png" },
+    { name: "Nogogeni II", imgPath: "/garage/ethanol_ii.png" },
+    { name: "Nagageni I", imgPath: "/garage/ethanol_i.jpg" },
+  ],
+});
 
-vehicles.set("motorcycle", [
-  {
-    name: "Ng-5000",
-    imgPath: "/home/ng_5000.png",
-    specification: {
-      chasis: "ALUMINIUM HOLLOW 6016",
-      steering: "ACKERMAN",
-      body: "CARBON FIBER",
-      engine: "125 CC",
-      transmission: "CHAIN AND SPROCKET",
-      fuel: "LITHIUM BATTERY",
-      brake: "HYDRAULIC DISC",
-    },
+vehicles.set("gokart", {
+  name: "Gokart Electric",
+  imgPath: "/home/gokart.png",
+  specification: {
+    steering: "ACKERMAN",
+    motor: "Mid Drive Brushless DC",
+    transmission: "CHAIN AND SPROCKET",
+    fuel: "LITHIUM BATTERY",
+    brake: "HYDRAULIC DISC",
+    battery: "LITHIUM IRON PHOSPHAT 72V/40AH",
+    "power output": "3000 W",
+    "max speed": "78 KM/H",
   },
-]);
+  gallery: [
+    { name: "Gokart Electric", imgPath: "/garage/gokart_electric.png" },
+  ],
+});
+
+vehicles.set("motorcycle", {
+  name: "Ng-5000",
+  imgPath: "/home/ng_5000.png",
+  specification: {
+    chasis: "ALUMINIUM HOLLOW 6016",
+    steering: "ACKERMAN",
+    body: "CARBON FIBER",
+    engine: "125 CC",
+    transmission: "CHAIN AND SPROCKET",
+    fuel: "LITHIUM BATTERY",
+    brake: "HYDRAULIC DISC",
+  },
+  gallery: [
+    { name: "NG - 5000", imgPath: "/garage/ng_5000_1.png" },
+    { name: "NG - 5000", imgPath: "/garage/ng_5000_2.jpg" },
+  ],
+});
 
 function VehicleList() {
-  const [selectedVehicleType, setSelectedVehicleType] = useState<
-    "urban_car" | "gokart" | "motorcycle"
-  >("urban_car");
+  const [selectedVehicleType, setSelectedVehicleType] =
+    useState<VehicleType>("electric_urban_car");
 
   const selectedVehicle = useMemo(() => {
     return vehicles.get(selectedVehicleType);
@@ -109,13 +141,23 @@ function VehicleList() {
           <div className="flex flex-wrap justify-center items-center gap-6">
             <Button
               className={`${
-                selectedVehicleType === "urban_car"
+                selectedVehicleType === "electric_urban_car"
                   ? "bg-nogogeni-white/50"
                   : "bg-nogogeni-black"
               } hover:bg-nogogeni-white/50 border border-nogogeni-white text-sm desktop:text-base`}
-              onClick={() => setSelectedVehicleType("urban_car")}
+              onClick={() => setSelectedVehicleType("electric_urban_car")}
             >
-              Urban Car
+              Electric Urban Car
+            </Button>
+            <Button
+              className={`${
+                selectedVehicleType === "ethanol_urban_car"
+                  ? "bg-nogogeni-white/50"
+                  : "bg-nogogeni-black"
+              } hover:bg-nogogeni-white/50 border border-nogogeni-white text-sm desktop:text-base`}
+              onClick={() => setSelectedVehicleType("ethanol_urban_car")}
+            >
+              Ethanol Urban Car
             </Button>
             <Button
               className={`${
@@ -142,14 +184,20 @@ function VehicleList() {
       </section>
 
       {selectedVehicle ? (
-        <section
-          id="vehicle-types"
-          className="scroll-mt-16 desktop:scroll-mt-24"
-        >
-          {selectedVehicle.map((vehicle) => (
-            <VehicleItem key={vehicle.name} vehicle={vehicle} />
-          ))}
-        </section>
+        <>
+          <section
+            id="vehicle-types"
+            className="scroll-mt-16 desktop:scroll-mt-24"
+          >
+            <VehicleItem key={selectedVehicle.name} vehicle={selectedVehicle} />
+          </section>
+
+          {selectedVehicle.gallery.length > 0 ? (
+            <VehicleGallery gallery={selectedVehicle.gallery} />
+          ) : (
+            <></>
+          )}
+        </>
       ) : (
         <></>
       )}

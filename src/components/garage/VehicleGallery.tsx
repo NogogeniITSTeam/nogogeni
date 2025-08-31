@@ -1,21 +1,9 @@
 import Image from "next/image";
 import { useMemo } from "react";
 import { useWindowSize } from "usehooks-ts";
+import { Vehicle } from "./VehicleList";
 
-const vehicles = [
-  { name: "Nogogeni IX EVO", imgPath: "/home/hero_image_2.jpg" },
-  { name: "Nogogeni VIII EVO", imgPath: "/garage/nogogeni_viii_evo.png" },
-  { name: "Nogogeni VII EVO", imgPath: "/garage/nogogeni_vii_evo.png" },
-  { name: "Nogogeni VI EVO", imgPath: "/garage/nogogeni_vi_evo.png" },
-  { name: "Nogogeni V EVO", imgPath: "/garage/nogogeni_v_evo.png" },
-  { name: "Nogogeni IV EVO", imgPath: "/garage/nogogeni_iv_evo.png" },
-  { name: "Nogogeni III EVO", imgPath: "/garage/nogogeni_iii_evo.png" },
-  { name: "Nogogeni II", imgPath: "/garage/nogogeni_ii.jpg" },
-  { name: "Pancasona", imgPath: "/garage/pancasona.jpg" },
-  { name: "Nagageni I", imgPath: "/garage/nogogeni_i.png" },
-];
-
-function VehicleGallery() {
+function VehicleGallery({ gallery }: { gallery: Vehicle["gallery"] }) {
   const { width = 0 } = useWindowSize({ initializeWithValue: false });
 
   const rows = useMemo(() => {
@@ -27,19 +15,23 @@ function VehicleGallery() {
     let currentIndex = 0;
     let rowNumber = 1;
 
-    while (currentIndex < vehicles.length) {
+    while (currentIndex < gallery.length) {
       const isOddRow = rowNumber % 2 === 1;
       let itemsPerRow = isOddRow ? 1 : 2;
-      if (width < 768) {
+      if (gallery.length === 1) {
+        itemsPerRow = 1;
+      } else if (gallery.length === 2) {
+        itemsPerRow = 2;
+      } else if (width < 768) {
         itemsPerRow = isOddRow ? 1 : 2;
       } else {
         itemsPerRow = isOddRow ? 2 : 3;
       }
 
-      const rowItems = vehicles.slice(currentIndex, currentIndex + itemsPerRow);
+      const rowItems = gallery.slice(currentIndex, currentIndex + itemsPerRow);
       if (rowItems.length > 0) {
         rows.push({
-          vehicles: rowItems,
+          gallery: rowItems,
           isOddRow,
         });
       }
@@ -49,7 +41,7 @@ function VehicleGallery() {
     }
 
     return rows;
-  }, [width]);
+  }, [width, gallery]);
 
   return (
     <section
@@ -74,24 +66,28 @@ function VehicleGallery() {
           <div
             key={index}
             className={`grid gap-4 mb-4 last:mb-0 tablet:gap-6 tablet:mb-6 desktop:gap-8 desktop:mb-8 ${
-              row.isOddRow
+              gallery.length === 1
+                ? "grid-cols-1"
+                : row.isOddRow || gallery.length === 2
                 ? "grid-cols-1 tablet:grid-cols-2"
                 : "grid-cols-2 tablet:grid-cols-3"
             }`}
           >
-            {row.vehicles.map((vehicle, index) => (
+            {row.gallery.map((item, index) => (
               <div
-                key={`${vehicle.imgPath}:${index}`}
-                className="relative w-full h-32 tablet:h-48 desktop:h-64"
+                key={`${item.imgPath}:${index}`}
+                className={`relative w-full h-32 tablet:h-48 ${
+                  gallery.length === 1 ? "desktop:h-96" : "desktop:h-64"
+                }`}
               >
                 <Image
                   fill
-                  src={vehicle.imgPath}
-                  alt={vehicle.name}
+                  src={item.imgPath}
+                  alt={item.name}
                   className="object-cover object-center"
                 />
                 <p className="absolute bottom-0 left-0 right-0 bg-linear-to-t from-nogogeni-orange to-transparent font-semibold text-xs p-1 tablet:text-base tablet:p-2 desktop:text-2xl desktop:p-4">
-                  {vehicle.name}
+                  {item.name}
                 </p>
               </div>
             ))}
