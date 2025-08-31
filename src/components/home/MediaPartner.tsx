@@ -13,7 +13,7 @@ const mediaPartners = [
 
 function MediaPartner() {
   return (
-    <section className="bg-nogogeni-black px-8 py-6 tablet:px-16 tablet:py-12 desktop:px-32 desktop:py-16">
+    <section className="bg-nogogeni-black px-8 py-16 tablet:px-16 tablet:py-24 desktop:px-32 desktop:py-32">
       <h2 className="text-nogogeni-white font-semibold text-center text-xl mb-4 tablet:text-4xl tablet:mb-8 desktop:text-[64px] desktop:mb-12">
         Media Partner
       </h2>

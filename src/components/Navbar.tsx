@@ -70,6 +70,13 @@ function NavbarModal({ setIsOpened }: NavbarModalProps) {
         >
           Contact
         </Link>
+        <Link
+          href="/sponsor"
+          className="hover:bg-[#3F3F3F] cursor-pointer block w-full px-6 py-4"
+          onClick={() => setIsOpened(false)}
+        >
+          Sponsor
+        </Link>
       </nav>
     </>
   );
@@ -274,6 +281,18 @@ function Navbar() {
               }`}
             >
               Contact
+            </Link>
+            <div className="bg-nogogeni-orange invisible h-0.5 w-0.5 mx-auto peer-hover:visible peer-hover:w-full transition-all duration-300"></div>
+          </div>
+
+          <div className="relative">
+            <Link
+              href="/sponsor"
+              className={`peer hover:text-nogogeni-orange font-medium transition-all duration-300 desktop:text-xl ${
+                router.pathname === "/sponsor" ? "text-nogogeni-orange" : ""
+              }`}
+            >
+              Sponsor
             </Link>
             <div className="bg-nogogeni-orange invisible h-0.5 w-0.5 mx-auto peer-hover:visible peer-hover:w-full transition-all duration-300"></div>
           </div>
