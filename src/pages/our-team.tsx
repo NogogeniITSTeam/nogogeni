@@ -40,7 +40,7 @@ export default function OurTeam() {
         <meta property="twitter:domain" content="nogogeniits.com" />
       </Head>
 
-      <section className="text-center relative bg-nogogeni-black mt-16 desktop:mt-24">
+      <section className="text-center relative mt-16 desktop:mt-24">
         <div className="relative h-[calc(100vh-64px)] desktop:h-[calc(100vh-96px)]">
           <Image
             fill
@@ -51,8 +51,6 @@ export default function OurTeam() {
           />
           <div className="absolute inset-0 bg-linear-to-t from-nogogeni-black to-transparent" />
         </div>
-
-        <div className="absolute inset-0 bg-linear-to-b from-black/50 to-black/50" />
 
         <div className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-full max-w-sm space-y-4 desktop:max-w-3xl desktop:space-y-6">
           <h1 className="uppercase flex flex-col">

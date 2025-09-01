@@ -54,7 +54,7 @@ export default function Competition() {
         <meta property="twitter:domain" content="nogogeniits.com" />
       </Head>
 
-      <section className="relative bg-nogogeni-black mt-16 desktop:mt-24">
+      <section className="relative mt-16 desktop:mt-24">
         <div className="relative h-[calc(100vh-64px)] desktop:h-[calc(100vh-96px)]">
           <Image
             fill
@@ -65,8 +65,6 @@ export default function Competition() {
           />
           <div className="absolute inset-0 bg-linear-to-t from-nogogeni-black to-transparent" />
         </div>
-
-        <div className="absolute inset-0 bg-linear-to-b from-black/50 to-black/50" />
 
         <div className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-full max-w-sm space-y-8 px-8 tablet:max-w-lg tablet:px-0 desktop:max-w-6xl desktop:space-y-12">
           <h1 className="text-center font-bold text-3xl desktop:text-[64px]">
