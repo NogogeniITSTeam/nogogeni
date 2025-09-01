@@ -60,7 +60,7 @@ function VehicleItem({ vehicle }: VehicleProps) {
             {Object.entries(vehicle.specification).map((item) => (
               <CarouselItem
                 key={`${vehicle.name}:${item[0]}:${item[1]}`}
-                className="text-nowrap flex flex-col justify-center items-center gap-1 basis-1/5 pl-0"
+                className="text-nowrap flex flex-col justify-center items-center gap-1 basis-1/2 pl-0 tablet:basis-1/4 desktop:basis-1/5"
               >
                 <h3 className="font-bold uppercase desktop:text-2xl">
                   {item[0]}
