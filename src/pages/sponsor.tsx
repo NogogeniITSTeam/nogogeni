@@ -3,37 +3,36 @@ import Head from "next/head";
 import Image from "next/image";
 
 const sponsors = [
-  {
-    company: "Pertamina Lubricants",
-    imgPath: "/home/pertamina_lubricants.png",
-  },
-  { company: "Chempo Site Store", imgPath: "/home/chempo.png" },
-  { company: "SKK Migas", imgPath: "/home/skkmigas.png" },
-  { company: "PT Tritunggal Swarna", imgPath: "/home/tritunggal.png" },
-  { company: "HKA", imgPath: "/home/hka.png" },
-  { company: "CPT", imgPath: "/home/cpt.png" },
-  {
-    company: "Swanaya Prisadi Indonesia",
-    imgPath: "/home/spi.png",
-  },
-  { company: "Telkom Indonesia", imgPath: "/home/telkom.png" },
-  { company: "Grab", imgPath: "/home/grab.png" },
-  { company: "Padang Cement Indonesia", imgPath: "/home/padang.png" },
-  { company: "Spectrum", imgPath: "/home/spectrum.png" },
-  { company: "BSS Original Exhaust", imgPath: "/home/bss.png" },
-  { company: "Print & Print", imgPath: "/home/print.png" },
-  { company: "Better Luck Project", imgPath: "/home/betterluck.png" },
-  {
-    company: "Husky-CNOOC Madura Limited",
-    imgPath: "/home/hcml.png",
-  },
-  { company: "Kangean Energy Indonesia", imgPath: "/home/kangean.png" },
-  { company: "Medco Energi", imgPath: "/home/medco.png" },
-  { company: "Pertamina PHE WMO", imgPath: "/home/pertamina_phe_wmo.png" },
-  { company: "Petronas", imgPath: "/home/petronas.png" },
-  { company: "Pertamna EP", imgPath: "/home/pertamina_ep.png" },
-  { company: "PGN Saka", imgPath: "/home/pgn.png" },
-  { company: "PT Petrokimia Gresik", imgPath: "/home/petrokimia.png" },
+  [
+    { company: "Chempo Site Store", imgPath: "/home/chempo.png" },
+    { company: "SKK Migas", imgPath: "/home/skkmigas.png" },
+  ],
+  [
+    { company: "PT Petrokimia Gresik", imgPath: "/home/petrokimia.png" },
+    { company: "PT Tritunggal Swarna", imgPath: "/home/tritunggal.png" },
+    { company: "HKA", imgPath: "/home/hka.png" },
+    { company: "CPT", imgPath: "/home/cpt.png" },
+  ],
+  [
+    { company: "Husky-CNOOC Madura Limited", imgPath: "/home/hcml.png" },
+    { company: "Swanaya Prisadi Indonesia", imgPath: "/home/spi.png" },
+    { company: "Pertamina PHE WMO", imgPath: "/home/pertamina_phe_wmo.png" },
+    { company: "Telkom Indonesia", imgPath: "/home/telkom.png" },
+    { company: "Grab", imgPath: "/home/grab.png" },
+  ],
+  [
+    { company: "Padang Cement Indonesia", imgPath: "/home/padang.png" },
+    { company: "Spectrum", imgPath: "/home/spectrum.png" },
+    { company: "BSS Original Exhaust", imgPath: "/home/bss.png" },
+    { company: "Better Luck Project", imgPath: "/home/betterluck.png" },
+    { company: "Kangean Energy Indonesia", imgPath: "/home/kangean.png" },
+  ],
+  [
+    { company: "Medco Energi", imgPath: "/home/medco.png" },
+    { company: "Petronas", imgPath: "/home/petronas.png" },
+    { company: "PGN Saka", imgPath: "/home/pgn.png" },
+    { company: "Pertamna EP", imgPath: "/home/pertamina_ep.png" },
+  ],
 ];
 
 export default function Sponsor() {
@@ -74,15 +73,35 @@ export default function Sponsor() {
           Supported By
         </h1>
 
-        <div className="grid grid-cols-2 gap-4 tablet:grid-cols-4 desktop:grid-cols-5">
-          {sponsors.map((sponsor) => (
-            <div key={sponsor.imgPath} className="relative h-24 desktop:h-32">
-              <Image
-                fill
-                src={sponsor.imgPath}
-                alt={sponsor.company}
-                className="object-contain object-center"
-              />
+        <div className="w-full m-auto max-w-4xl flex flex-col justify-center items-center">
+          <div className="relative w-64 h-24 tablet:w-sm tablet:h-36 desktop:w-lg desktop:h-32">
+            <Image
+              fill
+              src="/home/pertamina_lubricants.png"
+              alt="Pertamina Lubricants"
+              className="object-contain object-center"
+            />
+          </div>
+
+          {sponsors.map((item, index) => (
+            <div key={index} className="flex justify-center items-center">
+              {item.map((sponsor) => (
+                <div
+                  key={sponsor.imgPath}
+                  className={`relative h-16 ${
+                    index === 0
+                      ? "w-32 tablet:w-52 tablet:h-24 desktop:w-72 desktop:h-32"
+                      : "w-16 tablet:w-28 tablet:h-20 desktop:w-32 desktop:h-28"
+                  }`}
+                >
+                  <Image
+                    fill
+                    src={sponsor.imgPath}
+                    alt={sponsor.company}
+                    className="object-contain object-center"
+                  />
+                </div>
+              ))}
             </div>
           ))}
         </div>
