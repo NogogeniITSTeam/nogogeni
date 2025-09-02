@@ -382,7 +382,7 @@ function CompetitionList() {
                                 className="object-cover object-center"
                               />
 
-                              <div className="text-center absolute bottom-4 left-0 right-0 tablet:bottom-8">
+                              <div className="text-center absolute z-10 bottom-4 left-0 right-0 tablet:bottom-8">
                                 <p className="text-nogogeni-orange font-bold text-xs tablet:text-lg">
                                   {achievement.ranking}
                                 </p>
@@ -390,6 +390,8 @@ function CompetitionList() {
                                   {achievement.name}
                                 </h3>
                               </div>
+
+                              <div className="absolute inset-0 bg-linear-to-t from-black to-transparent" />
                             </div>
 
                             <div className="w-full flex flex-col items-start">
