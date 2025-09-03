@@ -11,51 +11,51 @@ function determineImageStyle(imgPath: string): string {
     case "/our-team/aji.png":
       return "scale-250 translate-y-12 -translate-x-2 group-hover:scale-300 desktop:translate-y-14";
     case "/our-team/saputra.png":
-      return "scale-200 translate-y-40 group-hover:scale-225 desktop:translate-y-52";
+      return "scale-200 translate-y-44 group-hover:scale-225 desktop:translate-y-60";
     case "/our-team/roland.png":
-      return "scale-200 translate-y-40 group-hover:scale-225 desktop:translate-y-52";
+      return "scale-200 translate-y-44 group-hover:scale-225 desktop:translate-y-60";
     case "/our-team/rahadi.png":
-      return "scale-175 translate-y-32 group-hover:scale-200 desktop:translate-y-40";
+      return "scale-175 translate-y-28 group-hover:scale-200 desktop:translate-y-32";
     case "/our-team/bagas.png":
-      return "scale-175 translate-y-32 group-hover:scale-200 desktop:translate-y-40";
+      return "scale-175 translate-y-28 group-hover:scale-200 desktop:translate-y-32";
     case "/our-team/devin.png":
-      return "scale-175 translate-y-32 group-hover:scale-200 desktop:translate-y-40";
+      return "scale-175 translate-y-28 group-hover:scale-200 desktop:translate-y-32";
     case "/our-team/rizki.png":
-      return "scale-175 translate-y-32 group-hover:scale-200 desktop:translate-y-40";
+      return "scale-175 translate-y-28 group-hover:scale-200 desktop:translate-y-32";
     case "/our-team/anung.png":
-      return "scale-175 translate-y-32 group-hover:scale-200 desktop:translate-y-40";
+      return "scale-175 translate-y-28 group-hover:scale-200 desktop:translate-y-32";
     case "/our-team/azrul.png":
-      return "scale-175 translate-y-32 group-hover:scale-200 desktop:translate-y-40";
+      return "scale-175 translate-y-28 group-hover:scale-200 desktop:translate-y-32";
     case "/our-team/raihan.png":
-      return "scale-175 translate-y-32 group-hover:scale-200 desktop:translate-y-40";
+      return "scale-175 translate-y-28 group-hover:scale-200 desktop:translate-y-32";
     case "/our-team/dionisius.png":
-      return "scale-175 translate-y-32 group-hover:scale-200 desktop:translate-y-40";
+      return "scale-175 translate-y-28 group-hover:scale-200 desktop:translate-y-32";
     case "/our-team/cahyo.png":
-      return "scale-175 translate-y-32 group-hover:scale-200 desktop:translate-y-40";
+      return "scale-175 translate-y-28 group-hover:scale-200 desktop:translate-y-32";
     case "/our-team/rayhana.png":
-      return "scale-175 translate-y-32 group-hover:scale-200 desktop:translate-y-40";
+      return "scale-175 translate-y-28 group-hover:scale-200 desktop:translate-y-32";
     case "/our-team/rifqi.png":
-      return "scale-175 translate-y-32 group-hover:scale-200 desktop:translate-y-40";
+      return "scale-175 translate-y-28 group-hover:scale-200 desktop:translate-y-32";
     case "/our-team/timothy.png":
-      return "scale-175 translate-y-32 group-hover:scale-200 desktop:translate-y-40";
+      return "scale-175 translate-y-28 group-hover:scale-200 desktop:translate-y-32";
     case "/our-team/mahendra.png":
-      return "scale-175 translate-y-32 group-hover:scale-200 desktop:translate-y-40";
+      return "scale-175 translate-y-28 group-hover:scale-200 desktop:translate-y-32";
     case "/our-team/andika.png":
-      return "scale-175 translate-y-32 group-hover:scale-200 desktop:translate-y-40";
+      return "scale-175 translate-y-28 group-hover:scale-200 desktop:translate-y-32";
     case "/our-team/randah.png":
-      return "scale-175 translate-y-32 group-hover:scale-200 desktop:translate-y-40";
+      return "scale-175 translate-y-28 group-hover:scale-200 desktop:translate-y-32";
     case "/our-team/fery.png":
-      return "scale-175 translate-y-32 group-hover:scale-200 desktop:translate-y-40";
+      return "scale-175 translate-y-28 group-hover:scale-200 desktop:translate-y-32";
     case "/our-team/yardan.png":
-      return "scale-175 translate-y-32 group-hover:scale-200 desktop:translate-y-40";
+      return "scale-175 translate-y-28 group-hover:scale-200 desktop:translate-y-32";
     case "/our-team/kumara.png":
-      return "scale-175 translate-y-32 group-hover:scale-200 desktop:translate-y-40";
+      return "scale-175 translate-y-28 group-hover:scale-200 desktop:translate-y-32";
     case "/our-team/hafiz.png":
-      return "scale-175 translate-y-32 group-hover:scale-200 desktop:translate-y-40";
+      return "scale-175 translate-y-28 group-hover:scale-200 desktop:translate-y-32";
     case "/our-team/zaky.png":
-      return "scale-175 translate-y-32 group-hover:scale-200 desktop:translate-y-40";
+      return "scale-175 translate-y-28 group-hover:scale-200 desktop:translate-y-32";
     case "/our-team/jeremi.png":
-      return "scale-175 translate-y-32 group-hover:scale-200 desktop:translate-y-40";
+      return "scale-175 translate-y-28 group-hover:scale-200 desktop:translate-y-32";
     case "/our-team/finna.png":
       return "scale-250 -translate-y-6 group-hover:scale-300";
     case "/our-team/tepy.png":
@@ -77,11 +77,11 @@ function determineImageStyle(imgPath: string): string {
     case "/our-team/fadhli.png":
       return "scale-115 translate-y-10 group-hover:scale-135";
     case "/our-team/duffania.png":
-      return "scale-175 translate-y-32 group-hover:scale-200 desktop:translate-y-40";
+      return "scale-175 translate-y-36 group-hover:scale-200 desktop:translate-y-48";
     case "/our-team/zafia.png":
-      return "scale-175 translate-y-32 group-hover:scale-200 desktop:translate-y-40";
+      return "scale-175 translate-y-36 group-hover:scale-200 desktop:translate-y-48";
     case "/our-team/thania.png":
-      return "scale-175 translate-y-32 group-hover:scale-200 desktop:translate-y-40";
+      return "scale-175 translate-y-36 group-hover:scale-200 desktop:translate-y-48";
     case "/our-team/ervika.png":
       return "scale-275 translate-y-8 -translate-x-8 group-hover:scale-325";
     case "/our-team/sheren.png":
@@ -154,7 +154,7 @@ function TeamCard({
       onClick={clickCard}
       className="group cursor-pointer w-64 space-y-2 desktop:w-80 desktop:space-y-4"
     >
-      <div className="bg-linear-to-br from-nogogeni-red to-nogogeni-orange relative overflow-hidden rounded-md aspect-square mx-auto h-64 desktop:h-80">
+      <div className="bg-linear-to-t from-nogogeni-red to-nogogeni-orange relative overflow-hidden rounded-md w-64 h-72 desktop:w-80 desktop:h-96">
         <Image
           fill
           src={imgPath}
