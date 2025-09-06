@@ -39,7 +39,8 @@ competitions.set("kmhe", {
   name: "Kontes Mobil Hemat Energi",
   description:
     "KMHE or Kontes Mobil Hemat Energi is an annual competition organized by the Pusat Prestasi Nasional (Puspresnas) of the Ministry of Education, Culture, Research and Technology (Kemdikbud Ristek). Republic of Indonesia. KMHE is a prestigious competition that focuses on energy-efficient vehicles. It serves as a platform for universities across Indonesia to showcase their innovations in sustainable transportation.",
-  imgPath: "/activities/kmhe_logo.png",
+  imgPath:
+    "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/activities/kmhe_logo.png",
   achievements: [
     {
       name: "Urban Concept Electric",
@@ -78,28 +79,32 @@ competitions.set("kmhe", {
       ranking: "2nd Place",
       year: 2017,
       location: "Kenjeran Park Circuit",
-      imgPath: "/activities/kmhe_2017_2nd.jpg",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/activities/kmhe_2017_2nd.jpg",
     },
     {
       name: "Urban Concept ICE Ethanol",
       ranking: "3rd Place",
       year: 2017,
       location: "Kenjeran Park Circuit",
-      imgPath: "/activities/kmhe_2017_3rd.png",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/activities/kmhe_2017_3rd.png",
     },
     {
       name: "Urban Concept Electric",
       ranking: "3rd Place",
       year: 2018,
       location: "Universitas Negeri Padang",
-      imgPath: "/activities/kmhe_2018_3rd.jpg",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/activities/kmhe_2018_3rd.jpg",
     },
     {
       name: "Urban Concept Ethanol",
       ranking: "1st Place",
       year: 2018,
       location: "Universitas Negeri Padang",
-      imgPath: "/activities/kmhe_2018_1st.png",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/activities/kmhe_2018_1st.png",
     },
     {
       name: "Urban Concept Electric",
@@ -114,7 +119,8 @@ competitions.set("kmhe", {
       ranking: "2nd Place",
       year: 2019,
       location: "Universitas Negeri Malang",
-      imgPath: "/activities/kmhe_2019_2nd.png",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/activities/kmhe_2019_2nd.png",
     },
     {
       name: "Urban Concept Electric",
@@ -145,28 +151,32 @@ competitions.set("kmhe", {
       ranking: "1st Place",
       year: 2023,
       location: "Jakarta International E-Prix Circuit",
-      imgPath: "/about-us/history_12.png",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/about-us/history_12.jpg",
     },
     {
       name: "Urban Concept Ethanol",
       ranking: "2nd Place",
       year: 2023,
       location: "Jakarta International E-Prix Circuit",
-      imgPath: "/about-us/history_12.png",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/about-us/history_12.jpg",
     },
     {
       name: "Urban Concept Electric",
       ranking: "2nd Place",
       year: 2024,
       location: "Jakarta International E-Prix Circuit",
-      imgPath: "/home/kmhe_second_place.png",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/kmhe_second_place.png",
     },
     {
       name: "Urban Concept Ethanol",
       ranking: "2nd Place",
       year: 2024,
       location: "Jakarta International E-Prix Circuit",
-      imgPath: "/about-us/history_13.png",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/about-us/history_13.jpg",
     },
   ],
 });
@@ -175,7 +185,8 @@ competitions.set("sem_asia", {
   name: "Shell Eco-Marathon Asia (SEM Asia)",
   description:
     "Shell Eco-Marathon Asia is an international competition that invites students from around the world to design, build, and drive the most energy-efficient vehicles. The competition features two main categories: Prototype and Urban Concept. Nogogeni ITS has participated in the Battery Electric Urban Concept Category, which focuses on creating practical, efficient vehicles for future urban mobility.",
-  imgPath: "/activities/sem_asia_logo.png",
+  imgPath:
+    "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/activities/sem_asia_logo.png",
   achievements: [
     {
       name: "Urban Electric Class of SEM-Asia",
@@ -190,14 +201,16 @@ competitions.set("sem_asia", {
       ranking: "2nd Place",
       year: 2018,
       location: "Changi Exhibition Centre",
-      imgPath: "/activities/sem_asia_2018_2nd.png",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/activities/sem_asia_2018_2nd.png",
     },
     {
       name: "Urban Electric Class of SEM-Asia",
       ranking: "2nd Place",
       year: 2019,
       location: "Sepang International Circuit",
-      imgPath: "/activities/sem_asia_2019_2nd.png",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/activities/sem_asia_2019_2nd.png",
     },
   ],
 });
@@ -206,21 +219,24 @@ competitions.set("fsae", {
   name: "Formula Society of Automotive Engineers",
   description:
     "Formula Society of Automotive Engineers (FSAE Australasia) FSAE Australasia is a prestigious motorsport engineering competition where students create small, formula-style racing cars. Teams are judged not only on their vehicle’s performance on track but also on their engineering design, cost analysis, and business presentation, making it a holistic test of engineering and management skills.",
-  imgPath: "/activities/fsae_logo.png",
+  imgPath:
+    "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/activities/fsae_logo.png",
   achievements: [
     {
       name: "Design Event and Coast Event",
       ranking: "14th Place",
       year: 2020,
       location: "FSAE Australasia",
-      imgPath: "/activities/fsae_2020_14th.png",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/activities/fsae_2020_14th.png",
     },
     {
       name: "Presentation Event",
       ranking: "8th Place",
       year: 2020,
       location: "FSAE Australasia",
-      imgPath: "/activities/fsae_2020_8th.png",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/activities/fsae_2020_8th.png",
     },
   ],
 });
@@ -229,21 +245,24 @@ competitions.set("pln_ice", {
   name: "PLN Innovation and Competition in Electricity",
   description:
     "PLN ICE is a national-level competition organized by PT PLN (Persero) to foster innovation in energy and technology. The event includes various categories, such as the development of electric-powered motorcycles and go-karts, encouraging students to create practical solutions for future mobility. Nogogeni ITS has taken part in this competition, presenting student-designed electric vehicles.",
-  imgPath: "/activities/pln_ice_logo.png",
+  imgPath:
+    "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/activities/pln_ice_logo.png",
   achievements: [
     {
       name: "Innovation Competition in Electricity",
       ranking: "Top 10",
       year: 2023,
       location: "Sentul International Circuit",
-      imgPath: "/activities/pln_ice_2023.png",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/activities/pln_ice_2023.png",
     },
     {
       name: "Gokart Category",
       ranking: "3rd Place",
       year: 2024,
       location: "Sentul International Circuitt",
-      imgPath: "/home/pln_ice.jpg",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/pln_ice.jpg",
     },
   ],
 });
@@ -252,14 +271,16 @@ competitions.set("teknofest_tubitak", {
   name: "TEKNOFEST TÜBİTAK",
   description:
     "TEKNOFEST TÜBİTAK is one of the world's largest technology and innovation festivals, held in Turkey. The event brings together students, researchers, and innovators to compete in areas ranging from aerospace and robotics to energy and sustainable transportation. Nogogeni ITS has represented Indonesia at TEKNOFEST, showcasing vehicle innovations on an international stage.",
-  imgPath: "/activities/teknofest_logo.png",
+  imgPath:
+    "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/activities/teknofest_logo.png",
   achievements: [
     {
       name: "Efficiency Challenge Electric Vehicle",
       ranking: "Finalist",
       year: 2022,
       location: "Turkey",
-      imgPath: "/activities/tubitak_2022.png",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/activities/tubitak_2022.png",
     },
   ],
 });

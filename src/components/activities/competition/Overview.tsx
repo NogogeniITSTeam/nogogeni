@@ -10,8 +10,10 @@ interface OverviewProps {
 function Overview({ name, description, imgPath }: OverviewProps) {
   const imgColor = useMemo((): string => {
     if (
-      imgPath === "/activities/pln_ice_logo.png" ||
-      imgPath === "/activities/teknofest_logo.png"
+      imgPath ===
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/activities/pln_ice_logo.png" ||
+      imgPath ===
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/activities/teknofest_logo.png"
     ) {
       return "bg-nogogeni-white";
     } else {

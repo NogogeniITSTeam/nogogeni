@@ -22,7 +22,8 @@ newsList.set("achievement", [
   },
   {
     title: "Tim Nogogeni ITS Meraih Juara di PLN ICE 2024",
-    imgPath: "/home/pln_ice.jpg",
+    imgPath:
+      "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/pln_ice.jpg",
     date: "08 Nov 2024",
     articleURL:
       "https://www.its.ac.id/tmi/tim-nogogeni-its-meraih-juara-di-pln-ice-2024",
