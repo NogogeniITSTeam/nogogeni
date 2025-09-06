@@ -14,7 +14,7 @@ function Footer() {
         <div className="relative w-32 h-16 mb-4 tablet:hidden">
           <Image
             fill
-            src="/nogogeni_logo_full.png"
+            src="https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/nogogeni_logo_full.png"
             alt="Logo Nogogeni"
             className="object-contain object-center"
           />
@@ -27,7 +27,7 @@ function Footer() {
         <div className="relative w-48 h-20 -translate-x-3 hidden tablet:block desktop:w-64 desktop:h-32 desktop:-translate-x-4">
           <Image
             fill
-            src="/nogogeni_logo_full.png"
+            src="https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/nogogeni_logo_full.png"
             alt="Logo Nogogeni"
             className="object-contain object-center"
           />

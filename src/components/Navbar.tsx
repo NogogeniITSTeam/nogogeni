@@ -108,7 +108,7 @@ function Navbar() {
           <div className="relative w-8 h-8">
             <Image
               fill
-              src="/nogogeni_logo.png"
+              src="https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/nogogeni_logo.png"
               alt="Logo Nogogeni"
               className="object-contain object-center"
             />
