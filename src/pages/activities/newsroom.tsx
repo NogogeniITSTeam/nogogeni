@@ -15,7 +15,8 @@ const newsList = new Map<NewsType, News[]>();
 newsList.set("achievement", [
   {
     title: "Tim Nogogeni ITS Kembali Raih Kemenangan di KMHE 2024",
-    imgPath: "/home/second_place_kmhe.jpg",
+    imgPath:
+      "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/second_place_kmhe.jpg",
     date: "15 Okt 2024",
     articleURL:
       "https://www.its.ac.id/stp/2024/10/15/tim-nogogeni-its-kembali-raih-kemenangan-di-kmhe-2024",
@@ -41,14 +42,16 @@ newsList.set("achievement", [
 newsList.set("event", [
   {
     title: "Tim Nogogeni ITS Unjuk Inovasi di PEVS 2025",
-    imgPath: "/activities/event_02_may_2025.jpg",
+    imgPath:
+      "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/activities/event_02_may_2025.jpg",
     date: "02 May 2025",
     articleURL:
       "https://www.tempo.co/prelude/tim-nogogeni-its-unjuk-inovasi-di-pevs-2025-1313598#goog_rewarded",
   },
   {
     title: "Kembali Unjuk Diri, Tim Nogogeni Hadir di IIMS Surabaya 2025",
-    imgPath: "/activities/event_02_jun_2025.jpg",
+    imgPath:
+      "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/activities/event_02_jun_2025.jpg",
     date: "02 Jun 2025",
     articleURL:
       "https://mediaindonesia.com/otomotif/778669/kembali-unjuk-diri-tim-nogogeni-hadir-di-iims-surabaya-2025",
@@ -56,7 +59,8 @@ newsList.set("event", [
   {
     title:
       "Tim Nogogeni ITS Unjuk Diri di Periklindo Electric Vehicle Show 2024",
-    imgPath: "/activities/event_06_may_2024.jpg",
+    imgPath:
+      "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/activities/event_06_may_2024.jpg",
     date: "06 May 2024",
     articleURL:
       "https://www.its.ac.id/news/2024/05/06/tim-nogogeni-its-unjuk-diri-di-periklindo-electric-vehicle-show-2024",
@@ -67,14 +71,16 @@ newsList.set("article", [
   {
     title:
       "Kenalkan Mobil Terbaru, Tim Nogogeni ITS Optimistis Juara di KMHE 2024",
-    imgPath: "/activities/article_27_sep_2024.jpg",
+    imgPath:
+      "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/activities/article_27_sep_2024.jpg",
     date: "27 Sep 2024",
     articleURL:
       "https://www.its.ac.id/news/2024/09/27/kenalkan-mobil-terbaru-tim-nogogeni-its-optimistis-juara-di-kmhe-2024",
   },
   {
     title: "Mobil Balap Listrik Nogogeni ITS Terus Melesat Bersama PT SIER",
-    imgPath: "/activities/article_05_may_2024.jpg",
+    imgPath:
+      "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/activities/article_05_may_2024.jpg",
     date: "05 May 2024",
     articleURL:
       "https://www.detik.com/jatim/jatim-moncer/d-7326293/mobil-balap-listrik-nogogeni-its-terus-melesat-bersama-pt-sier",
@@ -82,7 +88,8 @@ newsList.set("article", [
   {
     title:
       "CommTECH Camp Insight 2025 Stream 2: The Future of Zero-Emission Mobility",
-    imgPath: "/activities/article_24_feb_2025.png",
+    imgPath:
+      "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/activities/article_24_feb_2025.png",
     date: "24 Feb 2025",
     articleURL:
       "https://www.its.ac.id/tmi/commtech-camp-insight-2025-zero-emission-mobility",
