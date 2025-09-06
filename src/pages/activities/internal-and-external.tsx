@@ -8,19 +8,22 @@ const externalActivities = [
     name: "PEVS Jakarta",
     description:
       "For the past three years, we have joined the Periklindo Electric Vehicle Show (PEVS) in Jakarta, showcasing our innovations in electric mobility, connecting with industry leaders, and engaging the public on cleaner, smarter transportation solutions.",
-    imgPath: "/activities/pevs_jakarta.jpg",
+    imgPath:
+      "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/activities/pevs_jakarta.jpg",
   },
   {
     name: "IIMS Surabaya",
     description:
       "We have taken part in the Indonesia International Motor Show (IIMS) in Surabaya, presenting our latest breakthroughs in electric vehicle technology. This event has served as a valuable stage to interact with automotive enthusiasts, collaborate with industry players, and promote the vision of sustainable, future-ready mobility.",
-    imgPath: "/activities/iims_surabaya.jpg",
+    imgPath:
+      "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/activities/iims_surabaya.jpg",
   },
   {
     name: "GIIAS Surabaya",
     description:
       "We have participated in the GAIKINDO Indonesia International Auto Show (GIIAS) in Surabaya, showcasing our advancements in electric vehicle technology. Through this event, we have engaged with automotive communities, built industry connections, and promoted sustainable mobility innovations to a wider audience.",
-    imgPath: "/activities/giias_surabaya.jpg",
+    imgPath:
+      "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/activities/giias_surabaya.jpg",
   },
 ];
 
@@ -29,19 +32,22 @@ const internalActivities = [
     name: "Launching",
     description:
       "Each year, we host a launching event to unveil our latest vehicle innovations, celebrate months of hard work, and share our vision with partners, sponsors, and the public, reinforcing our commitment to sustainable mobility.",
-    imgPath: "/activities/launching.jpg",
+    imgPath:
+      "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/activities/launching.jpg",
   },
   {
     name: "Commtech",
     description:
       "CommTECH Camp is an international program that invites students, academics, and professionals to explore community and global issues through courses, cultural activities, site visits, and community engagement, while experiencing Indonesia’s rich heritage and ITS’s expertise in technology for society.",
-    imgPath: "/activities/commtech.png",
+    imgPath:
+      "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/activities/commtech.png",
   },
   {
     name: "ITS Big Event",
     description:
       "Each year, we take part in ITS events such as GERIGI ITS, UKM Expo, and departmental activities to introduce our team, showcase achievements, inspire future members, and strengthen our presence within the campus community.",
-    imgPath: "/activities/its_big_event.jpg",
+    imgPath:
+      "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/activities/its_big_event.jpg",
   },
 ];
 
@@ -98,7 +104,7 @@ export default function InternalAndExternal() {
           <Image
             fill
             priority
-            src="/activities/hero.png"
+            src="https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/activities/hero.png"
             alt="Nogogeni Team"
             className="object-cover object-center"
           />
