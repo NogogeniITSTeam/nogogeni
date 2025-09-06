@@ -23,7 +23,8 @@ interface Vehicle {
 const vehicles = new Map<VehicleType, Vehicle>();
 vehicles.set("electric_urban_car", {
   name: "Nogogeni IX Evo",
-  imgPath: "/home/nogogeni_ix_evo.png",
+  imgPath:
+    "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/nogogeni_ix_evo.png",
   specification: {
     chasis: "ALUMINIUM HOLLOW 6016",
     steering: "ACKERMAN",
@@ -34,22 +35,63 @@ vehicles.set("electric_urban_car", {
     brake: "HYDRAULIC DISC",
   },
   gallery: [
-    { name: "Nogogeni IX EVO", imgPath: "/home/hero_image_2.jpg" },
-    { name: "Nogogeni VIII EVO", imgPath: "/garage/electric_viii_evo.png" },
-    { name: "Nogogeni VII EVO", imgPath: "/garage/electric_vii_evo.png" },
-    { name: "Nogogeni VI EVO", imgPath: "/garage/electric_vi_evo.png" },
-    { name: "Nogogeni V EVO", imgPath: "/garage/electric_v_evo.png" },
-    { name: "Nogogeni IV EVO", imgPath: "/garage/electric_iv_evo.png" },
-    { name: "Nogogeni III EVO", imgPath: "/garage/electric_iii_evo.png" },
-    { name: "Nogogeni II", imgPath: "/garage/electric_ii.jpg" },
-    { name: "Pancasona", imgPath: "/garage/electric_pancasona.jpg" },
-    { name: "Nagageni I", imgPath: "/garage/electric_i.png" },
+    {
+      name: "Nogogeni IX EVO",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/hero_image_2.jpg",
+    },
+    {
+      name: "Nogogeni VIII EVO",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/garage/electric_viii_evo.png",
+    },
+    {
+      name: "Nogogeni VII EVO",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/garage/electric_vii_evo.png",
+    },
+    {
+      name: "Nogogeni VI EVO",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/garage/electric_vi_evo.png",
+    },
+    {
+      name: "Nogogeni V EVO",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/garage/electric_v_evo.png",
+    },
+    {
+      name: "Nogogeni IV EVO",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/garage/electric_iv_evo.png",
+    },
+    {
+      name: "Nogogeni III EVO",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/garage/electric_iii_evo.png",
+    },
+    {
+      name: "Nogogeni II",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/garage/electric_ii.jpg",
+    },
+    {
+      name: "Pancasona",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/garage/electric_pancasona.jpg",
+    },
+    {
+      name: "Nagageni I",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/garage/electric_i.png",
+    },
   ],
 });
 
 vehicles.set("ethanol_urban_car", {
   name: "Nogogeni VII",
-  imgPath: "/home/nogogeni_vii.png",
+  imgPath:
+    "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/nogogeni_vii.png",
   specification: {
     chasis: "ALUMINIUM HOLLOW 6016",
     steering: "ACKERMAN",
@@ -60,19 +102,48 @@ vehicles.set("ethanol_urban_car", {
     brake: "HYDRAULIC DISC",
   },
   gallery: [
-    { name: "Nogogeni VII", imgPath: "/home/hero_image_1.jpg" },
-    { name: "Nogogeni VI", imgPath: "/home/hero_image_2.jpg" },
-    { name: "Nogogeni V", imgPath: "/garage/ethanol_v.png" },
-    { name: "Nogogeni IV", imgPath: "/garage/ethanol_iv.png" },
-    { name: "Nogogeni III", imgPath: "/garage/ethanol_iii.png" },
-    { name: "Nogogeni II", imgPath: "/garage/ethanol_ii.png" },
-    { name: "Nagageni I", imgPath: "/garage/ethanol_i.jpg" },
+    {
+      name: "Nogogeni VII",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/hero_image_1.jpg",
+    },
+    {
+      name: "Nogogeni VI",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/hero_image_2.jpg",
+    },
+    {
+      name: "Nogogeni V",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/garage/ethanol_v.png",
+    },
+    {
+      name: "Nogogeni IV",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/garage/ethanol_iv.png",
+    },
+    {
+      name: "Nogogeni III",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/garage/ethanol_iii.png",
+    },
+    {
+      name: "Nogogeni II",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/garage/ethanol_ii.png",
+    },
+    {
+      name: "Nagageni I",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/garage/ethanol_i.jpg",
+    },
   ],
 });
 
 vehicles.set("gokart", {
   name: "Gokart Electric",
-  imgPath: "/home/gokart.png",
+  imgPath:
+    "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/gokart.png",
   specification: {
     steering: "ACKERMAN",
     motor: "Mid Drive Brushless DC",
@@ -84,13 +155,18 @@ vehicles.set("gokart", {
     "max speed": "78 KM/H",
   },
   gallery: [
-    { name: "Gokart Electric", imgPath: "/garage/gokart_electric.png" },
+    {
+      name: "Gokart Electric",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/garage/gokart_electric.png",
+    },
   ],
 });
 
 vehicles.set("motorcycle", {
   name: "Ng-5000",
-  imgPath: "/home/ng_5000.png",
+  imgPath:
+    "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/ng_5000.png",
   specification: {
     chasis: "ALUMINIUM HOLLOW 6016",
     steering: "ACKERMAN",
@@ -101,8 +177,16 @@ vehicles.set("motorcycle", {
     brake: "HYDRAULIC DISC",
   },
   gallery: [
-    { name: "NG - 5000", imgPath: "/garage/ng_5000_1.png" },
-    { name: "NG - 5000", imgPath: "/garage/ng_5000_2.jpg" },
+    {
+      name: "NG - 5000",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/garage/ng_5000_1.png",
+    },
+    {
+      name: "NG - 5000",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/garage/ng_5000_2.jpg",
+    },
   ],
 });
 
@@ -121,7 +205,7 @@ function VehicleList() {
           <Image
             fill
             priority
-            src="/garage/hero.png"
+            src="https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/garage/hero.png"
             alt=""
             className="object-cover object-center"
           />
