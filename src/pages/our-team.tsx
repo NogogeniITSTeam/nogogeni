@@ -51,7 +51,7 @@ export default function OurTeam() {
           <Image
             fill
             priority
-            src="/our-team/hero.jpg"
+            src="https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/our-team/hero.jpg"
             alt="Nogogeni Team"
             className="object-cover object-center"
           />

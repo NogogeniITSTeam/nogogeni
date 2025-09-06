@@ -6,89 +6,89 @@ import { useRef } from "react";
 
 function determineImageStyle(imgPath: string): string {
   switch (imgPath) {
-    case "/our-team/safira.png":
+    case "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/our-team/safira.png":
       return "scale-300 translate-y-10 group-hover:scale-350 desktop:translate-y-12";
-    case "/our-team/aji.png":
+    case "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/our-team/aji.png":
       return "scale-250 translate-y-12 -translate-x-2 group-hover:scale-300 desktop:translate-y-14";
-    case "/our-team/saputra.png":
+    case "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/our-team/saputra.png":
       return "scale-200 translate-y-44 group-hover:scale-225 desktop:translate-y-60";
-    case "/our-team/roland.png":
+    case "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/our-team/roland.png":
       return "scale-200 translate-y-44 group-hover:scale-225 desktop:translate-y-60";
-    case "/our-team/rahadi.png":
+    case "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/our-team/rahadi.png":
       return "scale-175 translate-y-28 group-hover:scale-200 desktop:translate-y-32";
-    case "/our-team/bagas.png":
+    case "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/our-team/bagas.png":
       return "scale-175 translate-y-28 group-hover:scale-200 desktop:translate-y-32";
-    case "/our-team/devin.png":
+    case "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/our-team/devin.png":
       return "scale-175 translate-y-28 group-hover:scale-200 desktop:translate-y-32";
-    case "/our-team/rizki.png":
+    case "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/our-team/rizki.png":
       return "scale-175 translate-y-28 group-hover:scale-200 desktop:translate-y-32";
-    case "/our-team/anung.png":
+    case "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/our-team/anung.png":
       return "scale-175 translate-y-28 group-hover:scale-200 desktop:translate-y-32";
-    case "/our-team/azrul.png":
+    case "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/our-team/azrul.png":
       return "scale-175 translate-y-28 group-hover:scale-200 desktop:translate-y-32";
-    case "/our-team/raihan.png":
+    case "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/our-team/raihan.png":
       return "scale-175 translate-y-28 group-hover:scale-200 desktop:translate-y-32";
-    case "/our-team/dionisius.png":
+    case "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/our-team/dionisius.png":
       return "scale-175 translate-y-28 group-hover:scale-200 desktop:translate-y-32";
-    case "/our-team/cahyo.png":
+    case "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/our-team/cahyo.png":
       return "scale-175 translate-y-28 group-hover:scale-200 desktop:translate-y-32";
-    case "/our-team/rayhana.png":
+    case "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/our-team/rayhana.png":
       return "scale-175 translate-y-28 group-hover:scale-200 desktop:translate-y-32";
-    case "/our-team/rifqi.png":
+    case "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/our-team/rifqi.png":
       return "scale-175 translate-y-28 group-hover:scale-200 desktop:translate-y-32";
-    case "/our-team/timothy.png":
+    case "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/our-team/timothy.png":
       return "scale-175 translate-y-28 group-hover:scale-200 desktop:translate-y-32";
-    case "/our-team/mahendra.png":
+    case "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/our-team/mahendra.png":
       return "scale-175 translate-y-28 group-hover:scale-200 desktop:translate-y-32";
-    case "/our-team/andika.png":
+    case "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/our-team/andika.png":
       return "scale-175 translate-y-28 group-hover:scale-200 desktop:translate-y-32";
-    case "/our-team/randah.png":
+    case "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/our-team/randah.png":
       return "scale-175 translate-y-28 group-hover:scale-200 desktop:translate-y-32";
-    case "/our-team/fery.png":
+    case "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/our-team/fery.png":
       return "scale-175 translate-y-28 group-hover:scale-200 desktop:translate-y-32";
-    case "/our-team/yardan.png":
+    case "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/our-team/yardan.png":
       return "scale-175 translate-y-28 group-hover:scale-200 desktop:translate-y-32";
-    case "/our-team/kumara.png":
+    case "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/our-team/kumara.png":
       return "scale-175 translate-y-28 group-hover:scale-200 desktop:translate-y-32";
-    case "/our-team/hafiz.png":
+    case "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/our-team/hafiz.png":
       return "scale-175 translate-y-28 group-hover:scale-200 desktop:translate-y-32";
-    case "/our-team/zaky.png":
+    case "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/our-team/zaky.png":
       return "scale-175 translate-y-28 group-hover:scale-200 desktop:translate-y-32";
-    case "/our-team/jeremi.png":
+    case "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/our-team/jeremi.png":
       return "scale-175 translate-y-28 group-hover:scale-200 desktop:translate-y-32";
-    case "/our-team/finna.png":
+    case "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/our-team/finna.png":
       return "scale-250 -translate-y-6 group-hover:scale-300";
-    case "/our-team/tepy.png":
+    case "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/our-team/tepy.png":
       return "scale-250 translate-y-4 group-hover:scale-300";
-    case "/our-team/putri.png":
+    case "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/our-team/putri.png":
       return "scale-250 -translate-y-6 group-hover:scale-300";
-    case "/our-team/fadad.png":
+    case "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/our-team/fadad.png":
       return "scale-250 translate-y-8 group-hover:scale-300 desktop:translate-y-10";
-    case "/our-team/rafif.png":
+    case "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/our-team/rafif.png":
       return "scale-250 translate-y-4 group-hover:scale-300 desktop:translate-y-6";
-    case "/our-team/rajendra.png":
+    case "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/our-team/rajendra.png":
       return "scale-250 translate-y-10 group-hover:scale-300 desktop:translate-y-12";
-    case "/our-team/firmansyah.png":
+    case "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/our-team/firmansyah.png":
       return "scale-250 translate-y-14 group-hover:scale-300 desktop:translate-y-20";
-    case "/our-team/bintang.png":
+    case "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/our-team/bintang.png":
       return "scale-115 translate-y-10 group-hover:scale-135 desktop:translate-y-12";
-    case "/our-team/danta.png":
+    case "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/our-team/danta.png":
       return "scale-115 translate-y-10 group-hover:scale-135 desktop:translate-y-12";
-    case "/our-team/fadhli.png":
+    case "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/our-team/fadhli.png":
       return "scale-115 translate-y-10 group-hover:scale-135";
-    case "/our-team/duffania.png":
+    case "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/our-team/duffania.png":
       return "scale-175 translate-y-36 group-hover:scale-200 desktop:translate-y-48";
-    case "/our-team/zafia.png":
+    case "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/our-team/zafia.png":
       return "scale-175 translate-y-36 group-hover:scale-200 desktop:translate-y-48";
-    case "/our-team/thania.png":
+    case "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/our-team/thania.png":
       return "scale-175 translate-y-36 group-hover:scale-200 desktop:translate-y-48";
-    case "/our-team/ervika.png":
+    case "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/our-team/ervika.png":
       return "scale-275 translate-y-8 -translate-x-8 group-hover:scale-325";
-    case "/our-team/sheren.png":
+    case "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/our-team/sheren.png":
       return "scale-275 translate-y-8 group-hover:scale-325";
-    case "/our-team/afrah.png":
+    case "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/our-team/afrah.png":
       return "scale-275 translate-y-4 group-hover:scale-325 desktop:translate-y-0";
-    case "/our-team/dita.png":
+    case "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/our-team/dita.png":
       return "scale-275 translate-y-8 group-hover:scale-325";
     default:
       return "";
