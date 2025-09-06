@@ -4,12 +4,14 @@ const drivers = [
   {
     name: "Roland Khusnu Winada",
     vehicleType: "Urban Ethanol Car",
-    imgPath: "/our-team/roland.png",
+    imgPath:
+      "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/our-team/roland.png",
   },
   {
     name: "Saputra Ardyan Syah",
     vehicleType: "Urban Electric Car",
-    imgPath: "/our-team/saputra.png",
+    imgPath:
+      "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/our-team/saputra.png",
   },
 ];
 
@@ -25,7 +27,7 @@ function Driver() {
       <div className="relative">
         <Image
           fill
-          src="/home/hero_image_1.jpg"
+          src="https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/hero_image_1.jpg"
           alt="Nogogeni VII"
           className="object-cover object-center"
         />

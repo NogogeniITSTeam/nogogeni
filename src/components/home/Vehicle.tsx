@@ -14,14 +14,30 @@ import Autoplay from "embla-carousel-autoplay";
 import { ChevronRightIcon } from "lucide-react";
 
 const vehicles = [
-  { name: "Nogogeni VII", year: "2024", imgPath: "/home/nogogeni_vii.png" },
+  {
+    name: "Nogogeni VII",
+    year: "2024",
+    imgPath:
+      "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/nogogeni_vii.png",
+  },
   {
     name: "Nogogeni IX Evo",
     year: "2024",
-    imgPath: "/home/nogogeni_ix_evo.png",
+    imgPath:
+      "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/nogogeni_ix_evo.png",
   },
-  { name: "Gokart", year: "2024", imgPath: "/home/gokart.png" },
-  { name: "Ng-5000", year: "2024", imgPath: "/home/ng_5000.png" },
+  {
+    name: "Gokart",
+    year: "2024",
+    imgPath:
+      "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/gokart.png",
+  },
+  {
+    name: "Ng-5000",
+    year: "2024",
+    imgPath:
+      "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/ng_5000.png",
+  },
 ];
 
 function Vehicle() {
@@ -120,7 +136,7 @@ function Vehicle() {
       <div className="absolute w-40 h-40 -left-8 -translate-y-8 tablet:w-52 tablet:h-52 tablet:-left-10 tablet:-translate-y-24 desktop:w-64 desktop:h-64 desktop:-left-12">
         <Image
           fill
-          src="/pattern_left.png"
+          src="https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/pattern_left.png"
           alt=""
           className="object-contain object-center"
         />

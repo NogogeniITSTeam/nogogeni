@@ -3,11 +3,13 @@ import Image from "next/image";
 const mediaPartners = [
   {
     company: "Otomotif News and Media Indonesia",
-    imgPath: "/home/media_partner_1.png",
+    imgPath:
+      "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/media_partner_1.png",
   },
   {
     company: "Tempo and Pikiran Rakyat Media Network",
-    imgPath: "/home/media_partner_2.png",
+    imgPath:
+      "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/media_partner_2.png",
   },
 ];
 

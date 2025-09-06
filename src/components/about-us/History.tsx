@@ -88,7 +88,12 @@ function History() {
     >
       <div className="w-fit mx-auto relative">
         <div className="absolute -top-12 -left-12">
-          <Image src="/star.png" alt="" width={128} height={128} />
+          <Image
+            src="https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/star.png"
+            alt=""
+            width={128}
+            height={128}
+          />
           <div className="bg-nogogeni-black/85 absolute inset-0 -translate-x-8 -translate-y-8 w-32 h-32 rounded-full blur-xl"></div>
         </div>
 
@@ -106,7 +111,12 @@ function History() {
         </p>
 
         <div className="absolute -bottom-12 -right-12">
-          <Image src="/star.png" alt="" width={128} height={128} />
+          <Image
+            src="https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/star.png"
+            alt=""
+            width={128}
+            height={128}
+          />
           <div className="bg-nogogeni-black/85 absolute inset-0 translate-x-8 translate-y-8 w-32 h-32 rounded-full blur-xl"></div>
         </div>
       </div>

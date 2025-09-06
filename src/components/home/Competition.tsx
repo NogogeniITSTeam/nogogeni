@@ -8,21 +8,24 @@ const competitions = [
     name: "Ethanol Urban Concept",
     result: "2nd Place KMHE",
     location: "Ancol Circuit, Jakarta",
-    imgPath: "/home/second_place_kmhe.jpg",
+    imgPath:
+      "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/second_place_kmhe.jpg",
     year: 2024,
   },
   {
     name: "Electric Urban Concept",
     result: "2nd Place KMHE",
     location: "Ancol Circuit, Jakarta",
-    imgPath: "/home/kmhe_second_place.png",
+    imgPath:
+      "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/kmhe_second_place.png",
     year: 2024,
   },
   {
     name: "Go-Kart Design",
     result: "3rd Place PLN ICE",
     location: "Sentul International Circuit, Bogor",
-    imgPath: "/home/pln_ice.jpg",
+    imgPath:
+      "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/pln_ice.jpg",
     year: 2024,
   },
 ];

@@ -23,7 +23,10 @@ export default function AboutUs() {
           content="Nogogeni ITS Team was established in 2011. The team originated from a final project by a student from the 2009-2010 cohort of the Diploma III in Industrial Mechanical Engineering at ITS."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="/public/favicon.ico" />
+        <meta
+          property="og:image"
+          content="https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/nogogeni_logo_full.png"
+        />
         <meta
           property="og:url"
           content="https://www.nogogeniits.com/about-us"
@@ -35,7 +38,10 @@ export default function AboutUs() {
           content="Nogogeni ITS Team was established in 2011. The team originated from a final project by a student from the 2009-2010 cohort of the Diploma III in Industrial Mechanical Engineering at ITS."
         />
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:image" content="/public/favicon.ico" />
+        <meta
+          property="twitter:image"
+          content="https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/nogogeni_logo_full.png"
+        />
         <meta
           property="twitter:url"
           content="https://www.nogogeniits.com/about-us"

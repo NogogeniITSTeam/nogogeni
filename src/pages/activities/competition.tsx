@@ -34,7 +34,10 @@ export default function Competition() {
           content="The Only Team in Indonesia Who Achieve a Quintrick Victory in KMHE Urban Electric Category."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="/public/favicon.ico" />
+        <meta
+          property="og:image"
+          content="https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/nogogeni_logo_full.png"
+        />
         <meta
           property="og:url"
           content="https://www.nogogeniits.com/activities/competition"
@@ -46,7 +49,10 @@ export default function Competition() {
           content="The Only Team in Indonesia Who Achieve a Quintrick Victory in KMHE Urban Electric Category."
         />
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:image" content="/public/favicon.ico" />
+        <meta
+          property="twitter:image"
+          content="https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/nogogeni_logo_full.png"
+        />
         <meta
           property="twitter:url"
           content="https://www.nogogeniits.com/activities/competition"

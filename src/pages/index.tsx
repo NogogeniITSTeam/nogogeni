@@ -26,7 +26,10 @@ export default function Home() {
           content="An official student research team from Institut Teknologi Sepuluh Nopember (ITS), dedicated to developing energy-efficient vehicles that push the limits of technology, creativity, and sustainability."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="/public/favicon.ico" />
+        <meta
+          property="og:image"
+          content="https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/nogogeni_logo_full.png"
+        />
         <meta property="og:url" content="https://www.nogogeniits.com" />
 
         <meta property="twitter:title" content="Nogogeni - ITS Research Team" />
@@ -35,7 +38,10 @@ export default function Home() {
           content="An official student research team from Institut Teknologi Sepuluh Nopember (ITS), dedicated to developing energy-efficient vehicles that push the limits of technology, creativity, and sustainability."
         />
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:image" content="/public/favicon.ico" />
+        <meta
+          property="twitter:image"
+          content="https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/nogogeni_logo_full.png"
+        />
         <meta property="twitter:url" content="https://www.nogogeniits.com" />
         <meta property="twitter:domain" content="nogogeniits.com" />
       </Head>
@@ -54,7 +60,7 @@ export default function Home() {
             <div className="relative w-24 h-24 desktop:w-32 desktop:h-32">
               <Image
                 fill
-                src="/star.png"
+                src="https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/star.png"
                 alt=""
                 className="object-contain object-center"
               />
@@ -88,7 +94,7 @@ export default function Home() {
       <div className="absolute w-40 h-40 -right-8 -translate-y-12 tablet:w-52 tablet:h-52 tablet:-right-10 tablet:-translate-y-16 desktop:w-64 desktop:h-64 desktop:-right-12 desktop:-translate-y-28">
         <Image
           fill
-          src="/pattern_right.png"
+          src="https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/pattern_right.png"
           alt=""
           className="object-contain object-center"
         />
@@ -108,7 +114,7 @@ export default function Home() {
             <div className="relative w-24 h-24 desktop:w-32 desktop:h-32">
               <Image
                 fill
-                src="/star.png"
+                src="https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/star.png"
                 alt=""
                 className="object-contain object-center"
               />
@@ -120,7 +126,7 @@ export default function Home() {
             <div className="relative w-24 h-24 desktop:w-32 desktop:h-32">
               <Image
                 fill
-                src="/star.png"
+                src="https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/star.png"
                 alt=""
                 className="object-contain object-center"
               />

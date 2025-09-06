@@ -10,14 +10,31 @@ import Autoplay from "embla-carousel-autoplay";
 import { useWindowSize } from "usehooks-ts";
 
 const reviews = [
-  { reviewer: "Prof. Dr. Dahlan Iskan", imgPath: "/home/dahlan.png" },
-  { reviewer: "Rudy Salim", imgPath: "/home/rudy.png" },
-  { reviewer: "Sandiaga Uno", imgPath: "/home/sandiaga.png" },
+  {
+    reviewer: "Prof. Dr. Dahlan Iskan",
+    imgPath:
+      "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/dahlan.png",
+  },
+  {
+    reviewer: "Rudy Salim",
+    imgPath:
+      "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/rudy.png",
+  },
+  {
+    reviewer: "Sandiaga Uno",
+    imgPath:
+      "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/sandiaga.png",
+  },
   {
     reviewer: "Ir. Bambang Pramujati, S.T., M.Sc.Eng., PhD",
-    imgPath: "/home/bambang.png",
+    imgPath:
+      "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/bambang.png",
   },
-  { reviewer: "Fitra Eri", imgPath: "/home/fitra.png" },
+  {
+    reviewer: "Fitra Eri",
+    imgPath:
+      "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/fitra.png",
+  },
 ];
 
 function Review() {
@@ -61,7 +78,7 @@ function Review() {
           <div className="relative w-24 h-24 desktop:w-32 desktop:h-32">
             <Image
               fill
-              src="/star.png"
+              src="https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/star.png"
               alt=""
               className="object-contain object-center"
             />
@@ -73,7 +90,7 @@ function Review() {
           <div className="relative w-24 h-24 desktop:w-32 desktop:h-32">
             <Image
               fill
-              src="/star.png"
+              src="https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/star.png"
               alt=""
               className="object-contain object-center"
             />

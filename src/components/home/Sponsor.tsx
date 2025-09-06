@@ -13,35 +13,114 @@ import { Button } from "../ui/button";
 const sponsors = [
   {
     company: "Pertamina Lubricants",
-    imgPath: "/home/pertamina_lubricants.png",
+    imgPath:
+      "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/pertamina_lubricants.png",
   },
-  { company: "Chempo Site Store", imgPath: "/home/chempo.png" },
-  { company: "SKK Migas", imgPath: "/home/skkmigas.png" },
-  { company: "PT Tritunggal Swarna", imgPath: "/home/tritunggal.png" },
-  { company: "HKA", imgPath: "/home/hka.png" },
-  { company: "CPT", imgPath: "/home/cpt.png" },
+  {
+    company: "Chempo Site Store",
+    imgPath:
+      "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/chempo.png",
+  },
+  {
+    company: "SKK Migas",
+    imgPath:
+      "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/skkmigas.png",
+  },
+  {
+    company: "PT Tritunggal Swarna",
+    imgPath:
+      "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/tritunggal.png",
+  },
+  {
+    company: "HKA",
+    imgPath:
+      "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/hka.png",
+  },
+  {
+    company: "CPT",
+    imgPath:
+      "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/cpt.png",
+  },
   {
     company: "Swanaya Prisadi Indonesia",
-    imgPath: "/home/spi.png",
+    imgPath:
+      "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/spi.png",
   },
-  { company: "Telkom Indonesia", imgPath: "/home/telkom.png" },
-  { company: "Grab", imgPath: "/home/grab.png" },
-  { company: "Padang Cement Indonesia", imgPath: "/home/padang.png" },
-  { company: "Spectrum", imgPath: "/home/spectrum.png" },
-  { company: "BSS Original Exhaust", imgPath: "/home/bss.png" },
-  { company: "Print & Print", imgPath: "/home/print.png" },
-  { company: "Better Luck Project", imgPath: "/home/betterluck.png" },
+  {
+    company: "Telkom Indonesia",
+    imgPath:
+      "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/telkom.png",
+  },
+  {
+    company: "Grab",
+    imgPath:
+      "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/grab.png",
+  },
+  {
+    company: "Padang Cement Indonesia",
+    imgPath:
+      "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/padang.png",
+  },
+  {
+    company: "Spectrum",
+    imgPath:
+      "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/spectrum.png",
+  },
+  {
+    company: "BSS Original Exhaust",
+    imgPath:
+      "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/bss.png",
+  },
+  {
+    company: "Print & Print",
+    imgPath:
+      "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/print.png",
+  },
+  {
+    company: "Better Luck Project",
+    imgPath:
+      "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/betterluck.png",
+  },
   {
     company: "Husky-CNOOC Madura Limited",
-    imgPath: "/home/hcml.png",
+    imgPath:
+      "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/hcml.png",
   },
-  { company: "Kangean Energy Indonesia", imgPath: "/home/kangean.png" },
-  { company: "Medco Energi", imgPath: "/home/medco.png" },
-  { company: "Pertamina PHE WMO", imgPath: "/home/pertamina_phe_wmo.png" },
-  { company: "Petronas", imgPath: "/home/petronas.png" },
-  { company: "Pertamna EP", imgPath: "/home/pertamina_ep.png" },
-  { company: "PGN Saka", imgPath: "/home/pgn.png" },
-  { company: "PT Petrokimia Gresik", imgPath: "/home/petrokimia.png" },
+  {
+    company: "Kangean Energy Indonesia",
+    imgPath:
+      "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/kangean.png",
+  },
+  {
+    company: "Medco Energi",
+    imgPath:
+      "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/medco.png",
+  },
+  {
+    company: "Pertamina PHE WMO",
+    imgPath:
+      "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/pertamina_phe_wmo.png",
+  },
+  {
+    company: "Petronas",
+    imgPath:
+      "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/petronas.png",
+  },
+  {
+    company: "Pertamna EP",
+    imgPath:
+      "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/pertamina_ep.png",
+  },
+  {
+    company: "PGN Saka",
+    imgPath:
+      "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/pgn.png",
+  },
+  {
+    company: "PT Petrokimia Gresik",
+    imgPath:
+      "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/petrokimia.png",
+  },
 ];
 
 function Sponsor() {

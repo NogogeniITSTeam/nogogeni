@@ -11,9 +11,18 @@ import Link from "next/link";
 import { ChevronRightCircleIcon } from "lucide-react";
 
 const heroImages = [
-  { path: "/home/hero_image_1.jpg", alt: "Nogogeni VII" },
-  { path: "/home/hero_image_2.jpg", alt: "Nogogeni IX Evo" },
-  { path: "/home/hero_image_3.jpg", alt: "Nogogeni Driver and Its Team" },
+  {
+    path: "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/hero_image_1.jpg",
+    alt: "Nogogeni VII",
+  },
+  {
+    path: "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/hero_image_2.jpg",
+    alt: "Nogogeni IX Evo",
+  },
+  {
+    path: "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/hero_image_3.jpg",
+    alt: "Nogogeni Driver and Its Team",
+  },
 ];
 
 function Hero() {

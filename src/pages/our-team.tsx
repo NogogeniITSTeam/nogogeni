@@ -20,7 +20,10 @@ export default function OurTeam() {
           content="The people behind Nogogeni ITS that work together to design, build, and develop energy-efficient vehicles."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="/public/favicon.ico" />
+        <meta
+          property="og:image"
+          content="https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/nogogeni_logo_full.png"
+        />
         <meta
           property="og:url"
           content="https://www.nogogeniits.com/our-team"
@@ -32,7 +35,10 @@ export default function OurTeam() {
           content="The people behind Nogogeni ITS that work together to design, build, and develop energy-efficient vehicles."
         />
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:image" content="/public/favicon.ico" />
+        <meta
+          property="twitter:image"
+          content="https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/nogogeni_logo_full.png"
+        />
         <meta
           property="twitter:url"
           content="https://www.nogogeniits.com/our-team"
@@ -76,7 +82,12 @@ export default function OurTeam() {
       >
         <div className="relative w-full mx-auto max-w-[512px] tablet:max-w-xl desktop:max-w-4xl">
           <div className="absolute -top-12 -left-12">
-            <Image src="/star.png" alt="" width={128} height={128} />
+            <Image
+              src="https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/star.png"
+              alt=""
+              width={128}
+              height={128}
+            />
             <div className="bg-nogogeni-black/85 absolute inset-0 -translate-x-8 -translate-y-8 w-32 h-32 rounded-full blur-xl"></div>
           </div>
 
@@ -90,7 +101,12 @@ export default function OurTeam() {
           </p>
 
           <div className="absolute -bottom-12 -right-12">
-            <Image src="/star.png" alt="" width={128} height={128} />
+            <Image
+              src="https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/star.png"
+              alt=""
+              width={128}
+              height={128}
+            />
             <div className="bg-nogogeni-black/85 absolute inset-0 translate-x-8 translate-y-8 w-32 h-32 rounded-full blur-xl"></div>
           </div>
         </div>

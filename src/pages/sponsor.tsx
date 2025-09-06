@@ -4,34 +4,114 @@ import Image from "next/image";
 
 const sponsors = [
   [
-    { company: "Chempo Site Store", imgPath: "/home/chempo.png" },
-    { company: "SKK Migas", imgPath: "/home/skkmigas.png" },
+    {
+      company: "Chempo Site Store",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/chempo.png",
+    },
+    {
+      company: "SKK Migas",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/skkmigas.png",
+    },
   ],
   [
-    { company: "PT Petrokimia Gresik", imgPath: "/home/petrokimia.png" },
-    { company: "PT Tritunggal Swarna", imgPath: "/home/tritunggal.png" },
-    { company: "HKA", imgPath: "/home/hka.png" },
-    { company: "CPT", imgPath: "/home/cpt.png" },
+    {
+      company: "PT Petrokimia Gresik",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/petrokimia.png",
+    },
+    {
+      company: "PT Tritunggal Swarna",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/tritunggal.png",
+    },
+    {
+      company: "HKA",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/hka.png",
+    },
+    {
+      company: "CPT",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/cpt.png",
+    },
   ],
   [
-    { company: "Husky-CNOOC Madura Limited", imgPath: "/home/hcml.png" },
-    { company: "Swanaya Prisadi Indonesia", imgPath: "/home/spi.png" },
-    { company: "Pertamina PHE WMO", imgPath: "/home/pertamina_phe_wmo.png" },
-    { company: "Telkom Indonesia", imgPath: "/home/telkom.png" },
-    { company: "Grab", imgPath: "/home/grab.png" },
+    {
+      company: "Husky-CNOOC Madura Limited",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/hcml.png",
+    },
+    {
+      company: "Swanaya Prisadi Indonesia",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/spi.png",
+    },
+    {
+      company: "Pertamina PHE WMO",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/pertamina_phe_wmo.png",
+    },
+    {
+      company: "Telkom Indonesia",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/telkom.png",
+    },
+    {
+      company: "Grab",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/grab.png",
+    },
   ],
   [
-    { company: "Padang Cement Indonesia", imgPath: "/home/padang.png" },
-    { company: "Spectrum", imgPath: "/home/spectrum.png" },
-    { company: "BSS Original Exhaust", imgPath: "/home/bss.png" },
-    { company: "Better Luck Project", imgPath: "/home/betterluck.png" },
-    { company: "Kangean Energy Indonesia", imgPath: "/home/kangean.png" },
+    {
+      company: "Padang Cement Indonesia",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/padang.png",
+    },
+    {
+      company: "Spectrum",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/spectrum.png",
+    },
+    {
+      company: "BSS Original Exhaust",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/bss.png",
+    },
+    {
+      company: "Better Luck Project",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/betterluck.png",
+    },
+    {
+      company: "Kangean Energy Indonesia",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/kangean.png",
+    },
   ],
   [
-    { company: "Medco Energi", imgPath: "/home/medco.png" },
-    { company: "Petronas", imgPath: "/home/petronas.png" },
-    { company: "PGN Saka", imgPath: "/home/pgn.png" },
-    { company: "Pertamna EP", imgPath: "/home/pertamina_ep.png" },
+    {
+      company: "Medco Energi",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/medco.png",
+    },
+    {
+      company: "Petronas",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/petronas.png",
+    },
+    {
+      company: "PGN Saka",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/pgn.png",
+    },
+    {
+      company: "Pertamna EP",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/pertamina_ep.png",
+    },
   ],
 ];
 
@@ -51,7 +131,10 @@ export default function Sponsor() {
           content="Meet our valued sponsors and partners who support our mission."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="/public/favicon.ico" />
+        <meta
+          property="og:image"
+          content="https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/nogogeni_logo_full.png"
+        />
         <meta property="og:url" content="https://www.nogogeniits.com/sponsor" />
 
         <meta property="twitter:title" content="Nogogeni - Sponsor" />
@@ -60,7 +143,10 @@ export default function Sponsor() {
           content="Meet our valued sponsors and partners who support our mission."
         />
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:image" content="/public/favicon.ico" />
+        <meta
+          property="twitter:image"
+          content="https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/nogogeni_logo_full.png"
+        />
         <meta
           property="twitter:url"
           content="https://www.nogogeniits.com/sponsor"
@@ -77,7 +163,7 @@ export default function Sponsor() {
           <div className="relative w-64 h-24 tablet:w-sm tablet:h-36 desktop:w-lg desktop:h-32">
             <Image
               fill
-              src="/home/pertamina_lubricants.png"
+              src="https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/pertamina_lubricants.png"
               alt="Pertamina Lubricants"
               className="object-contain object-center"
             />
