@@ -54,7 +54,7 @@ export default function AboutUs() {
           <Image
             fill
             priority
-            src="/about-us/hero.jpg"
+            src="https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/about-us/hero.jpg"
             alt="Nogogeni V Evo"
             className="object-cover object-center"
           />
@@ -105,7 +105,7 @@ export default function AboutUs() {
             <div className="relative overflow-hidden w-full mx-auto aspect-4/5 max-w-xs mb-8 tablet:aspect-5/4 tablet:max-w-xl desktop:max-w-full desktop:h-full">
               <Image
                 fill
-                src="/about-us/first_place.png"
+                src="https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/about-us/first_place.png"
                 alt="First place in Urban Electricity category at IEMC 2013"
                 className="object-cover object-center group-hover:scale-125 duration-300"
               />

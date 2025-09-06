@@ -65,7 +65,7 @@ export default function Competition() {
           <Image
             fill
             priority
-            src="/about-us/history_12.jpg"
+            src="https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/about-us/history_12.jpg"
             alt="First Place in KMHE Urban Motor Electric Category 188,69 Km/Kwh"
             className="object-cover object-center"
           />

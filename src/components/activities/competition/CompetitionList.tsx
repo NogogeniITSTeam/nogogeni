@@ -46,28 +46,32 @@ competitions.set("kmhe", {
       ranking: "1st Place",
       year: 2013,
       location: "Kenjeran Park Circuit",
-      imgPath: "/about-us/history_2.png",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/about-us/history_2.png",
     },
     {
       name: "Urban Concept Electric",
       ranking: "1st Place",
       year: 2014,
       location: "Kenjeran Park Circuit",
-      imgPath: "/about-us/history_3.png",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/about-us/history_3.png",
     },
     {
       name: "Urban Concept Electric",
       ranking: "2nd Place",
       year: 2015,
       location: "Kanjuruhan Stadium",
-      imgPath: "/about-us/history_4.png",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/about-us/history_4.png",
     },
     {
       name: "Urban Concept Electric",
       ranking: "2nd Place",
       year: 2016,
       location: "Prambanan Temple Complex",
-      imgPath: "/about-us/history_5.png",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/about-us/history_5.png",
     },
     {
       name: "Urban Concept Electric",
@@ -102,7 +106,8 @@ competitions.set("kmhe", {
       ranking: "1st Place",
       year: 2019,
       location: "Universitas Negeri Malang",
-      imgPath: "/about-us/history_8.png",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/about-us/history_8.png",
     },
     {
       name: "Urban Concept Ethanol",
@@ -116,21 +121,24 @@ competitions.set("kmhe", {
       ranking: "1st Place",
       year: 2020,
       location: "Universitas Indonesia",
-      imgPath: "/about-us/history_9.png",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/about-us/history_9.png",
     },
     {
       name: "Urban Concept Electric",
       ranking: "1st Place",
       year: 2021,
       location: "Gelora Bung Tomo Circuit",
-      imgPath: "/about-us/history_10.png",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/about-us/history_10.png",
     },
     {
       name: "Urban Concept Electric",
       ranking: "1st Place",
       year: 2022,
       location: "Gelora Bung Tomo Circuit",
-      imgPath: "/about-us/history_11.png",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/about-us/history_11.png",
     },
     {
       name: "Urban Concept Electric",
@@ -174,7 +182,8 @@ competitions.set("sem_asia", {
       ranking: "3rd Place",
       year: 2017,
       location: "Changi Exhibition Centre",
-      imgPath: "/about-us/history_6.png",
+      imgPath:
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/about-us/history_6.png",
     },
     {
       name: "Urban Electric Class of SEM-Asia",

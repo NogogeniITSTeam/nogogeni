@@ -10,17 +10,20 @@ import { useEffect, useState } from "react";
 
 const carouselItems = [
   {
-    imgPath: "/about-us/kandang_kuning_1.png",
+    imgPath:
+      "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/about-us/kandang_kuning_1.png",
     title: "Kandang Kuning Nogogeni ITS Team",
     location: "ITS Surabaya",
   },
   {
-    imgPath: "/about-us/kandang_kuning_2.png",
+    imgPath:
+      "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/about-us/kandang_kuning_2.png",
     title: "Kandang Kuning Nogogeni ITS Team",
     location: "ITS Surabaya",
   },
   {
-    imgPath: "/about-us/kandang_kuning_3.png",
+    imgPath:
+      "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/about-us/kandang_kuning_3.png",
     title: "Kandang Kuning Nogogeni ITS Team",
     location: "ITS Surabaya",
   },

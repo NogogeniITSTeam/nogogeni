@@ -29,7 +29,8 @@ newsList.set("achievement", [
   },
   {
     title: "Tim Nogogeni ITS Raih Dua Prestasi di KMHE 2024",
-    imgPath: "/about-us/history_13.jpg",
+    imgPath:
+      "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/about-us/history_13.jpg",
     date: "15 Okt 2024",
     articleURL:
       "https://mercuryfm.id/2024/10/11/tim-nogogeni-its-raih-dua-prestasi-di-kmhe-2024",

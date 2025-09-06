@@ -112,7 +112,7 @@ export default function Contact() {
           <Image
             fill
             priority
-            src="/about-us/history_13.jpg"
+            src="https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/about-us/history_13.jpg"
             alt="Nogogeni Team"
             className="object-cover object-center"
           />
