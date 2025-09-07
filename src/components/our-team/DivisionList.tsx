@@ -114,13 +114,6 @@ departments.set("technical", [
         linkedInURL: "https://id.linkedin.com/in/raihan-fathoni-4bab56205",
       },
       {
-        name: "Dionisius Davis",
-        position: "Staff",
-        imgPath:
-          "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/our-team/dionisius.png",
-        linkedInURL: "https://id.linkedin.com/in/dionisiusdavis",
-      },
-      {
         name: "Cahyo Okto Risfian",
         position: "Staff",
         imgPath:

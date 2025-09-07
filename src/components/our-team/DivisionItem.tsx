@@ -28,8 +28,6 @@ function determineImageStyle(imgPath: string): string {
       return "scale-175 translate-y-28 group-hover:scale-200 desktop:translate-y-32";
     case "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/our-team/raihan.png":
       return "scale-175 translate-y-28 group-hover:scale-200 desktop:translate-y-32";
-    case "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/our-team/dionisius.png":
-      return "scale-175 translate-y-28 group-hover:scale-200 desktop:translate-y-32";
     case "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/our-team/cahyo.png":
       return "scale-175 translate-y-28 group-hover:scale-200 desktop:translate-y-32";
     case "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/our-team/rayhana.png":
