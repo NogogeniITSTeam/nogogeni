@@ -19,12 +19,19 @@ import {
 } from "./ui/dropdown-menu";
 import { Dispatch, RefObject, SetStateAction, useRef, useState } from "react";
 import { useOnClickOutside, useScrollLock } from "usehooks-ts";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "./ui/accordion";
 
 interface NavbarModalProps {
   setIsOpened: Dispatch<SetStateAction<boolean>>;
 }
 
 function NavbarModal({ setIsOpened }: NavbarModalProps) {
+  const router = useRouter();
   useScrollLock();
 
   return (
@@ -37,43 +44,122 @@ function NavbarModal({ setIsOpened }: NavbarModalProps) {
       <nav className="bg-nogogeni-black fixed top-16 left-0 right-0 tablet:hidden">
         <Link
           href="/about-us"
-          className="hover:bg-[#3F3F3F] cursor-pointer block w-full px-6 py-4"
           onClick={() => setIsOpened(false)}
+          className={`hover:bg-[#3F3F3F] cursor-pointer block w-full px-6 py-4 ${
+            router.pathname === "/about-us" ? "bg-[#3F3F3F]" : ""
+          }`}
         >
           About Us
         </Link>
-        <Link
-          href="/garage"
-          className="hover:bg-[#3F3F3F] cursor-pointer block w-full px-6 py-4"
-          onClick={() => setIsOpened(false)}
-        >
-          Garage
-        </Link>
+        <Accordion type="single" collapsible>
+          <AccordionItem value="garage">
+            <AccordionTrigger
+              className={`hover:bg-[#3F3F3F] cursor-pointer px-6 py-4 [&_svg]:size-6 hover:no-underline rounded-none text-base ${
+                router.pathname.startsWith("/garage") ? "bg-[#3F3F3F]" : ""
+              }`}
+            >
+              Garage
+            </AccordionTrigger>
+            <AccordionContent className="bg-[#3F3F3F] flex flex-col pb-0">
+              <Link
+                href="/garage#vehicle-types"
+                onClick={() => setIsOpened(false)}
+                className={`hover:bg-nogogeni-black/50 flex items-center gap-2 cursor-pointer pl-10 pr-6 py-4 text-sm ${
+                  router.asPath === "/garage#vehicle-types"
+                    ? "bg-nogogeni-black/50"
+                    : ""
+                }`}
+              >
+                <CarFrontIcon className="text-nogogeni-white size-3" /> Vehicle
+                Types
+              </Link>
+              <Link
+                href="/garage#vehicle-gallery"
+                onClick={() => setIsOpened(false)}
+                className={`hover:bg-nogogeni-black/50 flex items-center gap-2 cursor-pointer pl-10 pr-6 py-4 text-sm ${
+                  router.asPath === "/garage#vehicle-gallery"
+                    ? "bg-nogogeni-black/50"
+                    : ""
+                }`}
+              >
+                <BookImageIcon className="text-nogogeni-white size-3" /> Vehicle
+                Gallery
+              </Link>
+            </AccordionContent>
+          </AccordionItem>
+        </Accordion>
         <Link
           href="/our-team"
-          className="hover:bg-[#3F3F3F] cursor-pointer block w-full px-6 py-4"
           onClick={() => setIsOpened(false)}
+          className={`hover:bg-[#3F3F3F] cursor-pointer block w-full px-6 py-4 ${
+            router.pathname === "/our-team" ? "bg-[#3F3F3F]" : ""
+          }`}
         >
           Our Team
         </Link>
-        <Link
-          href="/activities/competition"
-          className="hover:bg-[#3F3F3F] cursor-pointer block w-full px-6 py-4"
-          onClick={() => setIsOpened(false)}
-        >
-          Activities
-        </Link>
+        <Accordion type="single" collapsible>
+          <AccordionItem value="activities">
+            <AccordionTrigger
+              className={`hover:bg-[#3F3F3F] cursor-pointer px-6 py-4 [&_svg]:size-6 hover:no-underline rounded-none text-base ${
+                router.pathname.startsWith("/activities") ? "bg-[#3F3F3F]" : ""
+              }`}
+            >
+              Activities
+            </AccordionTrigger>
+            <AccordionContent className="bg-[#3F3F3F] flex flex-col pb-0">
+              <Link
+                href="/activities/competition"
+                onClick={() => setIsOpened(false)}
+                className={`hover:bg-nogogeni-black/50 flex items-center gap-2 cursor-pointer pl-10 pr-6 py-4 text-sm ${
+                  router.pathname === "/activities/competition"
+                    ? "bg-nogogeni-black/50"
+                    : ""
+                }`}
+              >
+                <TrophyIcon className="text-nogogeni-white size-3" />{" "}
+                Competition
+              </Link>
+              <Link
+                href="/activities/internal-and-external"
+                onClick={() => setIsOpened(false)}
+                className={`hover:bg-nogogeni-black/50 flex items-center gap-2 cursor-pointer pl-10 pr-6 py-4 text-sm ${
+                  router.pathname === "/activities/internal-and-external"
+                    ? "bg-nogogeni-black/50"
+                    : ""
+                }`}
+              >
+                <CalendarIcon className="text-nogogeni-white size-3" /> Internal
+                & External
+              </Link>
+              <Link
+                href="/activities/newsroom"
+                onClick={() => setIsOpened(false)}
+                className={`hover:bg-nogogeni-black/50 flex items-center gap-2 cursor-pointer pl-10 pr-6 py-4 text-sm ${
+                  router.pathname === "/activities/newsroom"
+                    ? "bg-nogogeni-black/50"
+                    : ""
+                }`}
+              >
+                <Newspaper className="text-nogogeni-white size-3" /> Newsroom
+              </Link>
+            </AccordionContent>
+          </AccordionItem>
+        </Accordion>
         <Link
           href="/contact"
-          className="hover:bg-[#3F3F3F] cursor-pointer block w-full px-6 py-4"
           onClick={() => setIsOpened(false)}
+          className={`hover:bg-[#3F3F3F] cursor-pointer block w-full px-6 py-4 ${
+            router.pathname === "/contact" ? "bg-[#3F3F3F]" : ""
+          }`}
         >
           Contact
         </Link>
         <Link
           href="/sponsor"
-          className="hover:bg-[#3F3F3F] cursor-pointer block w-full px-6 py-4"
           onClick={() => setIsOpened(false)}
+          className={`hover:bg-[#3F3F3F] cursor-pointer block w-full px-6 py-4 ${
+            router.pathname === "/sponsor" ? "bg-[#3F3F3F]" : ""
+          }`}
         >
           Sponsor
         </Link>
@@ -170,7 +256,7 @@ function Navbar() {
               <DropdownMenuItem
                 asChild
                 className={`cursor-pointer rounded-none font-semibold focus:bg-[#FF675D] focus:text-nogogeni-white px-3 py-1.5 desktop:text-base desktop:px-4 desktop:py-2 ${
-                  router.pathname === "/garage#vehicle-types"
+                  router.asPath === "/garage#vehicle-types"
                     ? "bg-[#FF675D]"
                     : "bg-nogogeni-orange"
                 }`}
@@ -182,7 +268,7 @@ function Navbar() {
               <DropdownMenuItem
                 asChild
                 className={`cursor-pointer rounded-none font-semibold focus:bg-[#FF675D] focus:text-nogogeni-white px-3 py-1.5 desktop:text-base desktop:px-4 desktop:py-2 ${
-                  router.pathname === "/garage#vehicle-gallery"
+                  router.asPath === "/garage#vehicle-gallery"
                     ? "bg-[#FF675D]"
                     : "bg-nogogeni-orange"
                 }`}
