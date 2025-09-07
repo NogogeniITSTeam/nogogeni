@@ -76,7 +76,7 @@ function VehicleGallery({ gallery }: { gallery: Vehicle["gallery"] }) {
             {row.gallery.map((item, index) => (
               <div
                 key={`${item.imgPath}:${index}`}
-                className={`relative w-full h-32 tablet:h-48 ${
+                className={`overflow-hidden relative w-full h-32 tablet:h-48 ${
                   gallery.length === 1 ? "desktop:h-96" : "desktop:h-64"
                 }`}
               >
@@ -84,8 +84,14 @@ function VehicleGallery({ gallery }: { gallery: Vehicle["gallery"] }) {
                   fill
                   src={item.imgPath}
                   alt={item.name}
-                  className="object-cover object-center"
+                  className={`object-cover object-center ${
+                    item.imgPath ===
+                    "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/garage/ethanol_vi.jpg"
+                      ? "scale-200 -translate-x-32"
+                      : ""
+                  }`}
                 />
+                <div className="absolute inset-0 bg-linear-to-t from-black/50 to-transparent" />
                 <p className="absolute bottom-0 left-0 right-0 bg-linear-to-t from-nogogeni-orange to-transparent font-semibold text-xs p-1 tablet:text-base tablet:p-2 desktop:text-2xl desktop:p-4">
                   {item.name}
                 </p>
