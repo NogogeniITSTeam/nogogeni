@@ -110,7 +110,7 @@ vehicles.set("ethanol_urban_car", {
     {
       name: "Nogogeni VI",
       imgPath:
-        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/home/hero_image_2.jpg",
+        "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/garage/ethanol_vi.jpg",
     },
     {
       name: "Nogogeni V",
