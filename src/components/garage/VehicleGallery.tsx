@@ -87,7 +87,7 @@ function VehicleGallery({ gallery }: { gallery: Vehicle["gallery"] }) {
                   className={`object-cover object-center ${
                     item.imgPath ===
                     "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/garage/ethanol_vi.jpg"
-                      ? "scale-200 -translate-x-32"
+                      ? "scale-200 -translate-x-12 tablet:-translate-x-[88px] desktop:-translate-x-32"
                       : ""
                   }`}
                 />

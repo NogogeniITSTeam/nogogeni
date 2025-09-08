@@ -228,7 +228,7 @@ function VehicleList() {
                 selectedVehicleType === "electric_urban_car"
                   ? "bg-nogogeni-white/50"
                   : "bg-nogogeni-black"
-              } hover:bg-nogogeni-white/50 border border-nogogeni-white text-sm desktop:text-base`}
+              } hover:bg-nogogeni-white/50 border border-nogogeni-white w-full max-w-64 text-sm tablet:max-w-48 desktop:text-base`}
               onClick={() => setSelectedVehicleType("electric_urban_car")}
             >
               Electric Urban Car
@@ -238,7 +238,7 @@ function VehicleList() {
                 selectedVehicleType === "ethanol_urban_car"
                   ? "bg-nogogeni-white/50"
                   : "bg-nogogeni-black"
-              } hover:bg-nogogeni-white/50 border border-nogogeni-white text-sm desktop:text-base`}
+              } hover:bg-nogogeni-white/50 border border-nogogeni-white w-full max-w-64 text-sm tablet:max-w-48 desktop:text-base`}
               onClick={() => setSelectedVehicleType("ethanol_urban_car")}
             >
               Ethanol Urban Car
@@ -248,7 +248,7 @@ function VehicleList() {
                 selectedVehicleType === "gokart"
                   ? "bg-nogogeni-white/50"
                   : "bg-nogogeni-black"
-              } hover:bg-nogogeni-white/50 border border-nogogeni-white text-sm desktop:text-base`}
+              } hover:bg-nogogeni-white/50 border border-nogogeni-white w-full max-w-64 text-sm tablet:max-w-48 desktop:text-base`}
               onClick={() => setSelectedVehicleType("gokart")}
             >
               Gokart
@@ -258,7 +258,7 @@ function VehicleList() {
                 selectedVehicleType === "motorcycle"
                   ? "bg-nogogeni-white/50"
                   : "bg-nogogeni-black"
-              } hover:bg-nogogeni-white/50 border border-nogogeni-white text-sm desktop:text-base`}
+              } hover:bg-nogogeni-white/50 border border-nogogeni-white w-full max-w-64 text-sm tablet:max-w-48 desktop:text-base`}
               onClick={() => setSelectedVehicleType("motorcycle")}
             >
               Motorcycle
