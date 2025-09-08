@@ -19,11 +19,12 @@ departments.set("managers", [
     name: "Managers",
     teams: [
       {
-        name: "Safira Dewi Agustina",
-        position: "Non-Technical Manager",
+        name: "Saputra Ardyan Syah",
+        position: "General Manager",
         imgPath:
-          "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/our-team/safira.png",
-        linkedInURL: "https://www.linkedin.com/in/safiradewia",
+          "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/our-team/saputra.png",
+        linkedInURL:
+          "https://www.linkedin.com/in/saputra-ardyan-syah-6246a4252",
       },
       {
         name: "Aji Yusuf Saputra Setiawan",
@@ -34,12 +35,11 @@ departments.set("managers", [
           "https://www.linkedin.com/in/aji-yusuf-saputra-setiawan-a455a2367",
       },
       {
-        name: "Saputra Ardyan Syah",
-        position: "General Manager",
+        name: "Safira Dewi Agustina",
+        position: "Non-Technical Manager",
         imgPath:
-          "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/our-team/saputra.png",
-        linkedInURL:
-          "https://www.linkedin.com/in/saputra-ardyan-syah-6246a4252",
+          "https://iajfi9upvxogiyfi.public.blob.vercel-storage.com/our-team/safira.png",
+        linkedInURL: "https://www.linkedin.com/in/safiradewia",
       },
     ],
   },
